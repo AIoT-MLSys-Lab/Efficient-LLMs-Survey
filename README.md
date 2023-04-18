@@ -1,1 +1,1 @@
-# EfficientGPT
+# Efficient GPT
