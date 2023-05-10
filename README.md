@@ -14,9 +14,20 @@
 
 ## Table of Content
 
-- [Compression]: (#Compression)
+- [Compression](#Compression)
+  - [Pruning](#Pruning)
 
-- 
+  - [Knowledge Distillation](#Knowledge Distillation)
+
+  - [Low-rank Decomposition](#Low-rank Decomposition)
+
+  - [Efficient Attention](#Efficient Attention)
+
+- [Efficient Training](#Efficient Training)
+
+- [Efficient Tuning](#Efficient Tuning)
+  - [Parameter Efficient Tuning](#Parameter Efficient Tuning)
+
 
 ## Compression
 
@@ -32,17 +43,16 @@
 
 ## Efficient Tuning
 
-#### Parameter Efficient Fine-tuning
+#### Parameter Efficient Tuning
 
-- **PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods** [
+- PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods [[Code](https://github.com/huggingface/peft)]
 
-  [Code]: https://github.com/huggingface/peft
-
-  ]
-
-- 
+- LoRA: Low-Rank Adaptation of Large Language Models [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] []
 
 
 
 
 
+
+
+[Code]: 
