@@ -17,16 +17,16 @@
 - [Compression](#Compression)
   - [Pruning](#Pruning)
 
-  - [Knowledge Distillation](#Knowledge Distillation)
+  - [Knowledge Distillation](#Knowledge-Distillation)
 
-  - [Low-rank Decomposition](#Low-rank Decomposition)
+  - [Low-rank Decomposition](#Low-rank-Decomposition)
 
-  - [Efficient Attention](#Efficient Attention)
+  - [Efficient Attention](#Efficient-Attention)
 
-- [Efficient Training](#Efficient Training)
+- [Efficient Training](#Efficient-Training)
 
-- [Efficient Tuning](#Efficient Tuning)
-  - [Parameter Efficient Tuning](#Parameter Efficient Tuning)
+- [Efficient Tuning](#Efficient-Tuning)
+  - [Parameter Efficient Tuning](#Parameter-Efficient-Tuning)
 
 
 ## Compression
