@@ -10,6 +10,7 @@
 
 ## Survey
 * Efficient GPT: A Survey, 2023.
+* Efficient GPT for Edge Computing: Challenges and Opportunities, 2023.
 
 ## Efficient GPT Papers by Topics
 
