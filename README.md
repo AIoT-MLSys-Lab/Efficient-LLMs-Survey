@@ -18,8 +18,8 @@
   - [Model Pruning](#Model-Pruning)
   - [Knowledge Distillation](#Knowledge-Distillation)
   - [Low-rank Decomposition](#Low-rank-Decomposition)
-  - [Efficient Attention](#Efficient-Attention)
   - [Quantization](#Quantization)
+  - [Efficient Attention](#Efficient-Attention)
 - [Efficient Training](#Efficient-Training)
 - [Parameter Efficient Tuning](#Parameter-Efficient-Tuning)
 
