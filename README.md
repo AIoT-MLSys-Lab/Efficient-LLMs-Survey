@@ -12,5 +12,37 @@
 * Efficient GPT: A Survey, 2023.
 * Efficient GPT for Edge Computing: Challenges and Opportunities, 2023.
 
-## Efficient GPT Papers by Topics
+## Table of Content
+
+- [Compression]: (#Compression)
+
+- 
+
+## Compression
+
+#### Pruning
+
+#### Knowledge Distillation
+
+#### Low-rank Decomposition
+
+#### Efficient Attention
+
+## Efficient Training
+
+## Efficient Tuning
+
+#### Parameter Efficient Fine-tuning
+
+- **PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods** [
+
+  [Code]: https://github.com/huggingface/peft
+
+  ]
+
+- 
+
+
+
+
 
