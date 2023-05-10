@@ -1,4 +1,4 @@
-# Efficient GPT: Survey, Seminars, Papers, Benchmarks, and Open-Source Resources.  
+# Efficient GPT: Survey, Papers, Benchmarks, and Open-Source Resources.  
 
 ### ToDo (05/10/2023) 
 * Keep adding papers into the list.
