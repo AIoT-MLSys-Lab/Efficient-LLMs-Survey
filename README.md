@@ -14,7 +14,7 @@
 
 ## Table of Content
 - [Efficient Inference](#Efficient-Inference)
-- [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
+- [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
 - [Model Compression](#Model-Compression)
   - [Model Pruning](#Model-Pruning)
   - [Knowledge Distillation](#Knowledge-Distillation)
