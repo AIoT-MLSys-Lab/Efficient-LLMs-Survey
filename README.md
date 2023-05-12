@@ -13,6 +13,7 @@
 * Efficient GPT for Edge Computing: Challenges and Opportunities, 2023.
 
 ## Table of Content
+- [Efficient Inference](#Efficient-Inference)
 - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
 - [Model Compression](#Model-Compression)
   - [Model Pruning](#Model-Pruning)
@@ -22,8 +23,12 @@
   - [Efficient Attention](#Efficient-Attention)
 - [Efficient Training](#Efficient-Training)
 
-## Parameter Efficient Fine-Tuning
+## Efficient Inference
+- FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
+- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+- High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 
+## Parameter Efficient Fine-Tuning
 - PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods, <ins>Github, 2022</ins> [[Code](https://github.com/huggingface/peft)]
 - Parameter-efficient Fine-tuning of Large-scale Pre-trained Language Models, <ins>Nature Machine Intelligence, 2023</ins> [[Paper](https://doi.org/10.1038/s42256-023-00626-4)] [[Code](https://github.com/thunlp/OpenDelta)]
 - LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
@@ -37,19 +42,16 @@
 
 ## Model Compression
 #### Model Pruning
-
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
 - ZipLM: Hardware-Aware Structured Pruning of Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04089)]
 
 #### Knowledge Distillation
-
 - Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
 - Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
 - Specializing Smaller Language Models towards Multi-Step Reasoning, <ins>ICML, 2023</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.169.pdf)] [[Code](https://github.com/FranxYao/FlanT5-CoT-Specialization)]
 
 #### Low-rank Decomposition
-
 - Compressing Transformers: Features Are Low-Rank, but Weights Are Not!  <ins>AAAI, 2023</ins> [[Paper](https://cs.nju.edu.cn/wujx/paper/AAAI2023_AFM.pdf)]
 - Strategies for Applying Low Rank Decomposition to Transformer-Based Models,  <ins>NeurlPS-ENLSP, 2022</ins> [[Paper](https://neurips2022-enlsp.github.io/papers/paper_33.pdf)]
 - Numerical Optimizations for Weighted Low-rank Estimation on Language Model,  <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.91.pdf)] 
@@ -59,7 +61,6 @@
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Quantization
-
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
 - OliVe: Accelerating Large Language Models via Hardware-friendly Outlier-Victim Pair Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.07493)]
 - ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=f-fVCElZ-G1)]
@@ -68,7 +69,6 @@
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 
 #### Efficient Attention
-
 - HALOS: Hashing Large Output Space for Cheap Inference,  <ins>MLSys, 2022</ins> [[Paper](https://proceedings.mlsys.org/paper/2022/hash/1ff8a7b5dc7a7d1f0ed65aaa29c04b1e-Abstract.html)]
 - Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
 - Linformer: Self-Attention with Linear Complexity,  <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.04768)] [[Code](https://github.com/lucidrains/linformer)]
@@ -79,7 +79,4 @@
 
 ## Efficient Training
 
-## Efficient Inference
-- FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
-- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
-- High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+
