@@ -40,10 +40,6 @@
 - Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
 - Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
 
-1. How to migrate to or add other modalities.
-2. How to improve LoRa.
-3. 
-
 ## Model Compression
 #### Model Pruning
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
