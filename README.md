@@ -13,21 +13,16 @@
 * Efficient GPT for Edge Computing: Challenges and Opportunities, 2023.
 
 ## Table of Content
-- [Efficient Inference](#Efficient-Inference)
 - [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
+- [Efficient Instruction Tuning](#Efficient-Instruction-Tuning)
 - [Model Compression](#Model-Compression)
   - [Model Pruning](#Model-Pruning)
   - [Knowledge Distillation](#Knowledge-Distillation)
   - [Low-rank Decomposition](#Low-rank-Decomposition)
   - [Quantization](#Quantization)
   - [Efficient Attention](#Efficient-Attention)
+- [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
-- [Efficient Instruction Tuning](#Efficient Instruction Tuning)
-
-## Efficient Inference
-- FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
-- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
-- High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 
 ## Parameter-Efficient Fine-Tuning
 - QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
@@ -42,6 +37,9 @@
 - Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/0586.pdf)] [[Code](https://github.com/yuchaoli/PST)]
 - Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
 - Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
+
+## Efficient Instruction Tuning
+- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
 
 ## Model Compression
 #### Model Pruning
@@ -80,7 +78,10 @@
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
 - SMYRF: Efficient Attention using Asymmetric Clustering,  <ins>NeurlPS 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3495724.3496267)] [[Code](https://github.com/giannisdaras/smyrf)]
 
+## Efficient Inference
+- FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
+- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+- High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+
 ## Efficient Training
 
-## Efficient Instruction Tuning
-- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
