@@ -22,6 +22,7 @@
   - [Quantization](#Quantization)
   - [Efficient Attention](#Efficient-Attention)
 - [Efficient Training](#Efficient-Training)
+- [Efficient Instruction Tuning](#Efficient Instruction Tuning)
 
 ## Efficient Inference
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
