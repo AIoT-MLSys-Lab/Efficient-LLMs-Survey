@@ -10,7 +10,7 @@
 
 ## Survey
 * Efficient GPT: A Survey, 2023.
-* Efficient GPT for Edge Computing: Challenges and Opportunities, 2023.
+* Efficient GPT for Mobile Computing: Challenges and Opportunities, 2023.
 
 ## Table of Content
 - [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
