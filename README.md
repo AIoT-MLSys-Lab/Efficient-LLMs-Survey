@@ -43,6 +43,7 @@
 
 ## Model Compression
 #### Model Pruning
+- LLM-Pruner: On the Structural Pruning of Large Language Models, 2023
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
 - ZipLM: Hardware-Aware Structured Pruning of Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04089)]
 
