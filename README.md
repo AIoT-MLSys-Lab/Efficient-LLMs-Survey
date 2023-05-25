@@ -13,8 +13,8 @@
 * Efficient GPT for Mobile Computing: Challenges and Opportunities, 2023.
 
 ## Table of Content
-- [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
 - [Efficient Instruction Tuning](#Efficient-Instruction-Tuning)
+- [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
 - [Model Compression](#Model-Compression)
   - [Model Pruning](#Model-Pruning)
   - [Knowledge Distillation](#Knowledge-Distillation)
@@ -24,9 +24,12 @@
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
 
+## Efficient Instruction Tuning
+- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
+- SELF-INSTRUCT: Aligning Language Model with Self Generated Instructions
+
 ## Parameter-Efficient Fine-Tuning
 - QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
-- LLM-Pruner: On the Structural Pruning of Large Language Models, <ins>Github, 2023</ins> [[Code](https://github.com/horseee/LLM-Pruner)]
 - PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods, <ins>Github, 2022</ins> [[Code](https://github.com/huggingface/peft)]
 - Parameter-efficient Fine-tuning of Large-scale Pre-trained Language Models, <ins>Nature Machine Intelligence, 2023</ins> [[Paper](https://doi.org/10.1038/s42256-023-00626-4)] [[Code](https://github.com/thunlp/OpenDelta)]
 - LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
@@ -38,12 +41,9 @@
 - Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
 - Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
 
-## Efficient Instruction Tuning
-- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
-
 ## Model Compression
 #### Model Pruning
-- LLM-Pruner: On the Structural Pruning of Large Language Models, 2023
+- LLM-Pruner: On the Structural Pruning of Large Language Models, <ins>Github, 2023</ins> [[Code](https://github.com/horseee/LLM-Pruner)]
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
 - ZipLM: Hardware-Aware Structured Pruning of Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04089)]
 
