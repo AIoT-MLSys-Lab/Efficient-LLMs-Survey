@@ -46,7 +46,9 @@
 - LLM-Pruner: On the Structural Pruning of Large Language Models, <ins>Github, 2023</ins> [[Code](https://github.com/horseee/LLM-Pruner)]
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
 - ZipLM: Hardware-Aware Structured Pruning of Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04089)]
-
+- Vision Transformer Slimming: Multi-Dimension Searching in Continuous Optimization Space
+- Unified Visual Transformer Compression
+- Visual Transformer Pruning
 #### Knowledge Distillation
 - Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
