@@ -54,6 +54,7 @@
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
 - Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
 - Specializing Smaller Language Models towards Multi-Step Reasoning, <ins>ICML, 2023</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.169.pdf)] [[Code](https://github.com/FranxYao/FlanT5-CoT-Specialization)]
+- Lifting the Curse of Capacity Gap in Distilling Language Models
 
 #### Low-rank Decomposition
 - Compressing Transformers: Features Are Low-Rank, but Weights Are Not!  <ins>AAAI, 2023</ins> [[Paper](https://cs.nju.edu.cn/wujx/paper/AAAI2023_AFM.pdf)]
