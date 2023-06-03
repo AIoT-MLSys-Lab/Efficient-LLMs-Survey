@@ -73,6 +73,7 @@
 - GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - Towards Efficient Post-training Quantization of Pre-trained Language Models, <ins>NIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2109.15082)]
+- AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <u>Arxiv, 2023</u> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
 
 #### Efficient Attention
 - RWKV: Reinventing RNNs for the Transformer Era, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13048)] 
@@ -88,7 +89,7 @@
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 - High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
-- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <u>Arxiv, 2023 [[Paper](https://doi.org/10.48550/arXiv.2305.09781)]</u>
+- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <u>Arxiv, 2023 [[Paper](https://doi.org/10.48550/arXiv.2305.09781)]</u> [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
 
 ## Efficient Training
 
