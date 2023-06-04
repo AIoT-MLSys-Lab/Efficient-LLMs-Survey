@@ -26,7 +26,7 @@
 
 ## Efficient Instruction Tuning
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
-- Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper]([ https://doi.org/10.48550/arXiv.2212.10560](https://doi.org/10.48550/arXiv.2212.10560)Focus to learn more)] [[Code](https://github.com/yizhongw/self-instruct)]
+- Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper]( https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 
 ## Parameter-Efficient Fine-Tuning
 - QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
@@ -84,7 +84,7 @@
 - A tensorized transformer for language modeling,  <ins>NeurlPS, 2019</ins> [[Paper](https://dl.acm.org/doi/10.5555/3454287.3454487)] [[Code](https://github.com/szhangtju/The-compression-of-Transformer)]
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
 - SMYRF: Efficient Attention using Asymmetric Clustering,  <ins>NeurlPS, 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3495724.3496267)] [[Code](https://github.com/giannisdaras/smyrf)]
-- Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML,2019</ins> [[Paper](Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations)] [[Code](https://github.com/HazyResearch/butterfly)]
+- Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML,2019</ins> [[Paper](http://proceedings.mlr.press/v97/dao19a/dao19a.pdf)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
