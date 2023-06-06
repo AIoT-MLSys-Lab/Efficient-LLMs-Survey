@@ -49,6 +49,8 @@
 - Vision Transformer Slimming: Multi-Dimension Searching in Continuous Optimization Space, <ins>CVPR, 2022</ins> [[Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Chavan_Vision_Transformer_Slimming_Multi-Dimension_Searching_in_Continuous_Optimization_Space_CVPR_2022_paper.pdf)] [[Code](https://github.com/Arnav0400/ViT-Slim)]
 - Unified Visual Transformer Compression, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=9jsZiUgkCZP)] [[Code](https://github.com/VITA-Group/UVC)]
 - Visual Transformer Pruning, <ins>KDDW, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08500)] [[Code](https://github.com/Cydia2018/ViT-cifar10-pruning)]
+- From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression, <ins>AAAI, 2022</ins></ins> [[Paper](https://arxiv.org/abs/2112.07198)] [[Code](https://github.com/RunxinXu/ContrastivePruning)]
+- To prune, or not to prune: exploring the efficacy of pruning for model compression, <ins>ICLRW, 2018</ins><ins> [[Paper](https://openreview.net/forum?id=S1lN69AT-)] [[Code](https://github.com/IntelLabs/Model-Compression-Research-Package)]
 #### Knowledge Distillation
 - Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
@@ -85,12 +87,14 @@
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
 - SMYRF: Efficient Attention using Asymmetric Clustering,  <ins>NeurlPS, 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3495724.3496267)] [[Code](https://github.com/giannisdaras/smyrf)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML,2019</ins> [[Paper](http://proceedings.mlr.press/v97/dao19a/dao19a.pdf)] [[Code](https://github.com/HazyResearch/butterfly)]
+- Long Range Arena: A Benchmark for Efficient Transformers, <ins>ICLR, 2020</ins> [[Paper](https://openreview.net/forum?id=qVyeW-grC2k)] [[Code](https://github.com/google-research/long-range-arena)]
+- Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 - High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
-- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>Arxiv, 2023 [[Paper](https://doi.org/10.48550/arXiv.2305.09781)]</ins> [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
+- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>Arxiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
 
 ## Efficient Training
 
