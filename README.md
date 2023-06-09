@@ -55,6 +55,7 @@
 - From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression, <ins>AAAI, 2022</ins> [[Paper](https://arxiv.org/abs/2112.07198)] [[Code](https://github.com/RunxinXu/ContrastivePruning)]
 - Visual Transformer Pruning, <ins>KDDW, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08500)] [[Code](https://github.com/Cydia2018/ViT-cifar10-pruning)]
 - To prune, or not to prune: exploring the efficacy of pruning for model compression, <ins>ICLRW, 2018</ins> [[Paper](https://openreview.net/forum?id=S1lN69AT-)] [[Code](https://github.com/IntelLabs/Model-Compression-Research-Package)]
+- The Emergence of Essential Sparsity in Large Pre-trained Models: The Weights that Matter, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.03805)] [[Code](https://github.com/VITA-Group/essential_sparsity)]
 
 #### Model Quantization
 - AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
