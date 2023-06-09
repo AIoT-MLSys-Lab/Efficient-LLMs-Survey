@@ -13,6 +13,7 @@
 * Efficient GPT for Mobile Computing: Challenges and Opportunities, 2023.
 
 ## Table of Content
+- [Open LLM](#Open-LLM)
 - [Efficient Instruction Tuning](#Efficient-Instruction-Tuning)
 - [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
 - [Model Compression](#Model-Compression)
@@ -23,6 +24,9 @@
   - [Efficient Attention](#Efficient-Attention)
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
+
+## Open LLM
+- Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 
 ## Efficient Instruction Tuning
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
