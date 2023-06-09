@@ -27,6 +27,7 @@
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+- Awesome-LLM: https://github.com/Hannibal046/Awesome-LLM
 
 ## Efficient Instruction Tuning
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
