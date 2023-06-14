@@ -46,6 +46,8 @@
 - Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/0586.pdf)] [[Code](https://github.com/yuchaoli/PST)]
 - Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
 - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs//2306.07967)]
+- On the Effectiveness of Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2211.15583.pdf)] [[Code](https://github.com/fuzihaofzh/AnalyzeParameterEfficientFinetune)]
+- Parameter-Efficient Fine-Tuning Design Spaces, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=XSRSWxyJIC)] [[Code](https://github.com/amazon-science/peft-design-spaces)]
 
 ## Model Compression
 #### Model Pruning
