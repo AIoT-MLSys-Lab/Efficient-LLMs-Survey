@@ -41,7 +41,7 @@
 - DyLoRA: Parameter-Efficient Tuning of Pretrained Models using Dynamic Search-Free Low Rank Adaptation, <ins>EACL, 2023</ins> [[Paper](https://aclanthology.org/2023.eacl-main.239/)] [[Code](https://github.com/huawei-noah/KD-NLP/tree/main/DyLoRA)]
 - Parameter-efficient Fine-tuning Design Spaces, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=XSRSWxyJIC)] [[Code](https://github.com/amazon-science/peft-design-spaces)]
 - Parameter-efficient Fine-tuning of Large-scale Pre-trained Language Models, <ins>Nature Machine Intelligence, 2023</ins> [[Paper](https://doi.org/10.1038/s42256-023-00626-4)] [[Code](https://github.com/thunlp/OpenDelta)]
-- - PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods, <ins>Github, 2022</ins> [[Code](https://github.com/huggingface/peft)]
+- PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods, <ins>Github, 2022</ins> [[Code](https://github.com/huggingface/peft)]
 - LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
 - Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=rBCvMG-JsPd)] [[Code](https://github.com/r-three/t-few)]
 - Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/0586.pdf)] [[Code](https://github.com/yuchaoli/PST)]
