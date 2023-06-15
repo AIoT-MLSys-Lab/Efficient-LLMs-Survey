@@ -112,3 +112,6 @@
 - A Survey on Efficient Training of Transformers, <ins>IJCAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.01107)]
 - Training Large Language Models Efficiently with Sparsity and Dataflow, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.05511)]
 - LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
+- On Efficient Training of Large-Scale Deep Learning Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03589)]
+- Survey on Efficient Training of Large Neural Networks, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/769)]
+- Compute-Efficient Deep Learning: Algorithmic Trends and Opportunities, <ins>JMLR, 2023</ins> [[Paper](https://www.jmlr.org/papers/volume24/22-1208/22-1208.pdf)]
