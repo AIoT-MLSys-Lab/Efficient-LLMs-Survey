@@ -82,12 +82,13 @@
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Bridging the Gap between Decision and Logits in Decision-based Knowledge Distillation for Pre-trained Language Models, <ins>ACL, 2021</ins> [[Paper](https://arxiv.org/abs/2306.08909)] [[Code](https://github.com/thunlp-mt/dbkd-plm)]
+- Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)]
 - Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
 - Specializing Smaller Language Models towards Multi-Step Reasoning, <ins>ICML, 2023</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.169.pdf)] [[Code](https://github.com/FranxYao/FlanT5-CoT-Specialization)]
 - Lifting the Curse of Capacity Gap in Distilling Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12129)] [[Code](https://github.com/genezc/minimoe)]
 - Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
-- Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)]
 
 #### Efficient Attention
 - RWKV: Reinventing RNNs for the Transformer Era, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13048)] 
