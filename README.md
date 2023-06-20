@@ -28,6 +28,7 @@
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 - Awesome-LLM: https://github.com/Hannibal046/Awesome-LLM
+- KoLA: Carefully Benchmarking World Knowledge of Large Language Models, [[Paper](https://paperswithcode.com/paper/kola-carefully-benchmarking-world-knowledge)] [[Code](https://github.com/thu-keg/kola)]
 
 ## Efficient Instruction Tuning
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
