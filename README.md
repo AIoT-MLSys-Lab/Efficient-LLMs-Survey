@@ -14,8 +14,10 @@
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
-- [Efficient Instruction Tuning](#Efficient-Instruction-Tuning)
-- [Parameter-Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
+- [Efficient Fine-Tuning](#Efficient-Fine-Tuning)
+  - [Data Efficient](#Data-Efficient)
+  - [Memory Efficient](#Memory-Efficient)
+  - [Parameter Efficient](#Parameter-Efficient)
 - [Model Compression](#Model-Compression)
   - [Model Pruning](#Model-Pruning)
   - [Model Quantization](#Model-Quantization)
@@ -30,11 +32,17 @@
 - Awesome-LLM: https://github.com/Hannibal046/Awesome-LLM
 - KoLA: Carefully Benchmarking World Knowledge of Large Language Models, [[Paper](https://paperswithcode.com/paper/kola-carefully-benchmarking-world-knowledge)] [[Code](https://github.com/thu-keg/kola)]
 
-## Efficient Instruction Tuning
+## Efficient Fine-Tuning
+
+#### Data Efficient
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper]( https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 
-## Parameter-Efficient Fine-Tuning
+#### Memory Efficient
+- Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
+- Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
+
+#### Parameter Efficient
 - fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
 - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs//2306.07967)]
 - QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
