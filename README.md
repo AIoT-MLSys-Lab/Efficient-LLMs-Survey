@@ -43,7 +43,7 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
-- fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
+- Fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
 - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs//2306.07967)]
 - QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
 - Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
