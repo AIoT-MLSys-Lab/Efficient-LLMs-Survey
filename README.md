@@ -142,3 +142,4 @@
 - On Efficient Training of Large-Scale Deep Learning Models: A Literature Review, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03589)]
 - Survey on Efficient Training of Large Neural Networks, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/769)]
 - Compute-Efficient Deep Learning: Algorithmic Trends and Opportunities, <ins>JMLR, 2023</ins> [[Paper](https://www.jmlr.org/papers/volume24/22-1208/22-1208.pdf)]
+- FATE-LLM: https://github.com/FederatedAI/FATE-LLM/releases/tag/v1.2.0
