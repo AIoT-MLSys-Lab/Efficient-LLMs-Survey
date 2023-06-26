@@ -59,6 +59,7 @@
 - Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
 - On the Effectiveness of Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2211.15583.pdf)] [[Code](https://github.com/fuzihaofzh/AnalyzeParameterEfficientFinetune)]
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
+- Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/0cde695b83bd186c1fd456302888454c-Abstract-Conference.html)] [[Code](https://github.com/r-three/t-few)]
 
 ## Model Compression
 #### Model Pruning
