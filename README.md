@@ -43,6 +43,7 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- Composing Parameter-Efficient Modules with Arithmetic Operations, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14870)] [[Code](https://github.com/SJTU-LIT/PEM_composition)]
 - Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
 - LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
 - Fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
@@ -61,9 +62,12 @@
 - On the Effectiveness of Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2211.15583.pdf)] [[Code](https://github.com/fuzihaofzh/AnalyzeParameterEfficientFinetune)]
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
 - Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/0cde695b83bd186c1fd456302888454c-Abstract-Conference.html)] [[Code](https://github.com/r-three/t-few)]
+- Modular and Parameter-Efficient Fine-Tuning for NLP Models, <ins>EMNLP, 2022</ins>, [[Paper](https://aclanthology.org/2022.emnlp-tutorials.5/)]
 
 ## Model Compression
 #### Model Pruning
+- Low-Rank Prune-And-Factorize for Language Model Compression, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.14152)]
+- Constraint-aware and Ranking-distilled Token Pruning for Efficient Transformer Inference, <ins>KDD, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14393)]
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 - A Simple and Effective Pruning Approach for Large Language Models, <ins>ACL SRW, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11695)] [[Code](https://github.com/locuslab/wanda)]
 - Ten Lessons We Have Learned in the New "Sparseland": A Short Handbook for Sparse Neural Network Researchers, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.02596)]
@@ -104,6 +108,8 @@
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
+- GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)[
 - Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
 - Knowledge Distillation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)]
 - Bridging the Gap between Decision and Logits in Decision-based Knowledge Distillation for Pre-trained Language Models, <ins>ACL, 2021</ins> [[Paper](https://arxiv.org/abs/2306.08909)] [[Code](https://github.com/thunlp-mt/dbkd-plm)]
