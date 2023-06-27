@@ -43,6 +43,7 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
 - LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
 - Fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
 - One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs//2306.07967)]
