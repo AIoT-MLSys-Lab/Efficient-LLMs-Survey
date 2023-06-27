@@ -103,6 +103,7 @@
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
 - Knowledge Distillation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)]
 - Bridging the Gap between Decision and Logits in Decision-based Knowledge Distillation for Pre-trained Language Models, <ins>ACL, 2021</ins> [[Paper](https://arxiv.org/abs/2306.08909)] [[Code](https://github.com/thunlp-mt/dbkd-plm)]
 - Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)]
