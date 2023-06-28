@@ -44,6 +44,7 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation, <ins>ACL, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2305.16938)] [[Code](https://github.com/uds-lsv/llmft)]
 - Composing Parameter-Efficient Modules with Arithmetic Operations, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14870)] [[Code](https://github.com/SJTU-LIT/PEM_composition)]
 - Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
 - LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
