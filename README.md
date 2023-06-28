@@ -64,6 +64,7 @@
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
 - Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/0cde695b83bd186c1fd456302888454c-Abstract-Conference.html)] [[Code](https://github.com/r-three/t-few)]
 - Modular and Parameter-Efficient Fine-Tuning for NLP Models, <ins>EMNLP, 2022</ins>, [[Paper](https://aclanthology.org/2022.emnlp-tutorials.5/)]
+- Meta-Adapters: Parameter Efficient Few-shot Fine-tuning through Meta-Learning, <ins>AutoML, 2022</ins> [[Paper](https://openreview.net/forum?id=BCGNf-prLg5)]
 
 ## Model Compression
 #### Model Pruning
