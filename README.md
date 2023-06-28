@@ -36,7 +36,8 @@
 
 #### Data Efficient
 - LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
-- Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper]( https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
+- Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
+- Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
 #### Memory Efficient
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
