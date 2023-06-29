@@ -44,6 +44,8 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
+- Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2205.12410)] [[Code](https://github.com/microsoft/AdaMix)]
 - KnowPrefix-Tuning: A Two-Stage Prefix-Tuning Framework for Knowledge-Grounded Dialogue Generation, <ins>ECML-PKDD, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.15430)]
 - Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation, <ins>ACL, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2305.16938)] [[Code](https://github.com/uds-lsv/llmft)]
