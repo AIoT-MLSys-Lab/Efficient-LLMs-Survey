@@ -35,7 +35,8 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
-- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)] 
+- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
+- Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.00196)][[Code](https://github.com/allenai/data-efficient-finetuning)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
@@ -107,6 +108,7 @@
 
 
 #### Low-rank Decomposition
+- TensorGPT: Efficient Compression of the Embedding Layer in LLMs based on the Tensor-Train Decomposition, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.00526)]
 - Sparse Plus Low Rank Matrix Decomposition: A Discrete Optimization Approach, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2109.12701)] [[Code](https://github.com/NicholasJohnson2020/SparseLowRankSoftware)]
 - Compressing Transformers: Features Are Low-Rank, but Weights Are Not!  <ins>AAAI, 2023</ins> [[Paper](https://cs.nju.edu.cn/wujx/paper/AAAI2023_AFM.pdf)]
 - Strategies for Applying Low Rank Decomposition to Transformer-Based Models,  <ins>NeurlPS-ENLSP, 2022</ins> [[Paper](https://neurips2022-enlsp.github.io/papers/paper_33.pdf)]
