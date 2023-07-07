@@ -31,6 +31,7 @@
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 - Awesome-LLM: https://github.com/Hannibal046/Awesome-LLM
 - KoLA: Carefully Benchmarking World Knowledge of Large Language Models, [[Paper](https://paperswithcode.com/paper/kola-carefully-benchmarking-world-knowledge)] [[Code](https://github.com/thu-keg/kola)]
+- Benchmarking LLM Inference Efficiency: https://ml.energy/leaderboard/?__theme=light
 
 ## Efficient Fine-Tuning
 
