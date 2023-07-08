@@ -97,7 +97,7 @@
 
 
 #### Model Quantization
-- SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code]([https://github.com/Vahe1994/SpQR](https://github.com/Vahe1994/SpQR))]
+- SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
 - Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.12929)]
 - AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
