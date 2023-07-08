@@ -36,7 +36,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
-- LIMA: Less Is More for Alignment,  <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
+- LIMA: Less Is More for Alignment, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
 - Efficient Domain Adaptation of Sentence Embeddings using Adapters, <ins>RANLP, 2023</ins> [[paper](https://arxiv.org/abs/2307.03104)] [[Code](https://github.com/sebischair/Efficient-Domain-Adaptation-of-Sentence-Embeddings-using-Adapters)]
 - Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.00196)][[Code](https://github.com/allenai/data-efficient-finetuning)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
@@ -47,6 +47,8 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- Flacuna: Unleashing the Problem Solving Power of Vicuna using FLAN Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02053)] [[Code](https://huggingface.co/declare-lab/flacuna-13b-v1.0)]
+- OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03084)] [[Code](https://github.com/thunlp/OpenDelta)]
 - Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
 - Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
 - KnowPrefix-Tuning: A Two-Stage Prefix-Tuning Framework for Knowledge-Grounded Dialogue Generation, <ins>ECML-PKDD, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.15430)]
@@ -124,6 +126,7 @@
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Distilling Large Vision-Language Model with Out-of-Distribution Generalizability, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03135)] [[Code](https://github.com/xuanlinli17/large_vlm_distillation_ood)]
 - Knowledge Distillation Performs Partial Variance Reduction, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.17581)]
 - Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
 - GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)[
@@ -135,9 +138,12 @@
 - What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
 - Specializing Smaller Language Models towards Multi-Step Reasoning, <ins>ICML, 2023</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.169.pdf)] [[Code](https://github.com/FranxYao/FlanT5-CoT-Specialization)]
 - Lifting the Curse of Capacity Gap in Distilling Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12129)] [[Code](https://github.com/genezc/minimoe)]
+- KDSTM: Neural Semi-supervised Topic Modeling with Knowledge Distillation, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2307.01878)]
+- Improving Neural Topic Models using Knowledge Distillation, <ins>EMNLP, 2022</ins> [[Paper](https://www.aclweb.org/anthology/2020.emnlp-main.137/)] [[Code](https://github.com/ahoho/kd-topic-models)]
 - Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
 
 #### Efficient Attention
+- Sumformer: Universal Approximation for Efficient Transformers <ins>Arxiv, 2023</ins>[[Paper](https://arxiv.org/abs/2307.02301)]
 - FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
 - Awesome-Efficient-Transformers: https://github.com/Edwardlzy/Awesome-Efficient-Transformers
 - When to Use Efficient Self Attention? Profiling Text, Speech and Image Transformer Variants, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08667)] 
@@ -155,6 +161,7 @@
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 - High-throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
