@@ -101,6 +101,7 @@
 
 #### Model Quantization
 - SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
+- SqueezeLLM: Dense-and-Sparse Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07629)]
 - Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.12929)]
 - AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
@@ -111,7 +112,6 @@
 - GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - Towards Efficient Post-training Quantization of Pre-trained Language Models, <ins>NIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2109.15082)]
-- SqueezeLLM: Dense-and-Sparse Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07629)]
 
 
 #### Low-rank Decomposition
