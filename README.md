@@ -37,6 +37,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
+- Towards Robust and Efficient Continual Language Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05741)]
 - LIMA: Less Is More for Alignment, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
 - Efficient Domain Adaptation of Sentence Embeddings using Adapters, <ins>RANLP, 2023</ins> [[paper](https://arxiv.org/abs/2307.03104)] [[Code](https://github.com/sebischair/Efficient-Domain-Adaptation-of-Sentence-Embeddings-using-Adapters)]
 - Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.00196)][[Code](https://github.com/allenai/data-efficient-finetuning)]
@@ -166,6 +167,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- Predictive Pipelined Decoding: A Compute-Latency Trade-off for Exact LLM Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05908)]
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
@@ -174,6 +176,7 @@ https://arxiv.org/abs/2307.06290)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- Stack More Layers Differently: High-Rank Training Through Low-Rank Updates, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05695)]
 - No Train No Gain: Revisiting Efficient Training Algorithms For Transformer-based Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.06440)]
 - SparseProp: Efficient Sparse Backpropagation for Faster Training of Neural Networks at the Edge, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=JSTp7NiuYi)] [[Code](https://github.com/IST-DASLab/sparseprop)]
 - A Survey on Efficient Training of Transformers, <ins>IJCAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.01107)]
