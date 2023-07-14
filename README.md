@@ -41,6 +41,8 @@
 - Efficient Domain Adaptation of Sentence Embeddings using Adapters, <ins>RANLP, 2023</ins> [[paper](https://arxiv.org/abs/2307.03104)] [[Code](https://github.com/sebischair/Efficient-Domain-Adaptation-of-Sentence-Embeddings-using-Adapters)]
 - Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.00196)][[Code](https://github.com/allenai/data-efficient-finetuning)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
+- Instruction Mining: High-Quality Instruction Data Selection for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](
+https://arxiv.org/abs/2307.06290)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
 #### Memory Efficient
@@ -101,6 +103,7 @@
 
 
 #### Model Quantization
+- Self-Distilled Quantization: Achieving High Compression Rates in Transformer-Based Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05972)]
 - QIGen: Generating Efficient Kernels for Quantized Inference on Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03738)] [[Code](https://github.com/IST-DASLab/QIGen)]
 - SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
 - SqueezeLLM: Dense-and-Sparse Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07629)]
@@ -171,6 +174,7 @@
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- No Train No Gain: Revisiting Efficient Training Algorithms For Transformer-based Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.06440)]
 - SparseProp: Efficient Sparse Backpropagation for Faster Training of Neural Networks at the Edge, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=JSTp7NiuYi)] [[Code](https://github.com/IST-DASLab/sparseprop)]
 - A Survey on Efficient Training of Transformers, <ins>IJCAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.01107)]
 - SNT: Sharpness-Minimizing Network Transformation for Fast Compression-friendly Pretraining, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04526)] 
