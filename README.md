@@ -37,6 +37,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
+- AlpaGasus: Training A Better Alpaca with Fewer Data, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08701)] [[Code](https://lichang-chen.github.io/AlpaGasus/)]
 - Towards Robust and Efficient Continual Language Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05741)]
 - LIMA: Less Is More for Alignment, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
 - Efficient Domain Adaptation of Sentence Embeddings using Adapters, <ins>RANLP, 2023</ins> [[paper](https://arxiv.org/abs/2307.03104)] [[Code](https://github.com/sebischair/Efficient-Domain-Adaptation-of-Sentence-Embeddings-using-Adapters)]
@@ -51,6 +52,7 @@ https://arxiv.org/abs/2307.06290)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 
 #### Parameter Efficient
+- CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
 - Flacuna: Unleashing the Problem Solving Power of Vicuna using FLAN Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02053)] [[Code](https://huggingface.co/declare-lab/flacuna-13b-v1.0)]
 - OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03084)] [[Code](https://github.com/thunlp/OpenDelta)]
 - Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
@@ -104,6 +106,7 @@ https://arxiv.org/abs/2307.06290)]
 
 
 #### Model Quantization
+- Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08072)] [[Code](https://github.com/rucaibox/quantizedempirical)]
 - Self-Distilled Quantization: Achieving High Compression Rates in Transformer-Based Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05972)]
 - QIGen: Generating Efficient Kernels for Quantized Inference on Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03738)] [[Code](https://github.com/IST-DASLab/QIGen)]
 - SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
