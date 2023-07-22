@@ -50,6 +50,9 @@ https://arxiv.org/abs/2307.06290)]
 #### Memory Efficient
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
+- NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08941)] [[Code](https://github.com/weitianxin/MLP_Fusion)]
+- Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
+
 
 #### Parameter Efficient
 - CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
@@ -106,6 +109,8 @@ https://arxiv.org/abs/2307.06290)]
 
 
 #### Model Quantization
+- Efficiency Pentathlon: A Standardized Arena for Efficiency Evaluation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09701)]
+- ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09782)]
 - Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08072)] [[Code](https://github.com/rucaibox/quantizedempirical)]
 - Self-Distilled Quantization: Achieving High Compression Rates in Transformer-Based Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05972)]
 - QIGen: Generating Efficient Kernels for Quantized Inference on Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03738)] [[Code](https://github.com/IST-DASLab/QIGen)]
