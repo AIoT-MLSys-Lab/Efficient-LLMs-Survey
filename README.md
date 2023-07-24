@@ -48,11 +48,12 @@ https://arxiv.org/abs/2307.06290)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
 #### Memory Efficient
+- Memory-Efficient Selective Fine-Tuning, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=zaNbLceVwm)]
+- CocktailSGD: Fine-tuning Foundation Models over 500Mbps Networks, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=w2Vrl0zlzA)]
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 - NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08941)] [[Code](https://github.com/weitianxin/MLP_Fusion)]
 - Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
-
 
 #### Parameter Efficient
 - CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
@@ -89,6 +90,7 @@ https://arxiv.org/abs/2307.06290)]
 
 ## Model Compression
 #### Model Pruning
+- Towards Structured Sparsity in Transformers for Efficient Inference, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=c4m0BkO4OL)]
 - The Emergence of Essential Sparsity in Large Pre-trained Models: The Weights that Matter, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.03805)] [[Code](https://github.com/VITA-Group/essential_sparsity)]
 - Low-Rank Prune-And-Factorize for Language Model Compression, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.14152)]
 - Constraint-aware and Ranking-distilled Token Pruning for Efficient Transformer Inference, <ins>KDD, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14393)]
@@ -157,7 +159,8 @@ https://arxiv.org/abs/2307.06290)]
 - Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
 
 #### Efficient Attention
-- Sumformer: Universal Approximation for Efficient Transformers <ins>Arxiv, 2023</ins>[[Paper](https://arxiv.org/abs/2307.02301)]
+- Fast Causal Attention with Dynamic Sparsity <ins>Arxiv, 2023</ins>[[Paper](https://openreview.net/forum?id=BQEaklwG9P)]
+- Sumformer: Universal Approximation for Efficient Transformers, <ins>Arxiv, 2023</ins>[[Paper](https://arxiv.org/abs/2307.02301)]
 - FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
 - Awesome-Efficient-Transformers: https://github.com/Edwardlzy/Awesome-Efficient-Transformers
 - When to Use Efficient Self Attention? Profiling Text, Speech and Image Transformer Variants, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08667)] 
@@ -175,6 +178,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Predictive Pipelined Decoding: A Compute-Latency Trade-off for Exact LLM Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05908)]
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
 - FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
@@ -184,6 +188,7 @@ https://arxiv.org/abs/2307.06290)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- InRank: Incremental Low-Rank Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11250)] [[Code](https://github.com/jiaweizzhao/inrank)]
 - Stack More Layers Differently: High-Rank Training Through Low-Rank Updates, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05695)]
 - No Train No Gain: Revisiting Efficient Training Algorithms For Transformer-based Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.06440)]
 - SparseProp: Efficient Sparse Backpropagation for Faster Training of Neural Networks at the Edge, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=JSTp7NiuYi)] [[Code](https://github.com/IST-DASLab/sparseprop)]
