@@ -37,6 +37,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
+- Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.09246)]
 - AlpaGasus: Training A Better Alpaca with Fewer Data, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08701)] [[Code](https://lichang-chen.github.io/AlpaGasus/)]
 - Towards Robust and Efficient Continual Language Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05741)]
 - LIMA: Less Is More for Alignment, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
