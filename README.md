@@ -109,6 +109,7 @@ https://arxiv.org/abs/2307.06290)]
 - From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression, <ins>AAAI, 2022</ins> [[Paper](https://arxiv.org/abs/2112.07198)] [[Code](https://github.com/RunxinXu/ContrastivePruning)]
 - Visual Transformer Pruning, <ins>KDDW, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08500)] [[Code](https://github.com/Cydia2018/ViT-cifar10-pruning)]
 - Accelerating Sparse Deep Neural Networks, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/pdf/2104.08378.pdf)]
+- Learning N:M Fine-grained Structured Sparse Neural Networks From Scratch, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2102.04010)] [[Code](https://github.com/aojunzz/NM-sparsity)]
 - To prune, or not to prune: exploring the efficacy of pruning for model compression, <ins>ICLRW, 2018</ins> [[Paper](https://openreview.net/forum?id=S1lN69AT-)] [[Code](https://github.com/IntelLabs/Model-Compression-Research-Package)]
 
 
