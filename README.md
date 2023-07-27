@@ -37,6 +37,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
+- Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03044)] [[Code](https://github.com/yumeng5/FewGen)]
 - Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.09246)]
 - AlpaGasus: Training A Better Alpaca with Fewer Data, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08701)] [[Code](https://lichang-chen.github.io/AlpaGasus/)]
 - Towards Robust and Efficient Continual Language Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05741)]
@@ -182,6 +183,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Predictive Pipelined Decoding: A Compute-Latency Trade-off for Exact LLM Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05908)]
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
@@ -192,6 +194,7 @@ https://arxiv.org/abs/2307.06290)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- Efficient Training of Language Models using Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=SpFIO5Mdso)]
 - InRank: Incremental Low-Rank Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11250)] [[Code](https://github.com/jiaweizzhao/inrank)]
 - Stack More Layers Differently: High-Rank Training Through Low-Rank Updates, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05695)]
 - No Train No Gain: Revisiting Efficient Training Algorithms For Transformer-based Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.06440)]
