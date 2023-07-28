@@ -8,9 +8,9 @@
 
 ## What is Efficient GPT About?
 
-## Survey
-* Efficient GPT: A Survey, 2023.
-* Efficient GPT for Mobile Computing: Challenges and Opportunities, 2023.
+## Survey and Perspective Papers
+* Efficient LLM: A Survey.
+* Mobile Computing in the Era of LLM: Challenges and Opportunities.
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
