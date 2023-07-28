@@ -58,6 +58,7 @@ https://arxiv.org/abs/2307.06290)]
 - Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
 
 #### Parameter Efficient
+- LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13269)] [[Code](https://github.com/sail-sg/lorahub)]
 - CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
 - Flacuna: Unleashing the Problem Solving Power of Vicuna using FLAN Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02053)] [[Code](https://huggingface.co/declare-lab/flacuna-13b-v1.0)]
 - OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03084)] [[Code](https://github.com/thunlp/OpenDelta)]
@@ -147,6 +148,7 @@ https://arxiv.org/abs/2307.06290)]
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Domain Knowledge Distillation from Large Language Model: An Empirical Study in the Autonomous Driving Domain, <ins>ITSC, 2023</ins> [[Paper](https://arxiv.org/abs/2307.11769)]
 - Distilling Large Vision-Language Model with Out-of-Distribution Generalizability, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03135)] [[Code](https://github.com/xuanlinli17/large_vlm_distillation_ood)]
 - Knowledge Distillation Performs Partial Variance Reduction, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.17581)]
 - Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
@@ -183,6 +185,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- Incrementally-Computable Neural Networks: Efficient Inference for Dynamic Inputs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14988)]
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Predictive Pipelined Decoding: A Compute-Latency Trade-off for Exact LLM Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05908)]
@@ -194,6 +197,8 @@ https://arxiv.org/abs/2307.06290)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- Skill-it! A Data-Driven Skills Framework for Understanding and Training Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14430)]
+- Scaling TransNormer to 175 Billion Parameters, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14995)] [[Code](https://github.com/OpenNLPLab/TransnormerLLM)]
 - Efficient Training of Language Models using Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=SpFIO5Mdso)]
 - InRank: Incremental Low-Rank Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11250)] [[Code](https://github.com/jiaweizzhao/inrank)]
 - Stack More Layers Differently: High-Rank Training Through Low-Rank Updates, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05695)]
