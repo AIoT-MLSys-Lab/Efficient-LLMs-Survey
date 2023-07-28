@@ -6,7 +6,7 @@
 * Add the link of the open source codes (e.g., github repo) if the paper has one.
 * Add datasets, benchmarks used by the papers.
 
-## What is Efficient GPT About?
+## What is Efficient LLM About?
 
 ## Survey and Perspective Papers
 * Efficient LLM: A Survey.
