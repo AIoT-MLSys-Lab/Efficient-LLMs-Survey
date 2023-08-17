@@ -37,6 +37,7 @@
 ## Efficient Fine-Tuning
 
 #### Data Efficient
+- Platypus: Quick, Cheap, and Powerful Refinement of LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07317)] [[Code](https://platypus-llm.github.io/)]
 - Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03044)] [[Code](https://github.com/yumeng5/FewGen)]
 - Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.09246)]
 - AlpaGasus: Training A Better Alpaca with Fewer Data, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08701)] [[Code](https://lichang-chen.github.io/AlpaGasus/)]
@@ -58,6 +59,7 @@ https://arxiv.org/abs/2307.06290)]
 - Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
 
 #### Parameter Efficient
+- Comparison between parameter-efficient techniques and full fine-tuning: A case study on multilingual news article classification, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07282)]
 - LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03303)]
 - PromptSum: Parameter-Efficient Controllable Abstractive Summarization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03117)]
 - LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13269)] [[Code](https://github.com/sail-sg/lorahub)]
@@ -94,6 +96,7 @@ https://arxiv.org/abs/2307.06290)]
 
 
 ## Model Compression
+- A Survey on Model Compression for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07633)]
 #### Model Pruning
 - Towards Structured Sparsity in Transformers for Efficient Inference, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=c4m0BkO4OL)]
 - The Emergence of Essential Sparsity in Large Pre-trained Models: The Weights that Matter, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.03805)] [[Code](https://github.com/VITA-Group/essential_sparsity)]
@@ -151,6 +154,7 @@ https://arxiv.org/abs/2307.06290)]
 - Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
 
 #### Knowledge Distillation
+- Token-Scaled Logit Distillation for Ternary Weight Generative Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06744)]
 - Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
 - Domain Knowledge Distillation from Large Language Model: An Empirical Study in the Autonomous Driving Domain, <ins>ITSC, 2023</ins> [[Paper](https://arxiv.org/abs/2307.11769)]
 - Distilling Large Vision-Language Model with Out-of-Distribution Generalizability, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03135)] [[Code](https://github.com/xuanlinli17/large_vlm_distillation_ood)]
@@ -189,6 +193,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- Fly-Swat or Cannon? Cost-Effective Language Model Choice via Meta-Modeling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06077)]
 - Incrementally-Computable Neural Networks: Efficient Inference for Dynamic Inputs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14988)]
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
@@ -201,6 +206,7 @@ https://arxiv.org/abs/2307.06290)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 
 ## Efficient Training
+- Optimizing transformer-based machine translation model for single GPU training: a hyperparameter ablation study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06017)]
 - Skill-it! A Data-Driven Skills Framework for Understanding and Training Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14430)]
 - Scaling TransNormer to 175 Billion Parameters, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14995)] [[Code](https://github.com/OpenNLPLab/TransnormerLLM)]
 - Efficient Training of Language Models using Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=SpFIO5Mdso)]
