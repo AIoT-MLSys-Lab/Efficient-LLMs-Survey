@@ -33,6 +33,7 @@
 - KoLA: Carefully Benchmarking World Knowledge of Large Language Models, [[Paper](https://paperswithcode.com/paper/kola-carefully-benchmarking-world-knowledge)] [[Code](https://github.com/thu-keg/kola)]
 - Benchmarking LLM Inference Efficiency: https://ml.energy/leaderboard/?__theme=light
 - awesome-huge-models Awesome: https://github.com/zhengzangw/awesome-huge-models
+- LLM Collection: https://www.promptingguide.ai/models/collection
 
 ## Efficient Fine-Tuning
 
