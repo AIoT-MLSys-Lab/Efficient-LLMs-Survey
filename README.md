@@ -193,6 +193,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+- AdaTape: Foundation model with adaptive computation and dynamic read-and-write, <ins>Google Blog </ins> [[Paper](https://ai.googleblog.com/2023/08/adatape-foundation-model-with-adaptive.html)]
 - Fly-Swat or Cannon? Cost-Effective Language Model Choice via Meta-Modeling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06077)]
 - Incrementally-Computable Neural Networks: Efficient Inference for Dynamic Inputs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14988)]
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
