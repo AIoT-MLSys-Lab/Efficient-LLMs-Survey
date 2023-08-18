@@ -225,3 +225,19 @@ https://arxiv.org/abs/2307.06290)]
 - Survey on Efficient Training of Large Neural Networks, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/769)]
 - Compute-Efficient Deep Learning: Algorithmic Trends and Opportunities, <ins>JMLR, 2023</ins> [[Paper](https://www.jmlr.org/papers/volume24/22-1208/22-1208.pdf)]
 - FATE-LLM: https://github.com/FederatedAI/FATE-LLM/releases/tag/v1.2.0
+## Efficient Long-Text Training/Inference
+- Extending Context Window of Large Language Models via Positional Interpolation (arxiv 2023)
+- Memorizing Transformers (ICLR 2022)
+- Augmenting Language Models with Long-Term Memory (arxiv 2023)
+- Unlimiformer: Long-Range Transformers withUnlimited Length Input (arxiv 2023)
+- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification (arxiv 2023)
+- Parallel Context Windows for Large Language Models (ACL 2023)
+- Structured Prompting: Scaling In-Context Learning to 1,000 Examples (arxiv 2023)
+- Naive Bayes-based Context Extension (Github: https://github.com/bojone/NBCE)
+- LongNet: Scaling Transformers to 1,000,000,000 Tokens (arxiv 2023)
+- Efficient Long-Text Understanding with Short-Text Models (Published in TACL 2023, will be presented in ACL 2023)
+- Focused Transformer: Contrastive Training for Context Scaling (arxiv 2023)
+- Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
+- Landmark Attention: Random-Access Infinite Context Length for Transformers (arxiv 2023)
+- A Length-Extrapolatable Transformer (ACL 2023)
+- Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
