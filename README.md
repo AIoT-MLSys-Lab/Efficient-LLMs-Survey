@@ -123,6 +123,7 @@ https://arxiv.org/abs/2307.06290)]
 
 
 #### Model Quantization
+- QuIP: 2-Bit Quantization of Large Language Models With Guarantees, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13304)]
 - The case for 4-bit precision: k-bit Inference Scaling Laws, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2212.09720)]
 - Efficiency Pentathlon: A Standardized Arena for Efficiency Evaluation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09701)]
 - ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09782)]
