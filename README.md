@@ -35,6 +35,18 @@
 - awesome-huge-models Awesome: https://github.com/zhengzangw/awesome-huge-models
 - LLM Collection: https://www.promptingguide.ai/models/collection
 
+## Data-centric
+### Data Preprocessing
+### Data Selection
+#### Training Data Selection
+#### Fine-tuning Data Selection
+### Prompt Engineering
+#### Retrieval Augmented Generation
+#### Prompt Tuning
+#### Prompt Compression
+
+
+
 ## Efficient Fine-Tuning
 
 #### Data Efficient
