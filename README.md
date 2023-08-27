@@ -36,14 +36,67 @@
 - LLM Collection: https://www.promptingguide.ai/models/collection
 
 ## Data-centric
+### Prompt Engineering
+#### Few-shot Prompting
+- Hybrid Retrieval-Augmented Generation for Real-time Composition Assistance
+- PREFER: Prompt Ensemble Learning via Feedback-Reflect-Refine
+- Generate rather than Retrieve: Large Language Models are Strong Context Generators
+- TRAC: Trustworthy Retrieval Augmented Chatbot
+- Large Language Models Are Human-Level Prompt Engineers
+- Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator
+- Compositional Exemplars for In-context Learning
+- Larger language models do in-context learning differently
+- How Many Demonstrations Do You Need for In-context Learning?
+- Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?
+- Rethinking the Role of Scale for In-Context Learning: An Interpretability-based Case Study at 66 Billion Scale
+- Calibrate Before Use: Improving Few-shot Performance of Language Models
+- RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models
+- A Survey on In-context Learning
+- Large Language Models Are Implicitly Topic Models: Explaining and Finding Good Demonstrations for In-Context Learning
+- Learning to Retrieve In-Context Examples for Large Language Models
+- Finding Supporting Examples for In-Context Learning
+- Unified Demonstration Retriever for In-Context Learning
+- In-Context Learning with Many Demonstration Examples
+- In-Context Demonstration Selection with Cross Entropy Difference
+- RRAML: Reinforced Retrieval Augmented Machine Learning
+- Learning To Retrieve Prompts for In-Context Learning
+- What Makes Good In-Context Examples for GPT-3?
+- Language Models are Few-Shot Learners
+#### Prompt Tuning
+- Soft Prompt Tuning for Augmenting Dense Retrieval with Large Language Models
+- Making Pre-trained Language Models Better Few-shot Learners
+- Prompt Tuning Pushes Farther, Contrastive Learning Pulls Closer: A Two-Stage Approach to Mitigate Social Biases
+- On Conditional and Compositional Language Model Differentiable Prompting
+- Preserving In-Context Learning ability in Large Language Model Fine-tuning
+- ThoughtSource: A central hub for large language model reasoning data
+- Can Instruction Fine-Tuned Language Models Identify Social Bias through Prompting?
+#### Prompt Compression
+- Learning to Compress Prompts with Gist Tokens
+- Discrete Prompt Compression with Reinforcement Learning
+- In-context Autoencoder for Context Compression in a Large Language Model
+- Adapting Language Models to Compress Contexts
 ### Data Preprocessing
+- D4: Improving LLM Pretraining via Document De-Duplication and Diversification
+- Self-Instruct: Aligning Language Models with Self-Generated Instructions
+- Scaling Laws and Interpretability of Learning from Repeated Data
+- Deduplicating Training Data Makes Language Models Better
+- SOTASTREAM: A Streaming Approach to Machine Translation Training
+- Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning
 ### Data Selection
 #### Training Data Selection
+- Data Selection for Language Models via Importance Resampling
+- NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework
+- Data Selection with Cluster-Based Language Difference Models and Cynical Selection
+- Span Selection Pre-training for Question Answering
 #### Fine-tuning Data Selection
-### Prompt Engineering
-#### Retrieval Augmented Generation
-#### Prompt Tuning
-#### Prompt Compression
+- LIMA: Less Is More for Alignment
+- InstructionGPT-4: A 200-Instruction Paradigm for Fine-Tuning MiniGPT-4
+- Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values
+- Platypus: Quick, Cheap, and Powerful Refinement of LLMs
+- AlpaGasus: Training A Better Alpaca with Fewer Data
+- Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning
+- Instruction Mining: High-Quality Instruction Data Selection for Large Language Models
+- Data-Efficient Finetuning Using Cross-Task Nearest Neighbors
 
 
 
