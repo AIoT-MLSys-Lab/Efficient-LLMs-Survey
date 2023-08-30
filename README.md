@@ -274,6 +274,7 @@ https://arxiv.org/abs/2307.06290)]
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>Arxiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
 - An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
 - Efficiently Scaling Transformer Inference.
+- DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale
 
 ## Efficient Training
 - Optimizing transformer-based machine translation model for single GPU training: a hyperparameter ablation study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06017)]
