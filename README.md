@@ -261,6 +261,7 @@ https://arxiv.org/abs/2307.06290)]
 - Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ## Efficient Inference
+-  Quantized matmul for efficient inference of large-scale generative language models.
 - https://github.com/huggingface/candle
 - Fast Inference from Transformers via Speculative Decoding.
 - AdaTape: Foundation model with adaptive computation and dynamic read-and-write, <ins>Google Blog </ins> [[Paper](https://ai.googleblog.com/2023/08/adatape-foundation-model-with-adaptive.html)]
