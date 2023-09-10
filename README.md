@@ -34,7 +34,8 @@
 - Benchmarking LLM Inference Efficiency: https://ml.energy/leaderboard/?__theme=light
 - awesome-huge-models Awesome: https://github.com/zhengzangw/awesome-huge-models
 - LLM Collection: https://www.promptingguide.ai/models/collection
-
+- https://sapling.ai/llm/llama-vs-opt
+  
 ## Data-centric
 ### Prompt Engineering
 #### Few-shot Prompting
