@@ -39,6 +39,7 @@
 ## Data-centric
 ### Prompt Engineering
 #### Few-shot Prompting
+- LARGE LANGUAGE MODELS AS OPTIMIZERS
 - Hybrid Retrieval-Augmented Generation for Real-time Composition Assistance
 - PREFER: Prompt Ensemble Learning via Feedback-Reflect-Refine
 - Generate rather than Retrieve: Large Language Models are Strong Context Generators
