@@ -124,6 +124,7 @@ https://arxiv.org/abs/2307.06290)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 - NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08941)] [[Code](https://github.com/weitianxin/MLP_Fusion)]
 - Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
+- Full Parameter Fine-tuning for Large Language Models with Limited Resources
 
 #### Parameter Efficient
 - Comparison between parameter-efficient techniques and full fine-tuning: A case study on multilingual news article classification, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07282)]
