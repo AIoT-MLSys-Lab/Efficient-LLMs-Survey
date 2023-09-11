@@ -35,6 +35,7 @@
 - awesome-huge-models Awesome: https://github.com/zhengzangw/awesome-huge-models
 - LLM Collection: https://www.promptingguide.ai/models/collection
 - https://sapling.ai/llm/llama-vs-opt
+- https://huggingface.co/spaces/optimum/llm-perf-leaderboard
   
 ## Data-centric
 ### Prompt Engineering
