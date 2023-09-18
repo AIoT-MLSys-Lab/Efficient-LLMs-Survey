@@ -318,3 +318,8 @@ https://arxiv.org/abs/2307.06290)]
 - Landmark Attention: Random-Access Infinite Context Length for Transformers (arxiv 2023)
 - A Length-Extrapolatable Transformer (ACL 2023)
 - Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
+
+## Efficient Systems/Library
+- FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
+- DeepSpeed: https://arxiv.org/abs/2207.00032
+- Megatron-LM: https://arxiv.org/abs/1909.08053
