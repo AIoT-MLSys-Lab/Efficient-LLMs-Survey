@@ -26,7 +26,7 @@
   - [Efficient Attention](#Efficient-Attention)
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
-- [Efficient Systems/Library](#Efficient-Systems/Library)
+- [Efficient Systems/Library](#Efficient-Systems-Library)
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
@@ -319,7 +319,7 @@ https://arxiv.org/abs/2307.06290)]
 - A Length-Extrapolatable Transformer (ACL 2023)
 - Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
 
-## Efficient Systems/Library
+## Efficient Systems Library
 - FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
 - DeepSpeed: https://arxiv.org/abs/2207.00032
 - Megatron-LM: https://arxiv.org/abs/1909.08053
