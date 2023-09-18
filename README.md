@@ -26,7 +26,7 @@
   - [Efficient Attention](#Efficient-Attention)
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
-- [Efficient Systems/Library]
+- [Efficient Systems/Library](#Efficient-Systems/Library)
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
