@@ -323,3 +323,13 @@ https://arxiv.org/abs/2307.06290)]
 - FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
 - DeepSpeed: https://arxiv.org/abs/2207.00032
 - Megatron-LM: https://arxiv.org/abs/1909.08053
+- [vLLM](https://github.com/vllm-project/vllm)
+- [Text generation inference](https://github.com/huggingface/text-generation-inference)
+- [OpenLLM](https://github.com/bentoml/OpenLLM)
+- [MLC LLM](https://github.com/mlc-ai/mlc-llm)
+- [DeepSpeed-MII](https://github.com/microsoft/DeepSpeed-MII)
+- [OpenLLM](https://github.com/bentoml/OpenLLM)
+- [skypilot](https://github.com/skypilot-org/skypilot)
+- [ray-llm](https://github.com/ray-project/ray-llm)
+- [llm-action](https://github.com/liguodongiot/llm-action) ToDo: Need to be sure
+- [mosec](https://github.com/mosecorg/mosec)
