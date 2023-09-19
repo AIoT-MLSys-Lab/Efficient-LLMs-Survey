@@ -28,8 +28,8 @@
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
   
-- [Data-Centric](#Efficient-Systems-Library) (Xin Wang, ZHONGNAN Qu)
-- [Efficient Systems/Library](#Efficient-Systems-Library) (Xin Wang, SAMIUL ALAM)
+- [Data-Centric (Xin Wang, ZHONGNAN Qu)](#Efficient-Systems-Library) 
+- [Efficient Systems/Library (Xin Wang, SAMIUL ALAM)](#Efficient-Systems-Library) 
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
