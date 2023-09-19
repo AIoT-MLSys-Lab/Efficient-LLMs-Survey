@@ -14,19 +14,22 @@
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
-- [Efficient Fine-Tuning](#Efficient-Fine-Tuning)
+- [Model-Centric] (Zhongwei Wan)
+- [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
   - [Data Efficient](#Data-Efficient)
   - [Memory Efficient](#Memory-Efficient)
   - [Parameter Efficient](#Parameter-Efficient)
-- [Model Compression](#Model-Compression)
+- [Model Compression](#Model-Compression) 
   - [Model Pruning](#Model-Pruning)
   - [Model Quantization](#Model-Quantization)
   - [Low-rank Decomposition](#Low-rank-Decomposition)
   - [Knowledge Distillation](#Knowledge-Distillation)
-  - [Efficient Attention](#Efficient-Attention)
+  - [Efficient Attention](#Efficient-Attention) 
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
-- [Efficient Systems/Library](#Efficient-Systems-Library)
+  
+- [Data-Centric](#Efficient-Systems-Library) (Xin Wang, ZHONGNAN Qu)
+- [Efficient Systems/Library](#Efficient-Systems-Library) (Xin Wang, SAMIUL ALAM)
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
