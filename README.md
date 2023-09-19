@@ -14,7 +14,7 @@
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
-- [Model-Centric (Zhongwei Wan)](#Efficient-Fine-Tuning) 
+- [Model-Centric (Zhongwei Wan)](#Model-Centric) 
 - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
   - [Data Efficient](#Data-Efficient)
   - [Memory Efficient](#Memory-Efficient)
@@ -29,7 +29,7 @@
 - [Efficient Training](#Efficient-Training)
   
 - [Data-Centric (Xin Wang,ZHONGNAN Qu,Che Liu)](#Efficient-Systems-Library) 
-- [Efficient Systems/Library (Xin Wang, SAMIUL ALAM)](#Efficient-Systems-Library) 
+- [Acceleration Framework (SAMIUL ALAM)](#Efficient-Systems-Library) 
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
@@ -40,8 +40,11 @@
 - LLM Collection: https://www.promptingguide.ai/models/collection
 - https://sapling.ai/llm/llama-vs-opt
 - https://huggingface.co/spaces/optimum/llm-perf-leaderboard
-  
-## Efficient Data-centric Methods
+
+## Model-centric Methods
+
+
+## Data-centric Methods
 ### Prompt Engineering
 #### Few-shot Prompting
 - LARGE LANGUAGE MODELS AS OPTIMIZERS
