@@ -38,7 +38,7 @@
 - https://sapling.ai/llm/llama-vs-opt
 - https://huggingface.co/spaces/optimum/llm-perf-leaderboard
   
-## Data-centric
+## Efficient Data-centric Methods
 ### Prompt Engineering
 #### Few-shot Prompting
 - LARGE LANGUAGE MODELS AS OPTIMIZERS
