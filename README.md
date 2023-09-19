@@ -27,14 +27,14 @@
   - [Efficient Inference](#Efficient-Inference)
   - [Efficient Training](#Efficient-Training)
   - [Data-Centric (Xin Wang,ZHONGNAN Qu,Che Liu)](#Data-Centric)
-    - [Prompt Engineering]
-      - [Few-Shot Prompting]
-      - [Prompt Tuning]
-      - [Prompt Compression]
-      - [Prompt Generation]
-    - [Data Selection]
-      - [Training Data Selection]
-      - [Fine-tuning Data Selection] 
+    - [Prompt Engineering](#Prompt-Engineering)
+      - [Few-Shot Prompting](#Few-Shot-Prompting)(Xin Wang)
+      - [Prompt Tuning](#Prompt-Tuning)(ZHONGNAN Qu)
+      - [Prompt Compression](#Prompt-Compression)(Xin Wang)
+      - [Prompt Generation](#Prompt-Generation)(Xin Wang)
+    - [Data Selection](#Data-Selection) (Liu Che)
+      - [Training Data Selection](#Training-Data-Selection)
+      - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
 - [Acceleration Framework (SAMIUL ALAM)](#Acceleration-Framework)
   - [General Acceleration](#General-Acceleration)
   - [LLM Specific Acceleration](#LLM-Specific-Acceleration)
