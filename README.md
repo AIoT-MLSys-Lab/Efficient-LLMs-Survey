@@ -14,7 +14,7 @@
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
-- [Model-Centric] (Zhongwei Wan)
+- [Model-Centric (Zhongwei Wan)](#Efficient-Fine-Tuning) 
 - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
   - [Data Efficient](#Data-Efficient)
   - [Memory Efficient](#Memory-Efficient)
