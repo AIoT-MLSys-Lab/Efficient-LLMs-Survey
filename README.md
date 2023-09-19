@@ -319,12 +319,13 @@ https://arxiv.org/abs/2307.06290)]
 - A Length-Extrapolatable Transformer (ACL 2023)
 - Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
 
-## Efficient Framework
-### General Framework
+## Acceleration Framework
+### General Acceleration Framework
 - DeepSpeed: https://arxiv.org/abs/2207.00032
 - [DeepSpeed-MII](https://github.com/microsoft/DeepSpeed-MII)
 - [mosec](https://github.com/mosecorg/mosec)
-### LLM Specific Framework
+- Alpa: https://github.com/alpa-projects/alpa
+### LLM Specific Acceleration Framework
 - FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
 - DeepSpeed-Chat: https://arxiv.org/abs/2308.01320
 - Megatron-LM: https://arxiv.org/abs/1909.08053
@@ -335,3 +336,6 @@ https://arxiv.org/abs/2307.06290)]
 - [OpenLLM](https://github.com/bentoml/OpenLLM)
 - [skypilot](https://github.com/skypilot-org/skypilot)
 - [ray-llm](https://github.com/ray-project/ray-llm)
+- FastLLM: https://github.com/ztxz16/fastllm
+- Colossal-AI: https://github.com/hpcaitech/ColossalAI
+- TensorRT-LLM: https://developer.nvidia.com/tensorrt-llm-early-access
