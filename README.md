@@ -26,7 +26,7 @@
     - [Efficient Attention](#Efficient-Attention) 
   - [Efficient Inference](#Efficient-Inference)
   - [Efficient Training](#Efficient-Training)
-  - [Data-Centric (Xin Wang,ZHONGNAN Qu,Che Liu)](#Data-Centric)
+- [Data-Centric (Xin Wang,ZHONGNAN Qu,Che Liu)](#Data-Centric)
     - [Prompt Engineering](#Prompt-Engineering)
       - [Few-Shot Prompting](#Few-Shot-Prompting)(Xin Wang)
       - [Prompt Tuning](#Prompt-Tuning)(ZHONGNAN Qu)
