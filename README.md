@@ -28,7 +28,7 @@
 - [Efficient Inference](#Efficient-Inference)
 - [Efficient Training](#Efficient-Training)
   
-- [Data-Centric (Xin Wang, ZHONGNAN Qu)](#Efficient-Systems-Library) 
+- [Data-Centric (Xin Wang, ZHONGNAN Qu, Che Liu)](#Efficient-Systems-Library) 
 - [Efficient Systems/Library (Xin Wang, SAMIUL ALAM)](#Efficient-Systems-Library) 
 
 ## Open LLM
