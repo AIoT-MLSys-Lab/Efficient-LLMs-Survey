@@ -294,6 +294,11 @@
 #### Prompt Generation
 - Self-Instruct: Aligning Language Models with Self-Generated Instructions
 - Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning
+- Large Language Models Are Human-Level Prompt Engineers
+- PromptGen: Automatically Generate Prompts using Generative Models
+- TempLM: Distilling Language Models into Template-Based Generators
+- AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts
+- TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design
 ### Data Selection
 #### Training Data Selection
 - Data Selection for Language Models via Importance Resampling
