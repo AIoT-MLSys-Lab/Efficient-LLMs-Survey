@@ -32,10 +32,10 @@
     - [Prompt Tuning](#Prompt-Tuning) (Zhongnan Qu)
     - [Prompt Compression](#Prompt-Compression) (Xin Wang)
     - [Prompt Generation](#Prompt-Generation) (Xin Wang)
-  - [Data Selection](#Data-Selection) (Liu Che)
+  - [Data Selection](#Data-Selection) (Che Liu)
     - [Training Data Selection](#Training-Data-Selection)
     - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
-- [Acceleration Framework (Samiul)](#Acceleration-Framework)
+- [Acceleration Framework (Che Liu, Samiul)](#Acceleration-Framework)
   - [General Acceleration](#General-Acceleration)
   - [LLM Specific Acceleration](#LLM-Specific-Acceleration)
 
