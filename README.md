@@ -14,7 +14,7 @@
 
 ## Table of Content
 - [Open LLM](#Open-LLM)
-- [Model-Centric (Zhongwei Wan)](#Model-Centric) 
+- [Model-Centric Methods (Zhongwei Wan)](#Model-Centric) 
   - [Model Compression](#Model-Compression) 
     - [Model Pruning](#Model-Pruning)
     - [Model Quantization](#Model-Quantization)
@@ -26,7 +26,7 @@
     - [Parameter Efficient](#Parameter-Efficient)
   - [Efficient Inference](#Efficient-Inference)
   - [Efficient Training](#Efficient-Training)
-- [Data-Centric (Xin Wang, Che Liu, Zhongnan Qu)](#Data-Centric)
+- [Data-Centric Methods (Xin Wang, Che Liu, Zhongnan Qu)](#Data-Centric)
   - [Prompt Engineering](#Prompt-Engineering)
     - [Few-Shot Prompting](#Few-Shot-Prompting) (Xin Wang)
     - [Prompt Tuning](#Prompt-Tuning) (Zhongnan Qu)
@@ -35,7 +35,7 @@
   - [Data Selection](#Data-Selection) (Che Liu)
     - [Training Data Selection](#Training-Data-Selection)
     - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
-- [Acceleration Framework (Che Liu, Samiul)](#Acceleration-Framework)
+- [Acceleration Frameworks (Che Liu, Samiul)](#Acceleration-Framework)
   - [General Acceleration](#General-Acceleration)
   - [LLM Specific Acceleration](#LLM-Specific-Acceleration)
 
