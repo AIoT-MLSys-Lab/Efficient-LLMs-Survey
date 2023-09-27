@@ -336,7 +336,7 @@ https://arxiv.org/abs/2307.06290)]
 - FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
 - DeepSpeed-Chat: https://arxiv.org/abs/2308.01320
 - Megatron-LM: https://arxiv.org/abs/1909.08053
-- [vLLM](https://github.com/vllm-project/vllm)
+- [vLLM](https://github.com/vllm-project/vllm): https://arxiv.org/abs/2309.06180
 - [Text generation inference](https://github.com/huggingface/text-generation-inference)
 - [OpenLLM](https://github.com/bentoml/OpenLLM)
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm)
