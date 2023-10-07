@@ -250,6 +250,7 @@
 - Landmark Attention: Random-Access Infinite Context Length for Transformers (arxiv 2023)
 - A Length-Extrapolatable Transformer (ACL 2023)
 - Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
+- BAMBOO: A Comprehensive Benchmark for Evaluating Long Text Modeling Capacities of Large Language Models.
 
 ## Data-centric Methods
 ### Prompt Engineering
