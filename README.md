@@ -327,13 +327,16 @@ https://arxiv.org/abs/2307.06290)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
 
-## Acceleration Framework
-### General Acceleration Framework
-- DeepSpeed: https://arxiv.org/abs/2207.00032
-- [DeepSpeed-MII](https://github.com/microsoft/DeepSpeed-MII)
-- [mosec](https://github.com/mosecorg/mosec)
-- Alpa: https://github.com/alpa-projects/alpa
-### LLM Specific Acceleration Framework
+## Acceleration Frameworks
+### LLM Frameworks Supporting Efficient Training and Inference
+- DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
+- Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
+- Alpa [[Code](https://github.com/alpa-projects/alpa)]
+- ColossalAI [[Code](https://github.com/hpcaitech/ColossalAI)]
+- FairScale [[Code](https://github.com/facebookresearch/fairscale)]
+- Pax [[Code](https://github.com/google/paxml/)]
+- Composer [[Code](https://github.com/mosaicml/composer)]
+### LLM Frameworks Supporting Efficient Inference Only
 - FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
 - DeepSpeed-Chat: https://arxiv.org/abs/2308.01320
 - Megatron-LM: https://arxiv.org/abs/1909.08053
