@@ -327,7 +327,7 @@ https://arxiv.org/abs/2307.06290)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
 
 
-## Acceleration Frameworks
+## LLM Acceleration Frameworks
 ### LLM Frameworks Supporting Efficient Training and Inference
 - DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
 - Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
@@ -337,16 +337,11 @@ https://arxiv.org/abs/2307.06290)]
 - Pax [[Code](https://github.com/google/paxml/)]
 - Composer [[Code](https://github.com/mosaicml/composer)]
 ### LLM Frameworks Supporting Efficient Inference Only
-- FasterTransformer: https://github.com/NVIDIA/FasterTransformer/
-- DeepSpeed-Chat: https://arxiv.org/abs/2308.01320
-- Megatron-LM: https://arxiv.org/abs/1909.08053
-- [vLLM](https://github.com/vllm-project/vllm): https://arxiv.org/abs/2309.06180
-- [Text generation inference](https://github.com/huggingface/text-generation-inference)
-- [OpenLLM](https://github.com/bentoml/OpenLLM)
-- [MLC LLM](https://github.com/mlc-ai/mlc-llm)
-- [OpenLLM](https://github.com/bentoml/OpenLLM)
-- [skypilot](https://github.com/skypilot-org/skypilot)
-- [ray-llm](https://github.com/ray-project/ray-llm)
-- FastLLM: https://github.com/ztxz16/fastllm
-- Colossal-AI: https://github.com/hpcaitech/ColossalAI
-- TensorRT-LLM: https://developer.nvidia.com/tensorrt-llm-early-access
+- vLLM [[Code](https://github.com/vllm-project/vllm)]
+- Parallelformers [[Code](https://github.com/tunib-ai/parallelformers)]
+- OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]
+- Ray-LLM [[Code](https://github.com/ray-project/ray-llm)]
+- MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]
+- Sax [[Code](https://github.com/google/saxml)]
+- Mosec [[Code](https://github.com/mosecorg/mosec)]
+- LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
