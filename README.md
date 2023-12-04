@@ -36,8 +36,8 @@
     - [Training Data Selection](#Training-Data-Selection)
     - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
 - [LLM Frameworks](#LLM-Frameworks)
-  - [General Acceleration](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
-  - [LLM Specific Acceleration](#LLM-Specific-Acceleration)
+  - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
+  - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
 
 ## Open LLM
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
