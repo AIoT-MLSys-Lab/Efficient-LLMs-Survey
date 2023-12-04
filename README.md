@@ -35,8 +35,8 @@
   - [Data Selection](#Data-Selection) (Che Liu)
     - [Training Data Selection](#Training-Data-Selection)
     - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
-- [LLM Frameworks (Samiul)](#LLM-Frameworks)
-  - [General Acceleration](#General-Acceleration)
+- [LLM Frameworks](#LLM-Frameworks)
+  - [General Acceleration](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
   - [LLM Specific Acceleration](#LLM-Specific-Acceleration)
 
 ## Open LLM
