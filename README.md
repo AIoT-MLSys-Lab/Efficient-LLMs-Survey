@@ -28,7 +28,6 @@
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
     - [Memory Efficient](#Memory-Efficient)
     - [Parameter Efficient](#Parameter-Efficient)
-    - [Continual Learning Based](#Continual-Learning)
   - [Efficient Inference](#Efficient-Inference)
     - [Algorithm Based](#Algorithm-Based)
     - [Hardware Acceleration)(#Hardware-Acceleration)
