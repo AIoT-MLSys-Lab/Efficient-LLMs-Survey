@@ -6,6 +6,10 @@ Large Language Models (LLMs) have demonstrated remarkable capabilities in import
 
 ## Why Efficient LLMs are Needed?
 
+![img/image.jpg](img/image.jpg)
+
+Although LLMs are leading the next wave of AI revolution, the remarkable capabilities of LLMs come at the cost of their substantial resource demands. Figure 1 illustrates the relationship between model performance and the carbon emissions during training for LLaMA series. As shown, the amount of carbon emitted grows exponentially as the number of model parameter scales up. In addition to training, inference also contributes quite significantly to the operational cost of LLMs. As depicted in Figure 2, more advanced LLMs exhibit higher memory usage and energy consumption during inference, presenting challenges for these models in expanding their reach to a broader customer base and diverse applications in a cost-effective way. With the rapid expansion of applications and the customer base for LLMs, the operational cost during inference in terms of energy consumption and memory usage would increase and exceed the training cost and become the dominant factor for the overall environmental impact. 
+
 ## Table of Content
 - [Model-Centric Methods](#Model-Centric) 
   - [Model Compression](#Model-Compression) 
