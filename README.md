@@ -224,7 +224,7 @@
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 ### Efficient Inference
 #### Algorithm-level Inference Acceleration
-##### Speculative-based Decoding
+##### Speculative Decoding
 - Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
 - Accelerating LLM Inference with Staged Speculative Decoding, <ins>ES-FOMO at ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
 - Accelerating Large Language Model Decoding with Speculative Sampling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01318)]
