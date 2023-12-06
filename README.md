@@ -1,16 +1,7 @@
-# Efficient LLM: Survey, Papers, Benchmarks, and Open-Source Resources.  
+# Efficient Large Language Models: A Survey  
 
-### ToDo (05/10/2023) 
-* Keep adding papers into the list.
-* Put the papers under their correct categories. Create new categories if the papers do not fit the current ones.
-* Add the link of the open source codes (e.g., github repo) if the paper has one.
-* Add datasets, benchmarks used by the papers.
+## What is This Survey About?
 
-## What is Efficient LLM About?
-
-## Survey and Perspective Papers
-* Efficient LLM: A Survey.
-* Mobile Computing in the Era of LLM: Challenges and Opportunities.
 
 ## Table of Content
 - [Model-Centric Methods](#Model-Centric) 
