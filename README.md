@@ -236,7 +236,7 @@
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
 - Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
-##### Sharing-based Attention Optimization
+##### Sharing-based Attention Acceleration
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
 #### System-level Inference Acceleration
@@ -295,7 +295,7 @@
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
-#### Mixture of Experts (MoE)
+#### Mixture of Experts
 ##### MoE-based LLMs
 - GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16668)]
 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity, <ins>JMLR, 2022</ins> [[Paper](https://jmlr.org/papers/volume23/21-0998/21-0998.pdf)] [[Code](https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py)]
