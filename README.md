@@ -6,35 +6,68 @@
 ## Table of Content
 - [Model-Centric Methods](#Model-Centric) 
   - [Model Compression](#Model-Compression) 
-    - [Parameter Pruning](#Parameter-Pruning)
     - [Quantization](#Quantization)
+      - [Post-Training Quantitation](#Post-Training Quantitation)
+        - [Weight-based Quantization](#Weight-based Quantization)
+        - [Weight-Activation Co-Quantization](#Weight-Activation Co-Quantization)
+    - [Parameter Pruning](#Parameter-Pruning)
+      - [Structured Pruning](#Structured Pruning)
+      - [Unstructured Pruning](#Unstructured Pruning)
     - [Low-rank Decomposition](#Low-rank-Decomposition)
     - [Knowledge Distillation](#Knowledge-Distillation)
+      - [White-box KD](#White-box KD)
+      - [Black-box KD](#Black-box KD)
   - [Efficient Pre-Training](#Efficient-Pre-Training)
     - [Mixed Precision](#Mixed-Precision)
     - [Scaling Models](#Scaling-Models)
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
-    - [Parallelized Pre-Training](#Parallelized-Pre-Training)
+    - [System-level Pre-Training Acceleration](#System-level Techniques)
+      - [Distributed Pre-Training](#Distributed Pre-Training)
+      - [Hardware-assisted Attention Acceleration](#Hardware-assisted Attention Acceleration)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
-    - [Memory Efficient](#Memory-Efficient)
-    - [Parameter Efficient](#Parameter-Efficient)
+    - [Parameter Efficient Fine-tuning](#Parameter-Efficient Fine-tuning)
+      - [Adapter-tuning](#Adapter-tuning)
+      - [Low-Rank Adaptation](#Low-Rank Adaptation)
+      - [Prefix-tuning](#Prefix-tuning)
+      - [Prompt-tuning](#Prompt-tuning)
+    - [Memory Efficient Fine-tuning](#Memory-Efficient Fine-tuning)
   - [Efficient Inference](#Efficient-Inference)
-    - [Algorithm Based](#Algorithm-Based)
-    - [Hardware Acceleration)(#Hardware-Acceleration)
+    - [Algorithm-level Inference Acceleration](#Algorithm-level Inference Acceleration)
+      - [Speculative Decoding](#Speculative Decoding)
+      - [KV-cache Optimization](KV-cache Optimization)
+      - [Sharing-based Attention Acceleration](#Sharing-based Attention Acceleration)
+    - [System-level Inference Acceleration](#System-level Inference Acceleration)
   - [Efficient Architecture](#Efficient-Training)
     - [Efficient Attention](#Efficient-Attention)
+      - [General Attention Optimization](#General Attention Optimization)
+      - [Attention Optimization for LLMs](#Attention Optimization for LLMs)
     - [Mixture of Experts](#Mixture-of-Experts)
-    - [Long Context LLMs](#Long-Context-LLMs)
+      - [MoE-based LLMs](#MoE-based LLMs)
+      - [MoE Optimization Strategies](#MoE Optimization Strategies)
+      - [MoE Acceleration Frameworks](#MoE Acceleration Frameworks)
+    - [Long-context LLMs](#Long-Context-LLMs)
+      - [Extrapolation and Interpolation](#Extrapolation and Interpolation)
+      - [Recurrent Structure](#Recurrent Structure)
+      - [Window & Stream Structure](#Window & Stream Structure)
+      - [Memory-Retrieval Augmentation](#Memory-Retrieval Augmentation)
     - [Transformer Alternatives](#Transformer-Alternatives)
+      - [State Space Model](#State Space Model)
+      - [Other Sequential Model](#Other Sequential Model)
 - [Data-Centric Methods](#Data-Centric)
+  - [Data Selection](#Data-Selection)
+    - [Data Selection for Efficient Pre-Training  ](#Data Selection for Efficient Pre-Training  )
+    - [Data Selection for Efficient Fine-Tuning  ](#Data Selection for Efficient Fine-Tuning  )
   - [Prompt Engineering](#Prompt-Engineering)
     - [Few-Shot Prompting](#Few-Shot-Prompting)
+      - [Demonstration Organization](#Demonstration Organization)
+        - [Demonstration Selection](#Demonstration Selection)
+        - [Demonstration Ordering](#Demonstration Ordering)
+      - [Template Formatting](#Template Formatting)
+        - [Instruction Generation](#Instruction Generation)
+        - [Multi-step Reasoning](#Multi-step Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
-  - [Data Selection](#Data-Selection)
-    - [Pre-Training Data Selection](#Training-Data-Selection)
-    - [Fine-tuning Data Selection](#Fine-tuning-Data-Selection)
 - [LLM Frameworks](#LLM-Frameworks)
   - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
   - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
@@ -49,282 +82,469 @@
 - https://sapling.ai/llm/llama-vs-opt
 - https://huggingface.co/spaces/optimum/llm-perf-leaderboard
 
-## Model-centric Methods
+## Model-Centric
+
 ### Model Compression
-- A Survey on Model Compression for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07633)]
-#### Model Pruning
-- Towards Structured Sparsity in Transformers for Efficient Inference, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=c4m0BkO4OL)]
-- The Emergence of Essential Sparsity in Large Pre-trained Models: The Weights that Matter, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.03805)] [[Code](https://github.com/VITA-Group/essential_sparsity)]
-- Low-Rank Prune-And-Factorize for Language Model Compression, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.14152)]
-- Knowledge-preserving Pruning for Pre-trained Language Models without Retraining, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03449)]
-- Constraint-aware and Ranking-distilled Token Pruning for Efficient Transformer Inference, <ins>KDD, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14393)]
-- LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
-- A Simple and Effective Pruning Approach for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11695)] [[Code](https://github.com/locuslab/wanda)]
-- Ten Lessons We Have Learned in the New "Sparseland": A Short Handbook for Sparse Neural Network Researchers, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.02596)]
-- Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2305.18403)]
-- Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
-- LLM-Pruner: On the Structural Pruning of Large Language Models, <ins>Github, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11627)] [[Code](https://github.com/horseee/LLM-Pruner)]
-- SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
-- ZipLM: Hardware-Aware Structured Pruning of Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04089)]
-- Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together! <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=J6F3lLg4Kdp)] [[Code](https://github.com/VITA-Group/SMC-Bench)]
-- Vision Transformer Slimming: Multi-Dimension Searching in Continuous Optimization Space, <ins>CVPR, 2022</ins> [[Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Chavan_Vision_Transformer_Slimming_Multi-Dimension_Searching_in_Continuous_Optimization_Space_CVPR_2022_paper.pdf)] [[Code](https://github.com/Arnav0400/ViT-Slim)]
-- Unified Visual Transformer Compression, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=9jsZiUgkCZP)] [[Code](https://github.com/VITA-Group/UVC)]
-- From Dense to Sparse: Contrastive Pruning for Better Pre-trained Language Model Compression, <ins>AAAI, 2022</ins> [[Paper](https://arxiv.org/abs/2112.07198)] [[Code](https://github.com/RunxinXu/ContrastivePruning)]
-- Visual Transformer Pruning, <ins>KDDW, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08500)] [[Code](https://github.com/Cydia2018/ViT-cifar10-pruning)]
-- Accelerating Sparse Deep Neural Networks, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/pdf/2104.08378.pdf)]
-- Learning N:M Fine-grained Structured Sparse Neural Networks From Scratch, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2102.04010)] [[Code](https://github.com/aojunzz/NM-sparsity)]
-- To prune, or not to prune: exploring the efficacy of pruning for model compression, <ins>ICLRW, 2018</ins> [[Paper](https://openreview.net/forum?id=S1lN69AT-)] [[Code](https://github.com/IntelLabs/Model-Compression-Research-Package)]
 
+#### Quantization
 
-#### Model Quantization
-- Data-free quantization aware training for large language models,  <ins>Arxiv, 2023</ins> 
-- Q-Diffusion: Quantizing Diffusion Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.04304)]
-- QuIP: 2-Bit Quantization of Large Language Models With Guarantees, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13304)]
-- The case for 4-bit precision: k-bit Inference Scaling Laws, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2212.09720)]
-- Efficiency Pentathlon: A Standardized Arena for Efficiency Evaluation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09701)]
-- ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09782)]
-- Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08072)] [[Code](https://github.com/rucaibox/quantizedempirical)]
-- Self-Distilled Quantization: Achieving High Compression Rates in Transformer-Based Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05972)]
-- QIGen: Generating Efficient Kernels for Quantized Inference on Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03738)] [[Code](https://github.com/IST-DASLab/QIGen)]
-- SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
-- SqueezeLLM: Dense-and-Sparse Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07629)]
-- Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.12929)]
-- AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
+##### Post-Training Quantitation
+
+###### Weight-based Quantization
+
+- LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
-- OliVe: Accelerating Large Language Models via Hardware-friendly Outlier-Victim Pair Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.07493)]
-- Blockwise Compression of Transformer-based Models without Retraining, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.01483)]
-- ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=f-fVCElZ-G1)]
+- Optimal Brain Compression: A Framework for Accurate Post-Training Quantization and Pruning, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2208.11580)] [[Code](https://github.com/IST-DASLab/OBC)]
+- QuIP: 2-Bit Quantization of Large Language Models With Guarantees, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13304)] [[Code](https://github.com/jerry-chee/QuIP)]
+- AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
+- OWQ: Lessons learned from activation outliers for weight quantization in large language models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.02272)]
+- SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2306.03078)] [[Code](https://github.com/Vahe1994/SpQR)]
+- FineQuant: Unlocking Efficiency with Fine-Grained Weight-Only Quantization for LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.09723)]
+
+###### Weight-Activation Co-Quantization
+
+- ZeroQuant-FP: A Leap Forward in LLMs Post-Training W4A8 Quantization Using Floating-Point Formats, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.09782)]
 - SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models, <ins>NeurlPS-ENLSP, 2022 </ins>[[Paper](https://arxiv.org/abs/2211.10438)] [[Code](https://github.com/mit-han-lab/smoothquant)]
-- GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
+- OliVe: Accelerating Large Language Models via Hardware-friendly Outlier-Victim Pair Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.07493)]
+- RPTQ: Reorder-based Post-training Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.01089)]
+- Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.09145)]
+- QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.08041)]
+
+##### Quantitation-aware Training
+
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
-- Towards Efficient Post-training Quantization of Pre-trained Language Models, <ins>NIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2109.15082)]
+
+- LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
+
+- BitNet: Scaling 1-bit Transformers for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.11453)]
+
+##### Fine-Tuning Enhanced Quantization
+
+- QLoRA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
+- Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14152)]
+- QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.14717 )]
+- LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.08659)] [[Code](https://github.com/yxli2123/LoftQ)]
+
+#### Parameter Pruning
+
+##### Structured Pruning
+
+- LLM-Pruner: On the Structural Pruning of Large Language Models, <ins>Github, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11627)] [[Code](https://github.com/horseee/LLM-Pruner)]
+- Sheared LLaMA: Accelerating Language Model Pre-training via Structured Pruning, <ins> Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.06694)] [[Code](https://github.com/princeton-nlp/LLM-Shearing)]
+- Accelerated Sparse Neural Training: A Provable and Efficient Method to Find N:M Transposable Masks, <ins>NeurIPS, 2021</ins> [[Paper](https://proceedings.neurips.cc/paper/2021/file/b0490b85e92b64dbb5db76bf8fca6a82-Paper.pdf)] [[Code](https://github.com/papers-submission/structured_transposable_masks)]
+- Pruning Meets Low-Rank Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2305.18403)]
+
+##### Unstructured Pruning
+
+- SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
+- A Simple and Effective Pruning Approach for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11695)] [[Code](https://github.com/locuslab/wanda)]
+- One-Shot Sensitivity-Aware Mixed Sparsity Pruning for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.09499v1.pdf)]
 
 #### Low-rank Decomposition
+
 - TensorGPT: Efficient Compression of the Embedding Layer in LLMs based on the Tensor-Train Decomposition, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.00526)]
-- Sparse Plus Low Rank Matrix Decomposition: A Discrete Optimization Approach, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2109.12701)] [[Code](https://github.com/NicholasJohnson2020/SparseLowRankSoftware)]
-- Compressing Transformers: Features Are Low-Rank, but Weights Are Not!  <ins>AAAI, 2023</ins> [[Paper](https://cs.nju.edu.cn/wujx/paper/AAAI2023_AFM.pdf)]
-- Strategies for Applying Low Rank Decomposition to Transformer-Based Models,  <ins>NeurlPS-ENLSP, 2022</ins> [[Paper](https://neurips2022-enlsp.github.io/papers/paper_33.pdf)]
-- Numerical Optimizations for Weighted Low-rank Estimation on Language Model,  <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.91.pdf)] 
-- Language Model Compression With Weighted Low-rank Factorization,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/pdf?id=uPv9Y3gmAI5)]
-- Monarch: Expressive Structured Matrices for Efficient and Accurate Training,  <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/dao22a/dao22a.pdf)] [[Code](https://github.com/HazyResearch/fly)]
-- Compressing Pre-trained Language Models using Progressive Low Rank Decomposition,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://neurips2021-nlp.github.io/papers/27/CameraReady/Neurips_Workshop_camera_ready.pdf)]
-- Kronecker Decomposition for GPT Compression,  <ins>NeurlPS-ENLSP, 2021</ins> [[Paper](https://aclanthology.org/2022.acl-short.24.pdf)]
+- ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.08302)]
+- LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 
 #### Knowledge Distillation
-- Token-Scaled Logit Distillation for Ternary Weight Generative Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06744)]
+
+##### White-box KD
+
 - Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
-- Domain Knowledge Distillation from Large Language Model: An Empirical Study in the Autonomous Driving Domain, <ins>ITSC, 2023</ins> [[Paper](https://arxiv.org/abs/2307.11769)]
-- Distilling Large Vision-Language Model with Out-of-Distribution Generalizability, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.03135)] [[Code](https://github.com/xuanlinli17/large_vlm_distillation_ood)]
-- Knowledge Distillation Performs Partial Variance Reduction, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.17581)]
-- Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
-- GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)[
+- Knowledge Distillation of Large Language Models <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)] [[Code](https://github.com/microsoft/LMOps/tree/main/minillm)]
+- GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)]
+- Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)] [[Code](https://github.com/shankarp8/knowledge_distillation)]
 - Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
-- Knowledge Distillation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)]
-- Bridging the Gap between Decision and Logits in Decision-based Knowledge Distillation for Pre-trained Language Models, <ins>ACL, 2021</ins> [[Paper](https://arxiv.org/abs/2306.08909)] [[Code](https://github.com/thunlp-mt/dbkd-plm)]
-- Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)]
-- Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
-- What Language Reveals about Perception: Distilling Psychophysical Knowledge from Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01308)]
+- Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
+- Token-Scaled Logit Distillation for Ternary Weight Generative Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06744)]
+
+##### Black-box KD
+
+- Instruction Tuning with GPT-4 <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03277)] [[Code](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
+- Meta-learning via Language Model In-context Tuning, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.07814)] [[Code](https://github.com/yandachen/In-context-Tuning)]
+- MetaICL: Learning to Learn In Context, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.15943)] [[Code](https://github.com/facebookresearch/MetaICL)]
+- In-context Learning Distillation: Transferring Few-shot Learning Ability of Pre-trained Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10670)]
+- Explanations from Large Language Models Make Small Reasoners Better, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2210.06726)]
+- Lion: Adversarial Distillation of Closed-Source Large Language Model, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12870)] [[Code](https://github.com/YJiangcm/Lion)]
+- DISCO: Distilling Counterfactuals with Large Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10534)] [[Code](https://github.com/eric11eca/disco)]
 - Specializing Smaller Language Models towards Multi-Step Reasoning, <ins>ICML, 2023</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.169.pdf)] [[Code](https://github.com/FranxYao/FlanT5-CoT-Specialization)]
-- Lifting the Curse of Capacity Gap in Distilling Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12129)] [[Code](https://github.com/genezc/minimoe)]
-- KDSTM: Neural Semi-supervised Topic Modeling with Knowledge Distillation, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2307.01878)]
-- Improving Neural Topic Models using Knowledge Distillation, <ins>EMNLP, 2022</ins> [[Paper](https://www.aclweb.org/anthology/2020.emnlp-main.137/)] [[Code](https://github.com/ahoho/kd-topic-models)]
-- Distilling Multi-Step Reasoning Capabilites of Large Language Models into Smaller Models via Semantic Decompositions,  <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2212.00193)]
+- Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02301)]
+- Large Language Models Are Reasoning Teachers, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2212.10071)] [[Code](https://github.com/itsnamgyu/reasoning-teacher)]
+- SCOTT: Self-Consistent Chain-of-Thought Distillation, <ins>ACL’23, 2023</ins> [[Paper](https://arxiv.org/abs/2305.01879)] [[Code](https://github.com/wangpf3/consistent-CoT-distillation)]
+- Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
+- Distilling Reasoning Capabilities into Smaller Language Models, <ins>ACL’23, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.441/)] [[Code](https://github.com/kumar-shridhar/Distiiling-LM)]
 
-### Efficient Fine-Tuning
+### Efficient Pre-Training
 
-#### Memory Efficient
+#### Mixed Precision Acceleration
+
+- Mixed precision training, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1710.03740)]
+- Bfloat16 Processing for Neural Networks, <ins>ARITH, 2019</ins> [[Paper](https://ieeexplore.ieee.org/document/8877390)]
+- A study of BFLOAT16 for deep learning training, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
+- GACT: Activation compressed training for generic network architectures, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/abs/2206.11357)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
+- Mesa: A memory-saving training framework for transformers, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2111.11124)] [[Code](https://github.com/ziplab/Mesa)]
+
+#### Scaling Models
+
+- Efficient Training of BERT by Progressively Stacking <ins>ICML, 2019</ins> [[Paper](https://proceedings.mlr.press/v97/gong19a/gong19a.pdf)] [[Code](https://github.com/gonglinyuan/StackingBERT)]
+- Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2011.13635)]
+- Reusing Pretrained Models by Multi-linear Operators for Efficient Training, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.10699v1.pdf)]
+- On the Transformer Growth for Progressive BERT Training, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2010.12562)] [[Code](https://github.com/google-research/google-research/tree/master/grow_bert)]
+- Knowledge Inheritance for Pre-trained Language Models, <ins>NAACL, 2022</ins> [[Paper](https://arxiv.org/abs/2105.13880)] [[Code](https://github.com/thunlp/Knowledge-Inheritance)]
+- Staged Training for Transformer Language Models, <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/shen22f/shen22f.pdf)] [[Code](https://github.com/allenai/staged-training)]
+- bert2BERT: Towards Reusable Pretrained Language Models, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2110.07143)]
+- Learning to Grow Pretrained Models for Efficient Transformer Training, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/pdf?id=cDYRS5iZ16f)] [[Code](https://github.com/VITA-Group/LiGO)]
+- 2x Faster Language Model Pre-training via Masked Structural Growth, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02869)]
+- FLM-101B: An Open LLM and How to Train It with $100 K Budget, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2309.03852.pdf)] [[Code](https://huggingface.co/CofeAI/FLM-101B)]
+
+#### Initialization Techniques
+
+- On weight initialization in deep neural networks, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1704.08863)] [[Code](https://github.com/sidkk86/weight_initialization)]
+- Delving deep into rectifiers: Surpassing humanlevel performance on imagenet classification, <ins>ICCV, 2015</ins> [[Paper](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/He_Delving_Deep_into_ICCV_2015_paper.pdf)]
+- Fixup initialization: Residual learning without normalization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1901.09321)]
+- ZerO initialization: Initializing neural networks with only zeros and ones, <ins>TMLR, 2022</ins> [[Paper](https://openreview.net/pdf?id=1AxQpKmiTc)] [[Code](https://github.com/jiaweizzhao/ZerO-initialization)]
+- Batch normalization biases residual blocks towards the identity function in deep networks, <ins>NeurIPS 2020</ins> [[Paper](https://papers.neurips.cc/paper/2020/file/e6b738eca0e6792ba8a9cbcba6c1881d-Paper.pdf)]
+- Rezero is all you need: Fast convergence at large depth, <ins>UAI, 2021</ins> [[Paper](https://proceedings.mlr.press/v161/bachlechner21a/bachlechner21a.pdf)] [[Code](https://github.com/majumderb/rezero)]
+- Improving Transformer Optimization Through Better Initialization, <ins>ICML, 2020</ins> [[Paper](https://proceedings.mlr.press/v119/huang20f/huang20f.pdf)] [[Code](https://github.com/layer6ai-labs/T-Fixup)]
+- Deepnet: Scaling transformers to 1,000 layers, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2203.00555)] [[Code](https://github.com/microsoft/unilm)]
+
+#### Optimization Strategies
+
+- Adam: A method for stochastic optimization, <ins>ICLR, 2015</ins> [[Paper](https://arxiv.org/abs/1412.6980)]
+- Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
+- Symbolic Discovery of Optimization Algorithms, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
+- Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
+
+#### System-level Techniques  
+
+##### Distributed Pre-Training
+
+- PyTorch Distributed: Experiences on Accelerating Data Parallel Training
+- Measuring the Effects of Data Parallelism on Neural Network Training
+- PipeDream: Fast and Efficient Pipeline Parallel DNN Training
+- GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism, <ins>NeurIPS, 2018</ins> 
+- Maximizing Parallelism in Distributed Training for Huge Neural Networks  
+- Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC'21, 2021</ins>
+- Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://arxiv.org/abs/2105.14500)]
+- An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
+- ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
+- PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
+- ZeRO-Offload: Democratizing Billion-Scale Model Training  
+
+##### Hardware-assisted Attention Acceleration
+
+- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+
+### Efficient Fine-tuning
+
+#### Parameter-Efficient Fine-Tuning
+
+##### Adapter-Tuning
+
+- LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
+- Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
+- Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=rBCvMG-JsPd)] [[Code](https://github.com/r-three/t-few)]
+- Meta-Adapters: Parameter Efficient Few-shot Fine-tuning through Meta-Learning, <ins>AutoML, 2022</ins> [[Paper](https://openreview.net/forum?id=BCGNf-prLg5)]
+- AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
+- OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03084)] [[Code](https://github.com/thunlp/OpenDelta)]
+
+##### Low-Rank Adaptation
+
+- LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
+- LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03303)]
+- LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13269)] [[Code](https://github.com/sail-sg/lorahub)]
+- LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.12307)] [[Code](https://github.com/dvlab-research/LongLoRA)]
+- Multi-Head Adapter Routing for Cross-Task Generalization, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03831)] [[Code](https://github.com/microsoft/mttl)]
+- Parameter-efficient Fine-tuning Design Spaces, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=XSRSWxyJIC)] [[Code](https://github.com/amazon-science/peft-design-spaces)]
+- Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
+- DyLoRA: Parameter-Efficient Tuning of Pretrained Models using Dynamic Search-Free Low Rank Adaptation, <ins>EACL, 2023</ins> [[Paper](https://aclanthology.org/2023.eacl-main.239/)] [[Code](https://github.com/huawei-noah/KD-NLP/tree/main/DyLoRA)]
+- CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
+- Tied-Lora: Enhacing parameter efficiency of LoRA with weight tying, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.09578)]
+
+##### Prefix-Tuning
+
+- Prefix-Tuning: Optimizing Continuous Prompts for Generation <ins>ACL-IJCNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2101.00190)] [[Code](https://github.com/XiangLi1999/PrefixTuning)]
+- P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
+- LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2303.16199)] [[Code](https://github.com/ZrrSkywalker/LLaMA-Adapter)]
+
+##### Prompt-Tuning
+
+- The Power of Scale for Parameter-Efficient Prompt Tuning, <ins>EMNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08691)]
+- GPT Understands, Too, <ins>AIOPEN, 2023</ins> [[Paper](https://arxiv.org/abs/2103.10385)]
+- Multitask Pre-training of Modular Prompt for Chinese Few-Shot Learning <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
+- PPT: Pre-trained Prompt Tuning for Few-shot Learning, <ins>ACL, 2022</ins> [[Paper](https://arxiv.org/abs/2109.04332)] [[Code](https://github.com/thu-coai/PPT)]
+- Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
+
+#### Memory-Efficient Fine-Tuning
+
 - Memory-Efficient Selective Fine-Tuning, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=zaNbLceVwm)]
 - CocktailSGD: Fine-tuning Foundation Models over 500Mbps Networks, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=w2Vrl0zlzA)]
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
-- NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08941)] [[Code](https://github.com/weitianxin/MLP_Fusion)]
-- Gradient Sparsification For Masked Fine-Tuning of Transformers <ins>IJCNN, 2023</ins> [[Paper](https://arxiv.org/abs/2307.10098)]
-- Full Parameter Fine-tuning for Large Language Models with Limited Resources
-
-#### Parameter Efficient
-- Comparison between parameter-efficient techniques and full fine-tuning: A case study on multilingual news article classification, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.07282)]
-- LoRA-FA: Memory-efficient Low-rank Adaptation for Large Language Models Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03303)]
-- PromptSum: Parameter-Efficient Controllable Abstractive Summarization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.03117)]
-- LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13269)] [[Code](https://github.com/sail-sg/lorahub)]
-- CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
-- Flacuna: Unleashing the Problem Solving Power of Vicuna using FLAN Fine-Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02053)] [[Code](https://huggingface.co/declare-lab/flacuna-13b-v1.0)]
-- OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03084)] [[Code](https://github.com/thunlp/OpenDelta)]
-- Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
-- Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
-- KnowPrefix-Tuning: A Two-Stage Prefix-Tuning Framework for Knowledge-Grounded Dialogue Generation, <ins>ECML-PKDD, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.15430)]
-- Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation, <ins>ACL, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2305.16938)] [[Code](https://github.com/uds-lsv/llmft)]
-- Composing Parameter-Efficient Modules with Arithmetic Operations, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14870)] [[Code](https://github.com/SJTU-LIT/PEM_composition)]
-- Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
-- LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
-- Fact: factor-tuning for lightweight adaptation on vision transformer, <ins>AAAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.03145)] [[Code](https://github.com/JieShibo/PETL-ViT)]
-- One-for-All: Generalized LoRA for Parameter-Efficient Fine-tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs//2306.07967)]
-- QLORA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
-- Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurlPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
-- LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2303.16199)] [[Code](https://github.com/ZrrSkywalker/LLaMA-Adapter)]
-- DyLoRA: Parameter-Efficient Tuning of Pretrained Models using Dynamic Search-Free Low Rank Adaptation, <ins>EACL, 2023</ins> [[Paper](https://aclanthology.org/2023.eacl-main.239/)] [[Code](https://github.com/huawei-noah/KD-NLP/tree/main/DyLoRA)]
-- Parameter-efficient Fine-tuning Design Spaces, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=XSRSWxyJIC)] [[Code](https://github.com/amazon-science/peft-design-spaces)]
-- Parameter-efficient Fine-tuning of Large-scale Pre-trained Language Models, <ins>Nature Machine Intelligence, 2023</ins> [[Paper](https://doi.org/10.1038/s42256-023-00626-4)] [[Code](https://github.com/thunlp/OpenDelta)]
-- PEFT: State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods, <ins>Github, 2022</ins> [[Code](https://github.com/huggingface/peft)]
-- LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
-- Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=rBCvMG-JsPd)] [[Code](https://github.com/r-three/t-few)]
-- Parameter-Efficient Sparsity for Large Language Models Fine-Tuning, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/0586.pdf)] [[Code](https://github.com/yuchaoli/PST)]
-- Attempt: Parameter-Efficient Multi-task Tuning via Attentional Mixtures of Soft Prompts, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.446/)] [[Code](https://github.com/AkariAsai/ATTEMPT)]
-- On the Effectiveness of Parameter-Efficient Fine-Tuning, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2211.15583.pdf)] [[Code](https://github.com/fuzihaofzh/AnalyzeParameterEfficientFinetune)]
-- AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
-- Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning, <ins>NIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/0cde695b83bd186c1fd456302888454c-Abstract-Conference.html)] [[Code](https://github.com/r-three/t-few)]
-- Modular and Parameter-Efficient Fine-Tuning for NLP Models, <ins>EMNLP, 2022</ins>, [[Paper](https://aclanthology.org/2022.emnlp-tutorials.5/)]
-- Meta-Adapters: Parameter Efficient Few-shot Fine-tuning through Meta-Learning, <ins>AutoML, 2022</ins> [[Paper](https://openreview.net/forum?id=BCGNf-prLg5)]
-- AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2205.12410)] [[Code](https://github.com/microsoft/AdaMix)]
-- Exploring extreme parameter compression for pre-trained language models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=RftryyYyjiG)] 
-
-
-#### Efficient Attention
-- Fast Causal Attention with Dynamic Sparsity <ins>Arxiv, 2023</ins>[[Paper](https://openreview.net/forum?id=BQEaklwG9P)]
-- Sumformer: Universal Approximation for Efficient Transformers, <ins>Arxiv, 2023</ins>[[Paper](https://arxiv.org/abs/2307.02301)]
-- FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
-- Awesome-Efficient-Transformers: https://github.com/Edwardlzy/Awesome-Efficient-Transformers
-- When to Use Efficient Self Attention? Profiling Text, Speech and Image Transformer Variants, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08667)] 
-- RWKV: Reinventing RNNs for the Transformer Era, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13048)] 
-- HALOS: Hashing Large Output Space for Cheap Inference,  <ins>MLSys, 2022</ins> [[Paper](https://proceedings.mlsys.org/paper/2022/hash/1ff8a7b5dc7a7d1f0ed65aaa29c04b1e-Abstract.html)]
-- Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
-- Efficient Transformers: A Survey, <ins>ACM Computing Surveys, 2022</ins> [[Paper](https://dl.acm.org/doi/10.1145/3530811)]
-- Hierarchical Transformers Are More Efficient Language Models, <ins>NACCL, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.117/)] [[Code](https://github.com/lucidrains/hourglass-transformer-pytorch)]
-- Rethinking Attention with Performers,  <ins>ICLR, 2021</ins> [[Paper](https://openreview.net/forum?id=Ua6zuk0WRH)] [[Code](https://github.com/lucidrains/performer-pytorch)]
-- Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
-- SMYRF: Efficient Attention using Asymmetric Clustering,  <ins>NeurlPS, 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3495724.3496267)] [[Code](https://github.com/giannisdaras/smyrf)]
-- Long Range Arena: A Benchmark for Efficient Transformers, <ins>ICLR, 2020</ins> [[Paper](https://openreview.net/forum?id=qVyeW-grC2k)] [[Code](https://github.com/google-research/long-range-arena)]
-- Linformer: Self-Attention with Linear Complexity,  <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.04768)] [[Code](https://github.com/lucidrains/linformer)]
-- A tensorized transformer for language modeling,  <ins>NeurlPS, 2019</ins> [[Paper](https://dl.acm.org/doi/10.5555/3454287.3454487)] [[Code](https://github.com/szhangtju/The-compression-of-Transformer)]
-- Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations, <ins>ICML, 2019 </ins> [[Paper](https://arxiv.org/abs/1903.05895)] [[Code](https://github.com/HazyResearch/butterfly)]
 
 ### Efficient Inference
-- Efficient Memory Management for Large Language Model Serving with PagedAttention
-- Quantized matmul for efficient inference of large-scale generative language models.
-- https://github.com/huggingface/candle
-- Fast Inference from Transformers via Speculative Decoding.
-- AdaTape: Foundation model with adaptive computation and dynamic read-and-write, <ins>Google Blog </ins> [[Paper](https://ai.googleblog.com/2023/08/adatape-foundation-model-with-adaptive.html)]
-- Fly-Swat or Cannon? Cost-Effective Language Model Choice via Meta-Modeling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06077)]
-- Incrementally-Computable Neural Networks: Efficient Inference for Dynamic Inputs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14988)]
-- FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
-- H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
-- Predictive Pipelined Decoding: A Compute-Latency Trade-off for Exact LLM Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05908)]
-- SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
-- FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05176)]
-- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+
+#### Algorithm-level Inference Acceleration
+
+##### Speculative-based Decoding
+
+- Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
+- Accelerating LLM Inference with Staged Speculative Decoding, <ins>ES-FOMO at ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
+- Accelerating Large Language Model Decoding with Speculative Sampling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01318)]
+- Speculative Decoding with Big Little Decoder, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.07863)] [[Code](https://github.com/kssteven418/BigLittleDecoder)]
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>Arxiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
-- An Efficient Sparse Inference Software Accelerator for Transformer-based Language Models on CPUs, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2306.16601)]
-- Efficiently Scaling Transformer Inference.
-- DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale
+- Inference with Reference: Lossless Acceleration of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/unilm)]
 
-### Efficient Training
-- Optimizing transformer-based machine translation model for single GPU training: a hyperparameter ablation study, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06017)]
-- Skill-it! A Data-Driven Skills Framework for Understanding and Training Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14430)]
-- Scaling TransNormer to 175 Billion Parameters, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.14995)] [[Code](https://github.com/OpenNLPLab/TransnormerLLM)]
-- Efficient Training of Language Models using Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=SpFIO5Mdso)]
-- InRank: Incremental Low-Rank Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11250)] [[Code](https://github.com/jiaweizzhao/inrank)]
-- Stack More Layers Differently: High-Rank Training Through Low-Rank Updates, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05695)]
-- No Train No Gain: Revisiting Efficient Training Algorithms For Transformer-based Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.06440)]
-- SparseProp: Efficient Sparse Backpropagation for Faster Training of Neural Networks at the Edge, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/forum?id=JSTp7NiuYi)] [[Code](https://github.com/IST-DASLab/sparseprop)]
-- A Survey on Efficient Training of Transformers, <ins>IJCAI, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2302.01107)]
-- SNT: Sharpness-Minimizing Network Transformation for Fast Compression-friendly Pretraining, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04526)] 
-- Training Large Language Models Efficiently with Sparsity and Dataflow, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.05511)]
-- LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
-- On Efficient Training of Large-Scale Deep Learning Models: A Literature Review, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03589)]
-- Survey on Efficient Training of Large Neural Networks, <ins>IJCAI, 2022</ins> [[Paper](https://www.ijcai.org/proceedings/2022/769)]
-- Compute-Efficient Deep Learning: Algorithmic Trends and Opportunities, <ins>JMLR, 2023</ins> [[Paper](https://www.jmlr.org/papers/volume24/22-1208/22-1208.pdf)]
-- FATE-LLM: https://github.com/FederatedAI/FATE-LLM/releases/tag/v1.2.0
+##### KV-cache Optimization
 
-### Efficient Long-Text Training/Inference
-- Extending Context Window of Large Language Models via Positional Interpolation (arxiv 2023)
-- Memorizing Transformers (ICLR 2022)
-- Augmenting Language Models with Long-Term Memory (arxiv 2023)
-- Unlimiformer: Long-Range Transformers withUnlimited Length Input (arxiv 2023)
-- SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification (arxiv 2023)
-- Parallel Context Windows for Large Language Models (ACL 2023)
-- Structured Prompting: Scaling In-Context Learning to 1,000 Examples (arxiv 2023)
-- Naive Bayes-based Context Extension (Github: https://github.com/bojone/NBCE)
-- LongNet: Scaling Transformers to 1,000,000,000 Tokens (arxiv 2023)
-- Efficient Long-Text Understanding with Short-Text Models (Published in TACL 2023, will be presented in ACL 2023)
-- Focused Transformer: Contrastive Training for Context Scaling (arxiv 2023)
-- Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
-- Landmark Attention: Random-Access Infinite Context Length for Transformers (arxiv 2023)
-- A Length-Extrapolatable Transformer (ACL 2023)
-- Lost in the Middle: How Language Models Use Long Contexts (arxiv 2023)
-- BAMBOO: A Comprehensive Benchmark for Evaluating Long Text Modeling Capacities of Large Language Models.
+- SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
+- H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
+- Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
+- Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
 
-## Data-centric Methods
-### Prompt Engineering
-#### Few-shot Prompting
-- LARGE LANGUAGE MODELS AS OPTIMIZERS
-- Hybrid Retrieval-Augmented Generation for Real-time Composition Assistance
-- PREFER: Prompt Ensemble Learning via Feedback-Reflect-Refine
-- Generate rather than Retrieve: Large Language Models are Strong Context Generators
-- TRAC: Trustworthy Retrieval Augmented Chatbot
-- Large Language Models Are Human-Level Prompt Engineers
-- Self-Generated In-Context Learning: Leveraging Auto-regressive Language Models as a Demonstration Generator
-- Compositional Exemplars for In-context Learning
-- Larger language models do in-context learning differently
-- How Many Demonstrations Do You Need for In-context Learning?
-- Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?
-- Rethinking the Role of Scale for In-Context Learning: An Interpretability-based Case Study at 66 Billion Scale
-- Calibrate Before Use: Improving Few-shot Performance of Language Models
-- RAVEN: In-Context Learning with Retrieval Augmented Encoder-Decoder Language Models
-- A Survey on In-context Learning
-- Large Language Models Are Implicitly Topic Models: Explaining and Finding Good Demonstrations for In-Context Learning
-- Learning to Retrieve In-Context Examples for Large Language Models
-- Finding Supporting Examples for In-Context Learning
-- Unified Demonstration Retriever for In-Context Learning
-- In-Context Learning with Many Demonstration Examples
-- In-Context Demonstration Selection with Cross Entropy Difference
-- RRAML: Reinforced Retrieval Augmented Machine Learning
-- Learning To Retrieve Prompts for In-Context Learning
-- What Makes Good In-Context Examples for GPT-3?
-- Language Models are Few-Shot Learners
-#### Prompt Tuning
-- Soft Prompt Tuning for Augmenting Dense Retrieval with Large Language Models
-- Making Pre-trained Language Models Better Few-shot Learners
-- Prompt Tuning Pushes Farther, Contrastive Learning Pulls Closer: A Two-Stage Approach to Mitigate Social Biases
-- On Conditional and Compositional Language Model Differentiable Prompting
-- Preserving In-Context Learning ability in Large Language Model Fine-tuning
-- ThoughtSource: A central hub for large language model reasoning data
-- Can Instruction Fine-Tuned Language Models Identify Social Bias through Prompting?
-#### Prompt Compression
-- Learning to Compress Prompts with Gist Tokens
-- Discrete Prompt Compression with Reinforcement Learning
-- In-context Autoencoder for Context Compression in a Large Language Model
-- Adapting Language Models to Compress Contexts
-#### Prompt Generation
-- Self-Instruct: Aligning Language Models with Self-Generated Instructions
-- Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning
-- Large Language Models Are Human-Level Prompt Engineers
-- PromptGen: Automatically Generate Prompts using Generative Models
-- TempLM: Distilling Language Models into Template-Based Generators
-- AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts
-- TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design
+##### Sharing-based Attention Optimization
+
+- Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
+- GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
+
+#### System-level Inference Acceleration
+
+- FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
+- Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
+- Efficiently Scaling Transformer Inference, <ins>MLSys, 2023</ins> [[Paper](https://proceedings.mlsys.org/paper_files/paper/2023/file/523f87e9d08e6071a3bbd150e6da40fb-Paper-mlsys2023.pdf)]
+- EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2211.05102)]
+- S3: Increasing GPU Utilization during Generative Inference for Higher Throughput, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.06000)]
+- Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
+- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- DeepSpeed-inference: enabling efficient inference of transformer models at unprecedented scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
+- Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
+- Just-in-Time Dynamic-Batchin, <ins>NeurIPS Systems for ML Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
+- SMDP-Based Dynamic Batching for Efficient Inference on GPU-Based Platforms, <ins>ICC, 2023</ins> [[Paper](https://arxiv.org/abs/2301.12865)]
+- Flash-Decoding for long-context inference, <ins>PyTorch, 2023</ins> [[Blog](https://pytorch.org/blog/flash-decoding/)]
+- FlashDecoding++: Faster Large Language Model Inference on GPUs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.01282)]
+
+### Efficient Architecture
+
+#### Efficient Attention
+
+##### General Attention Optimization
+
+###### Feature Information Reduction
+
+- Funnel-transformer: Filtering out sequential redundancy for efficient language processing, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.03236)] [[Code](https://github.com/laiguokun/Funnel-Transformer)]
+- Nyströmformer: A nyström-based algorithm for approximating self-attention, <ins>AAAI, 2021</ins> [[Paper](https://arxiv.org/abs/2102.03902)] [[Code](https://github.com/mlpen/Nystromformer)]
+- Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks, <ins>ICML, 2019</ins> [[Paper](https://arxiv.org/abs/1810.00825)]
+
+###### Kernelization or Low-Rank
+
+- Sumformer: Universal Approximation for Efficient Transformers, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02301)]
+- FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
+- Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
+- Linformer: Self-Attention with Linear Complexity, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.04768)] [[Code](https://github.com/lucidrains/linformer)]
+- Lightweight and Efficient End-to-End Speech Recognition Using Low-Rank Transformer, <ins>ICASSP, 2020</ins> [[Paper](https://arxiv.org/abs/1910.13923)]
+- Rethinking Attention with Performers,  <ins>ICLR, 2021</ins> [[Paper](https://openreview.net/forum?id=Ua6zuk0WRH)] [[Code](https://github.com/lucidrains/performer-pytorch)]
+- Random Feature Attention, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2103.02143)]
+- Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16236)] [[Code](https://github.com/idiap/fast-transformers)]
+
+###### Fixed Pattern Strategies
+
+- Big bird: Transformers for longer sequences, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2007.14062)] [[Code](https://github.com/google-research/bigbird)]
+- Poolingformer: Long Document Modeling with Pooling Attention, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2105.04371)]
+- Longformer: The Long-Document Transformer, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2004.05150)] [[Code](https://github.com/allenai/longformer)]
+- Blockwise Self-Attention for Long Document Understanding, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/1911.02972v)] [[Code](https://github.com/xptree/BlockBERT)]
+- Generating Long Sequences with Sparse Transformers, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1904.10509)]
+- Faster Causal Attention Over Large Sequences Through Sparse Flash Attention, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.01160)]
+
+###### Learnable Pattern Strategies
+
+- Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
+- Sparse Sinkhorn Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2002.11296)]
+- Fast Transformers with Clustered Attention, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/pdf/2007.04825.pdf)] [[Code](https://github.com/idiap/fast-transformers)]
+- ClusterFormer: Neural Clustering Attention for Efficient and Effective Transformer, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.170/)]
+- Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
+
+###### Hardware-assisted Attention
+
+- A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
+- Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
+- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+
+##### Attention Optimization for LLMs
+
+- Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
+- GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
+- Generating Long Sequences with Sparse Transformers, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1904.10509)]
+- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
+- Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
+
+#### Mixture of Experts (MoE)
+
+##### MoE-based LLMs
+
+- GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16668)]
+- Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity, <ins>JMLR, 2022</ins> [[Paper](https://jmlr.org/papers/volume23/21-0998/21-0998.pdf)] [[Code](https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py)]
+- Efficient Large Scale Language Modeling with Mixtures of Experts, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2112.10684)] [[Code](https://github.com/facebookresearch/fairseq/tree/main/examples/moe_lm)]
+- BASE Layers: Simplifying Training of Large, Sparse Models, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2103.16716)] [[Code](https://github.com/pytorch/fairseq/)]
+- PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.10845)]
+
+##### Algorithm-level MoE Optimization
+
+- Mixture-of-Experts with Expert Choice Routing, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/2f00ecd787b432c1d36f3de9800728eb-Paper-Conference.pdf)]
+- StableMoE: Stable Routing Strategy for Mixture of Experts, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2204.08396.pdf)] [[Code](https://github.com/Hunter-DDM/stablemoe)]
+- On the Representation Collapse of Sparse Mixture of Experts, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2204.09179)]
+- TA-MoE: Topology-Aware Large Scale Mixture-of-Expert Training, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2302.09915)] [[Code](https://github.com/Chen-Chang/TA-MoE)]
+- Lifelong Language Pretraining with Distribution-Specialized Experts, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12281)]
+- Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14705)]
+
+##### System-level MoE Acceleration
+
+- FastMoE: A Fast Mixture-of-Expert Training System, <ins>PPoPP, 2022</ins> [[Paper](https://arxiv.org/abs/2103.13262)] [[Code](https://github.com/laekov/fastmoe)]
+- FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models, <ins>PPoPP, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3503221.3508418)] [[Code](https://github.com/thu-pacman/FasterMoE)]
+- DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2201.05596.pdf)] [[Code](https://github.com/microsoft/DeepSpeed)]
+- Tutel: Adaptive mixture-of-experts at scale, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2206.03382.pdf)] [[Code](https://github.com/microsoft/tutel)]
+- SmartMoE: Efficiently Training Sparsely-Activated Models through Combining Offline and Online Parallelization, <ins>USENIX ATC, 2023</ins> [[Paper](https://www.usenix.org/conference/atc23/presentation/zhai)]
+
+#### Long-Context LLMs
+
+##### Extrapolation and Interpolation
+
+- Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/pdf/2108.12409.pdf)] [[Code](https://github.com/ofirpress/attention_with_linear_biases)]
+- A Length-Extrapolatable Transformer, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.816/)] [[Code](https://aka.ms/LeX-Transformer)]
+- Extending Context Window of Large Language Models via Positional Interpolation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15595)]
+- NTK interpolation, [[Reddit post](https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/)]
+- YaRN: Efficient Context Window Extension of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.00071)] [[Code](https://github.com/jquesnelle/yarn)]
+-  Functional Interpolation for Relative Positions Improves Long Context Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.04418.pdf)]
+- The EOS Decision and Length Extrapolation, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/2010.07174)] [[Code](https://github.com/bnewm0609/eos-decision)]
+- Exploring Length Generalization in Large Language Models, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.04901)]
+- ∞-former: Infinite Memory Transformer, <ins>ACL, 2022</ins> [[Paper](https://arxiv.org/abs/2109.00301)]
+
+##### Recurrent Structure
+
+- Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context, <ins>ACL, 2019</ins> [[Paper](https://arxiv.org/abs/1901.02860)] [[Code](https://github.com/kimiyoung/transformer-xl)]
+- Memformer: A Memory-Augmented Transformer for Sequence Modeling, <ins>Arxiv, 2020</ins> [[Paper]](https://arxiv.org/abs/2010.06891) [[Code](https://github.com/deep-spin/infinite-former)]
+- Recurrent Memory Transformer, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.06881)] [[Code](https://github.com/booydar/LM-RMT)]
+- Block-Recurrent Transformers, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.07852)] [[Code](https://github.com/google-research/meliad)]
+
+##### Window & Stream Structure
+
+- Efficient Streaming Language Models with Attention Sinks, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.17453)] [[Code](https://github.com/mit-han-lab/streaming-llm)]
+- Parallel Context Windows for Large Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2212.10947)] [[Code](https://github.com/ai21labs/parallel-context-windows)]
+- Structured Prompting: Scaling In-Context Learning to 1,000 Examples, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.06713)] [[Code](https://github.com/microsoft/LMOps)]
+- Naive Bayes-based Context Extension, <ins>Github repository, 2023</ins>  [[Code](https://github.com/bojone/NBCE)]
+- LongNet: Scaling Transformers to 1,000,000,000 Tokens, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02486)] [[Code](https://github.com/microsoft/unilm/tree/master)]
+- Efficient Long-Text Understanding with Short-Text Models, <ins>TACL, 2023</ins> [[Paper](https://arxiv.org/abs/2208.00748)] [[Code](https://github.com/Mivg/SLED)]
+
+##### Memory-Retrieval Augmentation
+
+- Memorizing Transformers, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2203.08913)] [[Code]()]
+- Landmark Attention: Random-Access Infinite Context Length for Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.16300)] [[Code](https://github.com/epfml/landmark-attention/)]
+- Augmenting Language Models with Long-Term Memory, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07174)]
+- Unlimiformer: Long-Range Transformers with Unlimited Length Input, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.01625)] [[Code](https://github.com/abertsch72/unlimiformer)]
+- Focused Transformer: Contrastive Training for Context Scaling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03170)] [[Code](https://github.com/CStanKonrad/long_llama)]
+- Retrieval meets Long Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
+
+#### Transformer Alternate Architecture
+
+##### State Space Models
+
+- Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
+- Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
+- Hungry Hungry Hippos: Towards Language Modeling with State Space Models, <ins>ICLR 2023</ins> [[Paper](https://arxiv.org/abs/2212.14052)] [[Code](https://github.com/HazyResearch/H3)]
+- Long Range Language Modeling via Gated State Spaces, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2206.13947)]
+- Block-State Transformers, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09539)]
+
+##### Other Sequential Models
+
+- RWKV: Reinventing RNNs for the Transformer Era, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13048)]
+- Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
+- MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
+
+## Data-Centric
+
 ### Data Selection
-#### Training Data Selection
-- Data Selection for Language Models via Importance Resampling
-- NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework
-- Data Selection with Cluster-Based Language Difference Models and Cynical Selection
-- Span Selection Pre-training for Question Answering
-- D4: Improving LLM Pretraining via Document De-Duplication and Diversification
-- Scaling Laws and Interpretability of Learning from Repeated Data
-- Deduplicating Training Data Makes Language Models Better
-#### Fine-tuning Data Selection
-- LIMA: Less Is More for Alignment
-- InstructionGPT-4: A 200-Instruction Paradigm for Fine-Tuning MiniGPT-4
-- Platypus: Quick, Cheap, and Powerful Refinement of LLMs
-- AlpaGasus: Training A Better Alpaca with Fewer Data
-- Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning
-- Data-Efficient Finetuning Using Cross-Task Nearest Neighbors\
-- Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03044)] [[Code](https://github.com/yumeng5/FewGen)]
-- Towards Robust and Efficient Continual Language Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.05741)]
-- Efficient Domain Adaptation of Sentence Embeddings using Adapters, <ins>RANLP, 2023</ins> [[paper](https://arxiv.org/abs/2307.03104)] [[Code](https://github.com/sebischair/Efficient-Domain-Adaptation-of-Sentence-Embeddings-using-Adapters)]
-- Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.00196)][[Code](https://github.com/allenai/data-efficient-finetuning)]
+
+#### Data Selection for Efficient Pre-Training
+
+- Data Selection Strategies for Multi-Domain Sentiment Analysis, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1702.02426)]
+- Data Selection with Cluster-Based Language Difference Models and Cynical Selection, <ins>IWSLT, 2017</ins> [[Paper](https://arxiv.org/abs/1904.04900)]
+- Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
+- NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2111.04130.pdf)] [[Code](https://github.com/yaoxingcheng/TLM)]
+- Data Selection for Language Models via Importance Resampling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.03169)] [[Code](https://github.com/p-lambda/dsir)]
+
+#### Data Selection for Efficient Fine-Tuning
+
+- Instruction Mining: When Data Mining Meets Large Language Model Finetuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.06290)]
+- Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.576.pdf)] [[Code](https://github.com/allenai/data-efficient-finetuning)]
+- Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[Paper](https://arxiv.org/abs/2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
+- Maybe Only 0.5% Data is Needed: A Preliminary Exploration of Low Training Data Instruction Tuning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.09246)]
+- AlpaGasus: Training A Better Alpaca with Fewer Data, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08701)] [[Code](https://github.com/Lichang-Chen/AlpaGasus)]
+- LIMA: Less Is More for Alignment, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.11206)]
+
+### Prompt Engineering
+
+#### Few-Shot Prompting
+
+##### Demonstration Organization
+
+###### Demonstration Selection  
+
+- Self-Adaptive In-Context Learning: An Information Compression Perspective for In-Context Example Selection and Ordering, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.79.pdf)] [[Code](https://github.com/Shark-NLP/self-adaptive-ICL)]
+- What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
+- Selective Annotation Makes Language Models Better Few-Shot Learners, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01975)] [[Code](https://github.com/xlang-ai/icl-selective-annotation)]
+- Learning To Retrieve Prompts for In-Context Learning, <ins>NAACL-HLT, 2022</ins> [[Paper](https://arxiv.org/abs/2112.08633)] [[Code](https://github.com/OhadRubin/EPR)]
+- Unified Demonstration Retriever for In-Context Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04320)] [[Code](https://arxiv.org/abs/2305.04320)]
+
+###### Demonstration Ordering
+
+- Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity, <ins>ACL, 2022</ins> [[Paper](https://arxiv.org/abs/2104.08786)]
+- What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
+
+##### Template Formatting
+
+###### Instruction Generation
+
+- Instruction Induction: From Few Examples to Natural Language Task Descriptions, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2205.10782)] [[Code](https://github.com/orhonovich/instruction-induction)]
+- Large Language Models Are Human-Level Prompt Engineers, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2211.01910)] [[Code](https://github.com/keirp/automatic_prompt_engineer)]
+- Self-Instruct: Aligning Language Models with Self-Generated Instructions, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
+- Large Language Models as Optimizers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.03409)]
+
+###### Multi-step Reasoning
+
+- Emergent Abilities of Large Language Models, <ins>TMLR, 2022</ins> [[Paper](https://arxiv.org/abs/2206.07682)]
+- Automatic Chain of Thought Prompting in Large Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03493)] [[Code](https://github.com/amazon-science/auto-cot)]
+- Measuring and Narrowing the Compositionality Gap in Language Models, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03350)] [[Code](https://github.com/ofirpress/self-ask)]
+- ReAct: Synergizing Reasoning and Acting in Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03629)] [[Code](https://github.com/ysymyth/ReAct)]
+- Least-to-Most Prompting Enables Complex Reasoning in Large Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2205.10625)]
+- Graph of Thoughts: Solving Elaborate Problems with Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.09687)] [[Code](https://github.com/spcl/graph-of-thoughts)]
+- Tree of Thoughts: Deliberate Problem Solving with Large Language Models, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.10601)] [[Code](https://github.com/princeton-nlp/tree-of-thought-llm)]
+- Self-Consistency Improves Chain of Thought Reasoning in Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2203.11171)]
+- Graph of Thoughts: Solving Elaborate Problems with Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.09687)] [[Code](https://github.com/spcl/graph-of-thoughts)]
+- Contrastive Chain-of-Thought Prompting, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2311.09277.pdf)] [[Code](https://github.com/DAMO-NLP-SG/contrastive-cot)]
+- Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.04254)]
+
+#### Prompt Compression
+
+- Learning to Compress Prompts with Gist Tokens, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.08467)]
+- Adapting Language Models to Compress Contexts, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14788)] [[Code](https://github.com/princeton-nlp/AutoCompressors)]
+- In-context Autoencoder for Context Compression in a Large Language Model, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.06945)] [[Code](https://github.com/getao/icae)]
+- LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.06839)] [[Code](https://github.com/microsoft/LLMLingua)]
+- Discrete Prompt Compression with Reinforcement Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.08758)]
+- Nugget 2D: Dynamic Contextual Compression for Scaling Decoder-only Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.02409)]
+
+#### Prompt Generation  
+
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
-- Instruction Mining: High-Quality Instruction Data Selection for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](
-https://arxiv.org/abs/2307.06290)]
-- Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
+- Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03044)] [[Code](https://github.com/yumeng5/FewGen)]
+- Large Language Models Are Human-Level Prompt Engineers, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2211.01910)] [[Code](https://github.com/keirp/automatic_prompt_engineer)]
+- TempLM: Distilling Language Models into Template-Based Generators, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2205.11055)] [[Code](https://github.com/Tiiiger/templm)]
+- PromptGen: Automatically Generate Prompts using Generative Models, <ins>Findings-NAACL, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.3/)]
+- AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
+- TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
+
 
 
 ## LLM Frameworks
