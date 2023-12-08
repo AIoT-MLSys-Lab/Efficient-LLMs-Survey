@@ -37,7 +37,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Scaling Models](#Scaling-Models)
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
-    - [System-level Pre-Training Acceleration](#System-level-Techniques)
+    - [System-Level Pre-Training Acceleration](#System-Level-Techniques)
       - [Distributed Pre-Training](#Distributed-Pre-Training)
       - [Hardware-Assisted Attention Acceleration](#Hardware-Assisted-Attention-Acceleration)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
@@ -48,19 +48,19 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Prompt-Tuning](#Prompt-Tuning)
     - [Memory Efficient Fine-Tuning](#Memory-Efficient-Fine-Tuning)
   - [Efficient Inference](#Efficient-Inference)
-    - [Algorithm-level Inference Acceleration](#Algorithm-level-Inference-Acceleration)
+    - [Algorithm-Level Inference Acceleration](#Algorithm-Level-Inference-Acceleration)
       - [Speculative Decoding](#Speculative-Decoding)
       - [KV-cache Optimization](#KV-cache-Optimization)
       - [Sharing-based Attention Acceleration](#Sharing-based-Attention-Acceleration)
-    - [System-level Inference Acceleration](#System-level-Inference-Acceleration)
+    - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
       - [General Attention Optimization](#General-Attention-Optimization)
       - [Attention Optimization for LLMs](#Attention-Optimization-for-LLMs)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
-      - [Algorithm-level MoE Optimization](#Algorithm-level-MoE-Optimization)
-      - [System-level MoE Acceleration](#System-level-MoE-Acceleration)
+      - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
+      - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
     - [Long-context LLMs](#Long-Context-LLMs)
       - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
       - [Recurrent Structure](#Recurrent-Structure)
@@ -187,7 +187,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
 - Symbolic Discovery of Optimization Algorithms, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
-#### System-level Techniques  
+#### System-Level Techniques  
 ##### Distributed Pre-Training
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training
 - Measuring the Effects of Data Parallelism on Neural Network Training
@@ -239,7 +239,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 ### Efficient Inference
-#### Algorithm-level Inference Acceleration
+#### Algorithm-Level Inference Acceleration
 ##### Speculative Decoding
 - Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
 - Accelerating LLM Inference with Staged Speculative Decoding, <ins>ES-FOMO at ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
@@ -255,7 +255,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ##### Sharing-based Attention Acceleration
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
-#### System-level Inference Acceleration
+#### System-Level Inference Acceleration
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 - Efficiently Scaling Transformer Inference, <ins>MLSys, 2023</ins> [[Paper](https://proceedings.mlsys.org/paper_files/paper/2023/file/523f87e9d08e6071a3bbd150e6da40fb-Paper-mlsys2023.pdf)]
@@ -318,14 +318,14 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Large Scale Language Modeling with Mixtures of Experts, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2112.10684)] [[Code](https://github.com/facebookresearch/fairseq/tree/main/examples/moe_lm)]
 - BASE Layers: Simplifying Training of Large, Sparse Models, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2103.16716)] [[Code](https://github.com/pytorch/fairseq/)]
 - PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.10845)]
-##### Algorithm-level MoE Optimization
+##### Algorithm-Level MoE Optimization
 - Mixture-of-Experts with Expert Choice Routing, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/2f00ecd787b432c1d36f3de9800728eb-Paper-Conference.pdf)]
 - StableMoE: Stable Routing Strategy for Mixture of Experts, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2204.08396.pdf)] [[Code](https://github.com/Hunter-DDM/stablemoe)]
 - On the Representation Collapse of Sparse Mixture of Experts, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2204.09179)]
 - TA-MoE: Topology-Aware Large Scale Mixture-of-Expert Training, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2302.09915)] [[Code](https://github.com/Chen-Chang/TA-MoE)]
 - Lifelong Language Pretraining with Distribution-Specialized Experts, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12281)]
 - Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14705)]
-##### System-level MoE Acceleration
+##### System-Level MoE Acceleration
 - FastMoE: A Fast Mixture-of-Expert Training System, <ins>PPoPP, 2022</ins> [[Paper](https://arxiv.org/abs/2103.13262)] [[Code](https://github.com/laekov/fastmoe)]
 - FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models, <ins>PPoPP, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3503221.3508418)] [[Code](https://github.com/thu-pacman/FasterMoE)]
 - DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2201.05596.pdf)] [[Code](https://github.com/microsoft/DeepSpeed)]
