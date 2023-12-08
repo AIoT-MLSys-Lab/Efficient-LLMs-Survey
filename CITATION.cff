@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you find this survey useful to your work, please consider citing it."
-type: unpublished
+type: generic
 authors:
   - family-names: Wan
     given-names: Zhongwei
