@@ -453,7 +453,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
 
 ## 🖌️ Citation
-If you find this useful for your work, please consider citing:
+If you find this survey useful to your work, please consider citing:
 ```
 @misc{wan2023efficient,
       title={Efficient Large Language Models: A Survey}, 
@@ -466,7 +466,7 @@ If you find this useful for your work, please consider citing:
 ```
 ## ❤️ Contribution
 
-This repository is currently maintained by <ins>[tuidan](https://github.com/tuidan)</ins> (wang.15980@osu.edu) and <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> (wan.512@osu.edu). **We appreciate any contributions** ❤️.
+This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> (wang.15980@osu.edu) and <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> (wan.512@osu.edu). **We welcome feedback, suggestions, and contributions that can help improve this survey and repository so as to make them as a valuable resource to benefit the whole community**.
 
 
 <!-- **<font color='red'>Work still in progress</font>**  🚀, **we appreciate any suggestions and contributions** ❤️. -->
