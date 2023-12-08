@@ -78,7 +78,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Demonstration Ordering](#Demonstration-Ordering)
       - [Template Formatting](#Template-Formatting)
         - [Instruction Generation](#Instruction-Generation)
-        - [Multi-step Reasoning](#Multi-step-Reasoning)
+        - [Multi-Step Reasoning](#Multi-Step-Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
 - [LLM Frameworks](#LLM-Frameworks)
