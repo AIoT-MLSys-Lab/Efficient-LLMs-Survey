@@ -6,17 +6,17 @@
 
 > *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>Amazon AWS AI, <sup>5</sup>Google Research, <sup>6</sup>Boson AI, <sup>7</sup>Microsoft Research Asia, <sup>8</sup>University of Michigan*  
 
-## What is This Survey About?
+## 📌 What is This Survey About?
 
 Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding, language generation, and complex reasoning and have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing the efficiency challenges posed by LLMs. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of the research developments in efficient LLMs and inspire them to contribute to this important and exciting field. We will actively maintain this repository and incorporate new research as it emerges. 
 
-## Why Efficient LLMs are Needed?
+## 🤔 Why Efficient LLMs are Needed?
 
 ![img/image.jpg](img/image.jpg)
 
 Although LLMs are leading the next wave of AI revolution, the remarkable capabilities of LLMs come at the cost of their substantial resource demands. Figure 1 (left) illustrates the relationship between model performance and the carbon emissions during training for LLaMA series. As shown, the amount of carbon emitted grows exponentially as the number of model parameter scales up. In addition to training, inference also contributes quite significantly to the operational cost of LLMs. As depicted in Figure 2 (right), more advanced LLMs exhibit higher memory usage and energy consumption during inference, presenting challenges for these models in expanding their reach to a broader customer base and diverse applications in a cost-effective way. With the rapid expansion of applications and the customer base for LLMs, the operational cost during inference in terms of energy consumption and memory usage would increase and exceed the training cost and become the dominant factor for the overall environmental impact. 
 
-## Table of Content
+## 📖 Table of Content
 - [Model-Centric Methods](#Model-Centric) 
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
@@ -452,7 +452,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Mosec [[Code](https://github.com/mosecorg/mosec)]
 - LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
 
-## Citation
+## 🖌️ Citation
 If you find this useful for your work, please consider citing:
 ```
 @misc{wan2023efficient,
