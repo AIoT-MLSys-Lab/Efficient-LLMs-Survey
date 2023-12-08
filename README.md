@@ -241,6 +241,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ### Efficient Inference
 #### Algorithm-Level Inference Acceleration
 ##### Speculative Decoding
+- Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads, <ins>Blog, 2023</ins> [[Blog](https://sites.google.com/view/medusa-llm)] [[Code](https://github.com/FasterDecoding/Medusa)]
 - Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
 - Accelerating LLM Inference with Staged Speculative Decoding, <ins>ES-FOMO at ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
 - Accelerating Large Language Model Decoding with Speculative Sampling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01318)]
