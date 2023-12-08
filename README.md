@@ -64,7 +64,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Recurrent Structure](#Recurrent-Structure)
       - [Window & Stream Structure](#Window-&-Stream-Structure)
       - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
-    - [Transformer Alternate Architecture](#Transformer-Alternate-Architecture)
+    - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
 - [Data-Centric Methods](#Data-Centric)
@@ -358,7 +358,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Unlimiformer: Long-Range Transformers with Unlimited Length Input, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.01625)] [[Code](https://github.com/abertsch72/unlimiformer)]
 - Focused Transformer: Contrastive Training for Context Scaling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03170)] [[Code](https://github.com/CStanKonrad/long_llama)]
 - Retrieval meets Long Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
-#### Transformer Alternate Architecture
+#### Transformer Alternative Architecture
 ##### State Space Models
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
