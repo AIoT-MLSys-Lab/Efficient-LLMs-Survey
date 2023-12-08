@@ -1,6 +1,10 @@
 # Efficient Large Language Models: A Survey  
 
-Paper: [http://arxiv.org/abs/2312.03863](http://arxiv.org/abs/2312.03863)
+> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**
+
+> *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Zhongnan Qu<sup>4</sup>, Shen Yan<sup>5</sup>, Yi Zhu<sup>6</sup>, Quanlu Zhang<sup>7</sup>, Mosharaf Chowdhury<sup>8</sup>, Mi Zhang<sup>1</sup>*
+
+> *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>Amazon AWS AI, <sup>5</sup>Google Research, <sup>6</sup>Boson AI, <sup>7</sup>Microsoft Research Asia, <sup>8</sup>University of Michigan*  
 
 ## What is This Survey About?
 
@@ -445,3 +449,16 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Sax [[Code](https://github.com/google/saxml)]
 - Mosec [[Code](https://github.com/mosecorg/mosec)]
 - LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
+
+## Citation
+If you find this useful for your work, please consider citing:
+```
+@misc{wan2023efficient,
+      title={Efficient Large Language Models: A Survey}, 
+      author={Zhongwei Wan and Xin Wang and Che Liu and Samiul Alam and Yu Zheng and Zhongnan Qu and Shen Yan and Yi Zhu and Quanlu Zhang and Mosharaf Chowdhury and Mi Zhang},
+      year={2023},
+      eprint={2312.03863},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
