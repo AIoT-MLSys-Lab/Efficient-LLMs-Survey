@@ -67,7 +67,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
-- [📄 Data-Centric Methods](#Data-Centric)
+- [📄 Data-Centric Methods](#-Data-Centric)
   - [Data Selection](#Data-Selection)
     - [Data Selection for Efficient Pre-Training](#Data-Selection-for-Efficient-Pre-Training)
     - [Data Selection for Efficient Fine-Tuning](#Data-Selection-for-Efficient-Fine-Tuning)
@@ -81,7 +81,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Multi-Step Reasoning](#Multi-Step-Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
-- [🧑‍💻 LLM Frameworks](#LLM-Frameworks)
+- [🧑‍💻 LLM Frameworks](#-LLM-Frameworks)
   - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
   - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
 
