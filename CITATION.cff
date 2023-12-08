@@ -1,6 +1,8 @@
 cff-version: 1.2.0
-message: "If you find this survey useful to your work, please consider citing it."
-type: generic
+title: 'Efficient Large Language Models: A Survey'
+message: >-
+  If you find this survey useful to your work, please
+  consider citing it.
 authors:
   - family-names: Wan
     given-names: Zhongwei
@@ -10,7 +12,7 @@ authors:
     given-names: Che
   - family-names: Alam
     given-names: Samiul
-    orcid: "https://0000-0002-8458-4642"
+    orcid: 'https://orcid.org/0000-0002-8458-4642'
   - family-names: Zheng
     given-names: Yu
   - family-names: Qu
@@ -25,9 +27,40 @@ authors:
     given-names: Mosharaf
   - family-names: Zhang
     given-names: Mi
-title: "Efficient Large Language Models: A Survey"
-year: 2023
-eprint: 2312.03863
-archive-prefix: arXiv
-primary-class: cs.CL
-doi: "https://doi.org/10.48550/arXiv.2312.03863"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+  - type: url
+    value: 'https://arxiv.org/abs/2312.03863'
+    description: Arxiv preprint url
+url: 'https://aiot-mlsys-lab.github.io/'
+abstract: >-
+  Large Language Models (LLMs) have demonstrated remarkable
+  capabilities in important tasks such as natural language
+  understanding, language generation, and complex reasoning
+  and have the potential to make a substantial impact on our
+  society. Such capabilities, however, come with the
+  considerable resources they demand, highlighting the
+  strong need to develop effective techniques for addressing
+  their efficiency challenges. In this survey, we provide a
+  systematic and comprehensive review of efficient LLMs
+  research. We organize the literature in a taxonomy
+  consisting of three main categories, covering distinct yet
+  interconnected efficient LLMs topics from model-centric,
+  data-centric, and framework-centric perspectives,
+  respectively. We have also created this GitHub repository
+  where we compile the papers featured in this survey, and
+  will actively maintain this repository and incorporate new
+  research as it emerges. We hope our survey can serve as a
+  valuable resource to help researchers and practitioners
+  gain a systematic understanding of the research
+  developments in efficient LLMs and inspire them to
+  contribute to this important and exciting field.
+keywords:
+  - Large Language models
+  - TinyML
+  - Efficient Deep Learning
+  - Edge Computing
+license: CC-BY-SA-4.0
+version: '1.0'
+date-released: '2023-12-08'
