@@ -28,8 +28,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Unstructured Pruning](#Unstructured-Pruning)
     - [Low-rank Decomposition](#Low-rank-Decomposition)
     - [Knowledge Distillation](#Knowledge-Distillation)
-      - [White-box KD](#White-box-KD)
-      - [Black-box KD](#Black-box-KD)
+      - [White-Box KD](#White-Box-KD)
+      - [Black-Box KD](#Black-Box-KD)
   - [Efficient Pre-Training](#Efficient-Pre-Training)
     - [Mixed Precision Acceleration](#Mixed-Precision-Acceleration)
     - [Scaling Models](#Scaling-Models)
@@ -130,7 +130,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.08302)]
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 #### Knowledge Distillation
-##### White-box KD
+##### White-Box KD
 - Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
 - Knowledge Distillation of Large Language Models <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)] [[Code](https://github.com/microsoft/LMOps/tree/main/minillm)]
 - GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)]
@@ -138,7 +138,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - Token-Scaled Logit Distillation for Ternary Weight Generative Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06744)]
-##### Black-box KD
+##### Black-Box KD
 - Instruction Tuning with GPT-4 <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03277)] [[Code](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
 - Meta-learning via Language Model In-context Tuning, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.07814)] [[Code](https://github.com/yandachen/In-context-Tuning)]
 - MetaICL: Learning to Learn In Context, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.15943)] [[Code](https://github.com/facebookresearch/MetaICL)]
