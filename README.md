@@ -131,8 +131,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 #### Knowledge Distillation
 ##### White-box KD
+- Towards the Law of Capacity Gap in Distilling Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.07052)] [[Code](https://github.com/GeneZC/MiniMA)]
 - Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
-- Knowledge Distillation of Large Language Models <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)] [[Code](https://github.com/microsoft/LMOps/tree/main/minillm)]
+- Knowledge Distillation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)] [[Code](https://github.com/microsoft/LMOps/tree/main/minillm)]
 - GKD: Generalized Knowledge Distillation for Auto-regressive Sequence Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.13649)]
 - Propagating Knowledge Updates to LMs Through Distillation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09306)] [[Code](https://github.com/shankarp8/knowledge_distillation)]
 - Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
@@ -360,6 +361,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Retrieval meets Long Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
 #### Transformer Alternate Architecture
 ##### State Space Models
+- Mamba: Linear-Time Sequence Modeling with Selective State Spaces, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.00752)] [[Code](https://github.com/state-spaces/mamba)]
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
 - Hungry Hungry Hippos: Towards Language Modeling with State Space Models, <ins>ICLR 2023</ins> [[Paper](https://arxiv.org/abs/2212.14052)] [[Code](https://github.com/HazyResearch/H3)]
