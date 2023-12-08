@@ -466,7 +466,7 @@ If you find this useful for your work, please consider citing:
 ```
 ## ❤️ Contribution
 
-This repository is currently maintained by <ins>[Xin Wang](https://github.com/tuidan)</ins> [wang.15980@osu.edu] and <ins>[Zhongwei Wan](https://github.com/SUSTechBruce)</ins> [wan.512@osu.edu]. **We appreciate any contributions** ❤️.
+This repository is currently maintained by <ins>[tuidan](https://github.com/tuidan)</ins> [wang.15980@osu.edu] and <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> [wan.512@osu.edu]. **We appreciate any contributions** ❤️.
 
 
 <!-- **<font color='red'>Work still in progress</font>**  🚀, **we appreciate any suggestions and contributions** ❤️. -->
