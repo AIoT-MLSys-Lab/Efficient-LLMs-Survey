@@ -24,7 +24,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Weight-based Quantization](#Weight-based-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
       - [Quantization-Aware Training](#Quantization-Aware-Training)
-      - [Quantization-Aware Fine-tuning](#Quantization-Aware-Fine-tuning)
+      - [Quantization-Aware Fine-Tuning](#Quantization-Aware-Fine-Tuning)
     - [Parameter Pruning](#Parameter-Pruning)
       - [Structured Pruning](#Structured-Pruning)
       - [Unstructured Pruning](#Unstructured-Pruning)
@@ -112,7 +112,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
 - BitNet: Scaling 1-bit Transformers for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.11453)]
-##### Quantization-Aware Fine-tuning
+##### Quantization-Aware Fine-Tuning
 - QLoRA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
 - Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14152)]
 - QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.14717 )]
