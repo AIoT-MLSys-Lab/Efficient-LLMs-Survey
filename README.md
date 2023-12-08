@@ -17,7 +17,7 @@ Large Language Models (LLMs) have demonstrated remarkable capabilities in import
 Although LLMs are leading the next wave of AI revolution, the remarkable capabilities of LLMs come at the cost of their substantial resource demands. Figure 1 (left) illustrates the relationship between model performance and the carbon emissions during training for LLaMA series. As shown, the amount of carbon emitted grows exponentially as the number of model parameter scales up. In addition to training, inference also contributes quite significantly to the operational cost of LLMs. As depicted in Figure 2 (right), more advanced LLMs exhibit higher memory usage and energy consumption during inference, presenting challenges for these models in expanding their reach to a broader customer base and diverse applications in a cost-effective way. With the rapid expansion of applications and the customer base for LLMs, the operational cost during inference in terms of energy consumption and memory usage would increase and exceed the training cost and become the dominant factor for the overall environmental impact. 
 
 ## 📖 Table of Content
-- [Model-Centric Methods](#Model-Centric) 
+- [🤖 Model-Centric Methods](#Model-Centric) 
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
       - [Post-Training Quantitation](#Post-Training-Quantitation)
@@ -67,7 +67,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
-- [Data-Centric Methods](#Data-Centric)
+- [📄 Data-Centric Methods](#Data-Centric)
   - [Data Selection](#Data-Selection)
     - [Data Selection for Efficient Pre-Training](#Data-Selection-for-Efficient-Pre-Training)
     - [Data Selection for Efficient Fine-Tuning](#Data-Selection-for-Efficient-Fine-Tuning)
@@ -81,12 +81,12 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Multi-Step Reasoning](#Multi-Step-Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
-- [LLM Frameworks](#LLM-Frameworks)
+- [🧑‍💻 LLM Frameworks](#LLM-Frameworks)
   - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
   - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
 
 
-## Model-Centric
+## 🤖 Model-Centric
 ### Model Compression
 #### Quantization
 ##### Post-Training Quantitation
@@ -372,7 +372,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
 - MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
 
-## Data-Centric
+## 📄 Data-Centric
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
 - Data Selection Strategies for Multi-Domain Sentiment Analysis, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1702.02426)]
@@ -433,7 +433,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 - TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 
-## LLM Frameworks
+## 🧑‍💻 LLM Frameworks
 ### LLM Frameworks Supporting Efficient Training and Inference
 - DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
 - Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
