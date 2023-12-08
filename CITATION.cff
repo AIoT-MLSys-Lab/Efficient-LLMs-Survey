@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you find this survey useful to your work, please consider citing it."
+references:
+  - type: article
+    authors:
+      - family-names: Wan
+        given-names: Zhongwei
+      - family-names: Wang
+        given-names: Xin
+      - family-names: Liu
+        given-names: Che
+      - family-names: Alam
+        given-names: Samiul
+        orcid: "0000-0002-8458-4642"
+      - family-names: Zheng
+        given-names: Yu
+      - family-names: Qu
+        given-names: Zhongnan
+      - family-names: Yan
+        given-names: Shen
+      - family-names: Zhu
+        given-names: Yi
+      - family-names: Zhang
+        given-names: Quanlu
+      - family-names: Chowdhury
+        given-names: Mosharaf
+      - family-names: Zhang
+        given-names: Mi
+    title: "Efficient Large Language Models: A Survey"
+    year: 2023
+    eprint: 2312.03863
+    archive-prefix: arXiv
+    primary-class: cs.CL
