@@ -1,6 +1,6 @@
 # Efficient Large Language Models: A Survey  
 
-Paper Link: [[http://arxiv.org/abs/2312.03863](http://arxiv.org/abs/2312.03863)]
+Paper: [http://arxiv.org/abs/2312.03863](http://arxiv.org/abs/2312.03863)
 
 ## What is This Survey About?
 
