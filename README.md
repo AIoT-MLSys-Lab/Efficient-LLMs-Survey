@@ -361,7 +361,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Retrieval meets Long Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
 #### Transformer Alternative Architecture
 ##### State Space Models
-- Mamba: Linear-Time Sequence Modeling with Selective State Spaces, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.00752)] [[Code](https://github.com/havenhq/mamba-chat)]
+- Mamba: Linear-Time Sequence Modeling with Selective State Spaces, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.00752)] [[Code](https://github.com/state-spaces/mamba)]
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
 - Hungry Hungry Hippos: Towards Language Modeling with State Space Models, <ins>ICLR 2023</ins> [[Paper](https://arxiv.org/abs/2212.14052)] [[Code](https://github.com/HazyResearch/H3)]
