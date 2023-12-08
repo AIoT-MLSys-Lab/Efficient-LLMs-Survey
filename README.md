@@ -23,6 +23,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Post-Training Quantitation](#Post-Training-Quantitation)
         - [Weight-based Quantization](#Weight-based-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
+      - [Quantization-Aware Training] (#Quantization-Aware Training)
+      - [Fine-Tuning Enhanced Quantization] (#Fine-Tuning Enhanced Quantization)
     - [Parameter Pruning](#Parameter-Pruning)
       - [Structured Pruning](#Structured-Pruning)
       - [Unstructured Pruning](#Unstructured-Pruning)
@@ -106,7 +108,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - RPTQ: Reorder-based Post-training Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.01089)]
 - Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.09145)]
 - QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.08041)]
-##### Quantitation-aware Training
+##### Quantization-Aware Training
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
 - BitNet: Scaling 1-bit Transformers for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.11453)]
