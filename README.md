@@ -20,7 +20,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - [🤖 Model-Centric Methods](#-Model-Centric) 
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
-      - [Post-Training Quantitation](#Post-Training-Quantitation)
+      - [Post-Training Quantization](#Post-Training-Quantization)
         - [Weight-based Quantization](#Weight-based-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
       - [Quantization-Aware Training](#Quantization-Aware-Training)
@@ -91,7 +91,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ## 🤖 Model-Centric
 ### Model Compression
 #### Quantization
-##### Post-Training Quantitation
+##### Post-Training Quantization
 ###### Weight-based Quantization
 - LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
