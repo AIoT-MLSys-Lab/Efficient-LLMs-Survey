@@ -69,7 +69,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
-- [📄 Data-Centric Methods](#-Data-Centric)
+- [🔢 Data-Centric Methods](#-Data-Centric)
   - [Data Selection](#Data-Selection)
     - [Data Selection for Efficient Pre-Training](#Data-Selection-for-Efficient-Pre-Training)
     - [Data Selection for Efficient Fine-Tuning](#Data-Selection-for-Efficient-Fine-Tuning)
@@ -375,7 +375,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
 - MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
 
-## 📄 Data-Centric
+## 🔢 Data-Centric
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
 - Data Selection Strategies for Multi-Domain Sentiment Analysis, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1702.02426)]
