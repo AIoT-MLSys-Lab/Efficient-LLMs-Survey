@@ -1,6 +1,6 @@
 # Efficient Large Language Models: A Survey  
 
-> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**
+> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863)
 
 > *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Zhongnan Qu<sup>4</sup>, Shen Yan<sup>5</sup>, Yi Zhu<sup>6</sup>, Quanlu Zhang<sup>7</sup>, Mosharaf Chowdhury<sup>8</sup>, Mi Zhang<sup>1</sup>*
 
