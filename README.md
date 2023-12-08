@@ -39,7 +39,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Optimization Strategies](#Optimization-Strategies)
     - [System-level Pre-Training Acceleration](#System-level-Techniques)
       - [Distributed Pre-Training](#Distributed-Pre-Training)
-      - [Hardware-assisted Attention Acceleration](#Hardware-assisted-Attention-Acceleration)
+      - [Hardware-Assisted Attention Acceleration](#Hardware-Assisted-Attention-Acceleration)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
     - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
       - [Adapter-Tuning](#Adapter-tuning)
@@ -200,7 +200,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
 - ZeRO-Offload: Democratizing Billion-Scale Model Training  
-##### Hardware-assisted Attention Acceleration
+##### Hardware-Assisted Attention Acceleration
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 ### Efficient Fine-Tuning
