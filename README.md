@@ -158,11 +158,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Distilling Reasoning Capabilities into Smaller Language Models, <ins>ACL’23, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.441/)] [[Code](https://github.com/kumar-shridhar/Distiiling-LM)]
 ### Efficient Pre-Training
 #### Mixed Precision Acceleration
-- Mixed precision training, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1710.03740)]
+- Mixed Precision Training, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1710.03740)]
 - Bfloat16 Processing for Neural Networks, <ins>ARITH, 2019</ins> [[Paper](https://ieeexplore.ieee.org/document/8877390)]
-- A study of BFLOAT16 for deep learning training, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
-- GACT: Activation compressed training for generic network architectures, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/abs/2206.11357)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
-- Mesa: A memory-saving training framework for transformers, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2111.11124)] [[Code](https://github.com/ziplab/Mesa)]
+- A Study of BFLOAT16 for Deep Learning Training, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
+- GACT: Activation Compressed Training for Generic Network Architectures, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/abs/2206.11357)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
+- Mesa: A Memory-saving Training Framework for Transformers, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2111.11124)] [[Code](https://github.com/ziplab/Mesa)]
 #### Scaling Models
 - Efficient Training of BERT by Progressively Stacking <ins>ICML, 2019</ins> [[Paper](https://proceedings.mlr.press/v97/gong19a/gong19a.pdf)] [[Code](https://github.com/gonglinyuan/StackingBERT)]
 - Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2011.13635)]
