@@ -460,9 +460,15 @@ This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> 
 
 <!-- **<font color='red'>Work still in progress</font>**  🚀, **we appreciate any suggestions and contributions** ❤️. -->
 
-If you have any suggestions or find any missed papers, feel free to send us an email or submit a pull request:
+1. If you 
 
-1. Use following markdown format.
+- Have any suggestions regarding our summarized category;
+
+- Find any missed papers;
+
+- Find any preprint papers with arXiv link have been published;
+
+feel free to send us an email or submit a pull request using following markdown format.
 
 ```markdown
 **Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
