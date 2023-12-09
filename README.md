@@ -370,6 +370,14 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ##### Demonstration Organization
 ###### Demonstration Selection  
 - Unified Demonstration Retriever for In-Context Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04320)] [[Code](https://arxiv.org/abs/2305.04320)]
+- Large Language Models Are Latent Variable Models: Explaining and Finding Good Demonstrations for In-Context Learning,
+- In-Context Learning with Iterative Demonstration Selection
+- Dr.ICL: Demonstration-Retrieved In-context Learning
+- Learning to Retrieve In-Context Examples for Large Language Models
+- Finding Supporting Examples for In-Context Learning
+- In-Context Learning with Many Demonstration Examples
+- How Many Demonstrations Do You Need for In-context Learning?
+- Selective Annotation Makes Language Models Better Few-Shot Learners
 - Self-Adaptive In-Context Learning: An Information Compression Perspective for In-Context Example Selection and Ordering, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.79.pdf)] [[Code](https://github.com/Shark-NLP/self-adaptive-ICL)]
 - Selective Annotation Makes Language Models Better Few-Shot Learners, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01975)] [[Code](https://github.com/xlang-ai/icl-selective-annotation)]
 - What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
