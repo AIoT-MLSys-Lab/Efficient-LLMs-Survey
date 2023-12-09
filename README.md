@@ -170,10 +170,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FLM-101B: An Open LLM and How to Train It with $100 K Budget, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2309.03852.pdf)] [[Code](https://huggingface.co/CofeAI/FLM-101B)]
 - Knowledge Inheritance for Pre-trained Language Models, <ins>NAACL, 2022</ins> [[Paper](https://arxiv.org/abs/2105.13880)] [[Code](https://github.com/thunlp/Knowledge-Inheritance)]
 - Staged Training for Transformer Language Models, <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/shen22f/shen22f.pdf)] [[Code](https://github.com/allenai/staged-training)]
-- bert2BERT: Towards Reusable Pretrained Language Models, <ins>arXiv, 2021</ins> [[Paper](https://arxiv.org/abs/2110.07143)]
-- On the Transformer Growth for Progressive BERT Training, <ins>arXiv, 2020</ins> [[Paper](https://arxiv.org/abs/2010.12562)] [[Code](https://github.com/google-research/google-research/tree/master/grow_bert)]
-- Progressively Stacking 2.0: A Multi-stage Layerwise Training Method for BERT Training Speedup, <ins>arXiv, 2020</ins> [[Paper](https://arxiv.org/abs/2011.13635)]
-- Efficient Training of BERT by Progressively Stacking <ins>ICML, 2019</ins> [[Paper](https://proceedings.mlr.press/v97/gong19a/gong19a.pdf)] [[Code](https://github.com/gonglinyuan/StackingBERT)]
 #### Initialization Techniques
 - Deepnet: Scaling transformers to 1,000 layers, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2203.00555)] [[Code](https://github.com/microsoft/unilm)]
 - ZerO initialization: Initializing neural networks with only zeros and ones, <ins>TMLR, 2022</ins> [[Paper](https://openreview.net/pdf?id=1AxQpKmiTc)] [[Code](https://github.com/jiaweizzhao/ZerO-initialization)]
