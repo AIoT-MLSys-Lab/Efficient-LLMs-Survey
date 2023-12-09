@@ -367,8 +367,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Data Selection for Language Models via Importance Resampling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.03169)] [[Code](https://github.com/p-lambda/dsir)]
 - NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2111.04130.pdf)] [[Code](https://github.com/yaoxingcheng/TLM)]
 - Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
-- Data Selection Strategies for Multi-Domain Sentiment Analysis, <ins>arXiv, 2017</ins> [[Paper](https://arxiv.org/abs/1702.02426)]
-- Data Selection with Cluster-Based Language Difference Models and Cynical Selection, <ins>IWSLT, 2017</ins> [[Paper](https://arxiv.org/abs/1904.04900)]
 #### Data Selection for Efficient Fine-Tuning
 - Instruction Mining: When Data Mining Meets Large Language Model Finetuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.06290)]
 - Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.576.pdf)] [[Code](https://github.com/allenai/data-efficient-finetuning)]
