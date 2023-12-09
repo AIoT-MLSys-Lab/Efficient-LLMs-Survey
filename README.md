@@ -150,7 +150,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Large Language Models Are Reasoning Teachers, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2212.10071)] [[Code](https://github.com/itsnamgyu/reasoning-teacher)]
 - SCOTT: Self-Consistent Chain-of-Thought Distillation, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.01879)] [[Code](https://github.com/wangpf3/consistent-CoT-distillation)]
 - Symbolic Chain-of-Thought Distillation: Small Models Can Also "Think" Step-by-Step, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14050)]
-- Distilling Reasoning Capabilities into Smaller Language Models, <ins>ACL’23, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.441/)] [[Code](https://github.com/kumar-shridhar/Distiiling-LM)]
+- Distilling Reasoning Capabilities into Smaller Language Models, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.441/)] [[Code](https://github.com/kumar-shridhar/Distiiling-LM)]
 - In-context Learning Distillation: Transferring Few-shot Learning Ability of Pre-trained Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10670)]
 - Explanations from Large Language Models Make Small Reasoners Better, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2210.06726)]
 - DISCO: Distilling Counterfactuals with Large Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10534)] [[Code](https://github.com/eric11eca/disco)]
@@ -197,7 +197,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC, 2021</ins> [[Paper](https://arxiv.org/abs/2104.04473)] [[Code](https://github.com/nvidia/megatron-lm)]
 - Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://arxiv.org/abs/2105.14500)]
 - An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
-- ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
+- ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
 - ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://arxiv.org/abs/2101.06840)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 ### Efficient Fine-Tuning
