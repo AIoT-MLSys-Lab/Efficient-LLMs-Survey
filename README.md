@@ -189,17 +189,17 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
 - Adam: A method for stochastic optimization, <ins>ICLR, 2015</ins> [[Paper](https://arxiv.org/abs/1412.6980)]
 #### System-Level Techniques  
-- PyTorch Distributed: Experiences on Accelerating Data Parallel Training
-- Measuring the Effects of Data Parallelism on Neural Network Training
-- PipeDream: Fast and Efficient Pipeline Parallel DNN Training
-- GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism, <ins>NeurIPS, 2018</ins> 
-- Maximizing Parallelism in Distributed Training for Huge Neural Networks  
-- Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC'21, 2021</ins>
+- PyTorch Distributed: Experiences on Accelerating Data Parallel Training, <ins>VLDB, 2020</ins> [[Paper](https://arxiv.org/abs/2006.15704)]
+- Measuring the Effects of Data Parallelism on Neural Network Training, <ins>JMLR, 2019</ins> [[Paper](https://arxiv.org/abs/1811.03600)]
+- PipeDream: Fast and Efficient Pipeline Parallel DNN Training, <ins>SOSP, 2019</ins> [[Paper](https://arxiv.org/abs/1806.03377)]
+- GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism, <ins>NeurIPS, 2019</ins> [[Paper](https://arxiv.org/abs/1811.06965)] [[Code]()]
+- Maximizing Parallelism in Distributed Training for Huge Neural Networks, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2105.14450)] 
+- Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC, 2021</ins> [[Paper](https://arxiv.org/abs/2104.04473)] [[Code](https://github.com/nvidia/megatron-lm)]
 - Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://arxiv.org/abs/2105.14500)]
 - An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
-- ZeRO-Offload: Democratizing Billion-Scale Model Training  
+- ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://arxiv.org/abs/2101.06840)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
 ##### Adapter-Tuning
