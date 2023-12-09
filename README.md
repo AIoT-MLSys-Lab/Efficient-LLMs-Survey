@@ -160,8 +160,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Mixed Precision Acceleration
 - GACT: Activation Compressed Training for Generic Network Architectures, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/abs/2206.11357)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
 - Mesa: A Memory-saving Training Framework for Transformers, <ins>arXiv, 2021</ins> [[Paper](https://arxiv.org/abs/2111.11124)] [[Code](https://github.com/ziplab/Mesa)]
-- Bfloat16 Processing for Neural Networks, <ins>ARITH, 2019</ins> [[Paper](https://ieeexplore.ieee.org/document/8877390)]
-- A Study of BFLOAT16 for Deep Learning Training, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
 - Mixed Precision Training, <ins>arXiv, 2017</ins> [[Paper](https://arxiv.org/abs/1710.03740)]
 #### Scaling Models
 - Learning to Grow Pretrained Models for Efficient Transformer Training, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/pdf?id=cDYRS5iZ16f)] [[Code](https://github.com/VITA-Group/LiGO)]
@@ -178,12 +176,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Improving Transformer Optimization Through Better Initialization, <ins>ICML, 2020</ins> [[Paper](https://proceedings.mlr.press/v119/huang20f/huang20f.pdf)] [[Code](https://github.com/layer6ai-labs/T-Fixup)]
 - Fixup initialization: Residual learning without normalization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1901.09321)]
 - On weight initialization in deep neural networks, <ins>arXiv, 2017</ins> [[Paper](https://arxiv.org/abs/1704.08863)] [[Code](https://github.com/sidkk86/weight_initialization)]
-- Delving deep into rectifiers: Surpassing humanlevel performance on imagenet classification, <ins>ICCV, 2015</ins> [[Paper](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/He_Delving_Deep_into_ICCV_2015_paper.pdf)]
 #### Optimization Strategies
 - Symbolic Discovery of Optimization Algorithms, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
-- Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
-- Adam: A method for stochastic optimization, <ins>ICLR, 2015</ins> [[Paper](https://arxiv.org/abs/1412.6980)]
 #### System-Level Techniques  
 - An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
@@ -193,9 +188,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://arxiv.org/abs/2101.06840)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training, <ins>VLDB, 2020</ins> [[Paper](https://arxiv.org/abs/2006.15704)]
-- Measuring the Effects of Data Parallelism on Neural Network Training, <ins>JMLR, 2019</ins> [[Paper](https://arxiv.org/abs/1811.03600)]
-- PipeDream: Fast and Efficient Pipeline Parallel DNN Training, <ins>SOSP, 2019</ins> [[Paper](https://arxiv.org/abs/1806.03377)]
-- GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism, <ins>NeurIPS, 2019</ins> [[Paper](https://arxiv.org/abs/1811.06965)] [[Code]()]
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
 ##### Adapter-Tuning
@@ -257,7 +249,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2211.05102)]
 - DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
 - Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
-- Just-in-Time Dynamic-Batchin, <ins>NeurIPS Systems for ML Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
+- Just-in-Time Dynamic-Batching, <ins>NeurIPS Systems for ML Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 ### Efficient Architecture
 #### Efficient Attention
 ##### Sharing-Based Attention Acceleration
@@ -282,7 +274,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Big Bird: Transformers for Longer Sequences, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2007.14062)] [[Code](https://github.com/google-research/bigbird)]
 - Longformer: The Long-Document Transformer, <ins>arXiv, 2020</ins> [[Paper](https://arxiv.org/abs/2004.05150)] [[Code](https://github.com/allenai/longformer)]
 - Blockwise Self-Attention for Long Document Understanding, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/1911.02972v)] [[Code](https://github.com/xptree/BlockBERT)]
-- Generating Long Sequences with Sparse Transformers, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1904.10509)]
 ##### Learnable Pattern Strategies
 - ClusterFormer: Neural Clustering Attention for Efficient and Effective Transformer, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.170/)]
 - Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
