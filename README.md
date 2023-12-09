@@ -189,17 +189,17 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
 - Adam: A method for stochastic optimization, <ins>ICLR, 2015</ins> [[Paper](https://arxiv.org/abs/1412.6980)]
 #### System-Level Techniques  
+- An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
+- PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
+- Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://arxiv.org/abs/2105.14500)]
+- Maximizing Parallelism in Distributed Training for Huge Neural Networks, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2105.14450)] 
+- Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC, 2021</ins> [[Paper](https://arxiv.org/abs/2104.04473)] [[Code](https://github.com/nvidia/megatron-lm)]
+- ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://arxiv.org/abs/2101.06840)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
+- ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training, <ins>VLDB, 2020</ins> [[Paper](https://arxiv.org/abs/2006.15704)]
 - Measuring the Effects of Data Parallelism on Neural Network Training, <ins>JMLR, 2019</ins> [[Paper](https://arxiv.org/abs/1811.03600)]
 - PipeDream: Fast and Efficient Pipeline Parallel DNN Training, <ins>SOSP, 2019</ins> [[Paper](https://arxiv.org/abs/1806.03377)]
 - GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism, <ins>NeurIPS, 2019</ins> [[Paper](https://arxiv.org/abs/1811.06965)] [[Code]()]
-- Maximizing Parallelism in Distributed Training for Huge Neural Networks, <ins>Arxiv, 2021</ins> [[Paper](https://arxiv.org/abs/2105.14450)] 
-- Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM, <ins>SC, 2021</ins> [[Paper](https://arxiv.org/abs/2104.04473)] [[Code](https://github.com/nvidia/megatron-lm)]
-- Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://arxiv.org/abs/2105.14500)]
-- An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://arxiv.org/abs/2104.05343)] [[Code](https://github.com/xuqifan897/Optimus)]
-- ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
-- PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
-- ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://arxiv.org/abs/2101.06840)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
 ##### Adapter-Tuning
@@ -363,6 +363,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - RWKV: Reinventing RNNs for the Transformer Era, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13048)]
 - Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
 - MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
+
 ## 🔢 Data-Centric
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
@@ -382,22 +383,21 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Few-Shot Prompting
 ##### Demonstration Organization
 ###### Demonstration Selection  
-- Self-Adaptive In-Context Learning: An Information Compression Perspective for In-Context Example Selection and Ordering, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.79.pdf)] [[Code](https://github.com/Shark-NLP/self-adaptive-ICL)]
-- What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
-- Selective Annotation Makes Language Models Better Few-Shot Learners, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01975)] [[Code](https://github.com/xlang-ai/icl-selective-annotation)]
-- Learning To Retrieve Prompts for In-Context Learning, <ins>NAACL-HLT, 2022</ins> [[Paper](https://arxiv.org/abs/2112.08633)] [[Code](https://github.com/OhadRubin/EPR)]
 - Unified Demonstration Retriever for In-Context Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04320)] [[Code](https://arxiv.org/abs/2305.04320)]
+- Self-Adaptive In-Context Learning: An Information Compression Perspective for In-Context Example Selection and Ordering, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.79.pdf)] [[Code](https://github.com/Shark-NLP/self-adaptive-ICL)]
+- Selective Annotation Makes Language Models Better Few-Shot Learners, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01975)] [[Code](https://github.com/xlang-ai/icl-selective-annotation)]
+- What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
+- Learning To Retrieve Prompts for In-Context Learning, <ins>NAACL-HLT, 2022</ins> [[Paper](https://arxiv.org/abs/2112.08633)] [[Code](https://github.com/OhadRubin/EPR)]
 ###### Demonstration Ordering
 - Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity, <ins>ACL, 2022</ins> [[Paper](https://arxiv.org/abs/2104.08786)]
 - What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
 ##### Template Formatting
 ###### Instruction Generation
+- Large Language Models as Optimizers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.03409)]
 - Instruction Induction: From Few Examples to Natural Language Task Descriptions, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2205.10782)] [[Code](https://github.com/orhonovich/instruction-induction)]
 - Large Language Models Are Human-Level Prompt Engineers, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2211.01910)] [[Code](https://github.com/keirp/automatic_prompt_engineer)]
 - Self-Instruct: Aligning Language Models with Self-Generated Instructions, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
-- Large Language Models as Optimizers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.03409)]
 ###### Multi-step Reasoning
-- Emergent Abilities of Large Language Models, <ins>TMLR, 2022</ins> [[Paper](https://arxiv.org/abs/2206.07682)]
 - Automatic Chain of Thought Prompting in Large Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03493)] [[Code](https://github.com/amazon-science/auto-cot)]
 - Measuring and Narrowing the Compositionality Gap in Language Models, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03350)] [[Code](https://github.com/ofirpress/self-ask)]
 - ReAct: Synergizing Reasoning and Acting in Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03629)] [[Code](https://github.com/ysymyth/ReAct)]
@@ -408,6 +408,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Graph of Thoughts: Solving Elaborate Problems with Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.09687)] [[Code](https://github.com/spcl/graph-of-thoughts)]
 - Contrastive Chain-of-Thought Prompting, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2311.09277.pdf)] [[Code](https://github.com/DAMO-NLP-SG/contrastive-cot)]
 - Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.04254)]
+- Emergent Abilities of Large Language Models, <ins>TMLR, 2022</ins> [[Paper](https://arxiv.org/abs/2206.07682)]
 #### Prompt Compression
 - Learning to Compress Prompts with Gist Tokens, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.08467)]
 - Adapting Language Models to Compress Contexts, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14788)] [[Code](https://github.com/princeton-nlp/AutoCompressors)]
@@ -416,13 +417,13 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Discrete Prompt Compression with Reinforcement Learning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.08758)]
 - Nugget 2D: Dynamic Contextual Compression for Scaling Decoder-only Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.02409)]
 #### Prompt Generation  
+- TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 - Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.03044)] [[Code](https://github.com/yumeng5/FewGen)]
 - Large Language Models Are Human-Level Prompt Engineers, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2211.01910)] [[Code](https://github.com/keirp/automatic_prompt_engineer)]
 - TempLM: Distilling Language Models into Template-Based Generators, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2205.11055)] [[Code](https://github.com/Tiiiger/templm)]
 - PromptGen: Automatically Generate Prompts using Generative Models, <ins>Findings-NAACL, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.3/)]
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
-- TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 
 ## 🧑‍💻 LLM Frameworks
 ### LLM Frameworks Supporting Efficient Training and Inference
