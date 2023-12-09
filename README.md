@@ -53,7 +53,12 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
-      - [General Attention Optimization](#General-Attention-Optimization)
+      - [Sharing-Based Attention Acceleration](#Sharing-Based-Attention-Acceleration)
+      - [Feature Information Reduction](#Feature-Information-Reduction)
+      - [Kernelization Or Low-Rank](#Kernelization-Or-Low-Rank)
+      - [Fixed Pattern Strategies](#Fixed-Pattern-Strategies)
+      - [Learnable Pattern Strategies](#Learnable-Pattern-Strategies)
+      - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
       - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
@@ -271,7 +276,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Funnel-transformer: Filtering out sequential redundancy for efficient language processing, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.03236)] [[Code](https://github.com/laiguokun/Funnel-Transformer)]
 - Nyströmformer: A nyström-based algorithm for approximating self-attention, <ins>AAAI, 2021</ins> [[Paper](https://arxiv.org/abs/2102.03902)] [[Code](https://github.com/mlpen/Nystromformer)]
 - Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks, <ins>ICML, 2019</ins> [[Paper](https://arxiv.org/abs/1810.00825)]
-##### Kernelization or Low-Rank
+##### Kernelization Or Low-Rank
 - Sumformer: Universal Approximation for Efficient Transformers, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02301)]
 - FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
@@ -293,7 +298,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Fast Transformers with Clustered Attention, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/pdf/2007.04825.pdf)] [[Code](https://github.com/idiap/fast-transformers)]
 - ClusterFormer: Neural Clustering Attention for Efficient and Effective Transformer, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.170/)]
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
-##### Hardware-assisted Attention
+##### Hardware-Assisted Attention
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
