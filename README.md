@@ -463,7 +463,7 @@ This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> 
 1. If you have any suggestions regarding our summarized category, find any missed papers or find any preprint papers with arXiv links have been published. Feel free to send us an email or submit a **pull request** using following markdown format.
 
 ```markdown
-**Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
+Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
 ```
 
 2. If one preprint paper has multiple versions, please use **the earliest submitted year**.
