@@ -259,8 +259,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2211.05102)]
 - S3: Increasing GPU Utilization during Generative Inference for Higher Throughput, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.06000)]
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
-- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
-- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - DeepSpeed-inference: enabling efficient inference of transformer models at unprecedented scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
 - Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
 - Just-in-Time Dynamic-Batchin, <ins>NeurIPS Systems for ML Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
