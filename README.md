@@ -370,13 +370,13 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ##### Demonstration Organization
 ###### Demonstration Selection  
 - Unified Demonstration Retriever for In-Context Learning, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2305.04320)] [[Code](https://arxiv.org/abs/2305.04320)]
-- Large Language Models Are Latent Variable Models: Explaining and Finding Good Demonstrations for In-Context Learning,
-- In-Context Learning with Iterative Demonstration Selection, [[Paper](https://arxiv.org/abs/2310.09881)]
-- Dr.ICL: Demonstration-Retrieved In-context Learning, [[Paper](https://arxiv.org/abs/2305.14128)]
-- Learning to Retrieve In-Context Examples for Large Language Models, [[Paper](https://arxiv.org/abs/2307.07164)]
-- Finding Supporting Examples for In-Context Learning, [[Paper](https://arxiv.org/abs/2302.13539)]
-- In-Context Learning with Many Demonstration Examples, [[Paper](https://arxiv.org/abs/2302.04931)]
-- How Many Demonstrations Do You Need for In-context Learning? [[Paper](https://arxiv.org/abs/2303.08119)]
+- Large Language Models Are Latent Variable Models: Explaining and Finding Good Demonstrations for In-Context Learning, <ins> NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2301.11916)] [[Code](https://github.com/WANGXinyiLinda/concept-based-demonstration-selection)]
+- In-Context Learning with Iterative Demonstration Selection, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2310.09881)]
+- Dr.ICL: Demonstration-Retrieved In-context Learning, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2305.14128)]
+- Learning to Retrieve In-Context Examples for Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2307.07164)]
+- Finding Supporting Examples for In-Context Learning, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2302.13539)]
+- In-Context Learning with Many Demonstration Examples, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2302.04931)]
+- How Many Demonstrations Do You Need for In-context Learning?, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2303.08119)]
 - Self-Adaptive In-Context Learning: An Information Compression Perspective for In-Context Example Selection and Ordering, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.79.pdf)] [[Code](https://github.com/Shark-NLP/self-adaptive-ICL)]
 - Selective Annotation Makes Language Models Better Few-Shot Learners, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01975)] [[Code](https://github.com/xlang-ai/icl-selective-annotation)]
 - What Makes Good In-Context Examples for GPT-3? <ins>DeeLIO, 2022</ins> [[Paper](https://arxiv.org/abs/2101.06804)]
