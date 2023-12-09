@@ -460,13 +460,7 @@ This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> 
 
 <!-- **<font color='red'>Work still in progress</font>**  🚀, **we appreciate any suggestions and contributions** ❤️. -->
 
-1. If you 
-
-- Have any suggestions regarding our summarized category;
-
-- Find any missed papers;
-
-- Find any preprint papers with arXiv link have been published;
+1. If you have any suggestions regarding our summarized category, find any missed papers or find any preprint papers with arXiv link have been published;
 
 feel free to send us an email or submit a pull request using following markdown format.
 
