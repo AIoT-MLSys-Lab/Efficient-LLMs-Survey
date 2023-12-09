@@ -301,6 +301,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
 #### Mixture of Experts
 ##### MoE-based LLMs
+- Mistral 7B, <ins>Mistral AI Blog, 2023</ins> [[Blog](https://mistral.ai/news/announcing-mistral-7b/)] [[Code](https://github.com/mistralai/mistral-src)]
 - GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16668)]
 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity, <ins>JMLR, 2022</ins> [[Paper](https://jmlr.org/papers/volume23/21-0998/21-0998.pdf)] [[Code](https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py)]
 - Efficient Large Scale Language Modeling with Mixtures of Experts, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2112.10684)] [[Code](https://github.com/facebookresearch/fairseq/tree/main/examples/moe_lm)]
