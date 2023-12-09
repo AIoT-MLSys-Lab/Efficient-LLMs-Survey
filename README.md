@@ -219,7 +219,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/pdf/2303.10512)] 
 - DyLoRA: Parameter-Efficient Tuning of Pretrained Models using Dynamic Search-Free Low Rank Adaptation, <ins>EACL, 2023</ins> [[Paper](https://aclanthology.org/2023.eacl-main.239/)] [[Code](https://github.com/huawei-noah/KD-NLP/tree/main/DyLoRA)]
 - CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
-- Tied-Lora: Enhacing parameter efficiency of LoRA with weight tying, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.09578)]
+- Tied-Lora: Enhacing Parameter Efficiency of LoRA with Weight Tying, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.09578)]
 ##### Prefix-Tuning
 - Prefix-Tuning: Optimizing Continuous Prompts for Generation <ins>ACL-IJCNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2101.00190)] [[Code](https://github.com/XiangLi1999/PrefixTuning)]
 - P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
@@ -257,11 +257,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/abs/2211.05102)]
 - S3: Increasing GPU Utilization during Generative Inference for Higher Throughput, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.06000)]
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
-- DeepSpeed-inference: enabling efficient inference of transformer models at unprecedented scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
+- DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
 - Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
 - Just-in-Time Dynamic-Batchin, <ins>NeurIPS Systems for ML Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 - SMDP-Based Dynamic Batching for Efficient Inference on GPU-Based Platforms, <ins>ICC, 2023</ins> [[Paper](https://arxiv.org/abs/2301.12865)]
-- Flash-Decoding for long-context inference, <ins>PyTorch, 2023</ins> [[Blog](https://pytorch.org/blog/flash-decoding/)]
+- Flash-Decoding for Long-Context Inference, <ins>PyTorch, 2023</ins> [[Blog](https://pytorch.org/blog/flash-decoding/)]
 - FlashDecoding++: Faster Large Language Model Inference on GPUs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.01282)]
 ### Efficient Architecture
 #### Efficient Attention
@@ -282,7 +282,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Random Feature Attention, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2103.02143)]
 - Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16236)] [[Code](https://github.com/idiap/fast-transformers)]
 ##### Fixed Pattern Strategies
-- Big bird: Transformers for longer sequences, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2007.14062)] [[Code](https://github.com/google-research/bigbird)]
+- Big Bird: Transformers for Longer Sequences, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2007.14062)] [[Code](https://github.com/google-research/bigbird)]
 - Poolingformer: Long Document Modeling with Pooling Attention, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2105.04371)]
 - Longformer: The Long-Document Transformer, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2004.05150)] [[Code](https://github.com/allenai/longformer)]
 - Blockwise Self-Attention for Long Document Understanding, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/1911.02972v)] [[Code](https://github.com/xptree/BlockBERT)]
@@ -326,7 +326,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/pdf/2108.12409.pdf)] [[Code](https://github.com/ofirpress/attention_with_linear_biases)]
 - A Length-Extrapolatable Transformer, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.816/)] [[Code](https://aka.ms/LeX-Transformer)]
 - Extending Context Window of Large Language Models via Positional Interpolation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15595)]
-- NTK interpolation, [[Reddit post](https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/)]
+- NTK Interpolation, [[Reddit post](https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/)]
 - YaRN: Efficient Context Window Extension of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.00071)] [[Code](https://github.com/jquesnelle/yarn)]
 -  Functional Interpolation for Relative Positions Improves Long Context Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.04418.pdf)]
 - The EOS Decision and Length Extrapolation, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/2010.07174)] [[Code](https://github.com/bnewm0609/eos-decision)]
