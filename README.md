@@ -38,7 +38,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
     - [System-Level Pre-Training Acceleration](#System-Level-Techniques)
-      - [Distributed Pre-Training](#Distributed-Pre-Training)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
     - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
       - [Adapter-Tuning](#Adapter-tuning)
@@ -190,7 +189,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Symbolic Discovery of Optimization Algorithms, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
 #### System-Level Techniques  
-##### Distributed Pre-Training
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training
 - Measuring the Effects of Data Parallelism on Neural Network Training
 - PipeDream: Fast and Efficient Pipeline Parallel DNN Training
