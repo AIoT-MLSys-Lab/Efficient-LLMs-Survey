@@ -6,68 +6,70 @@
 
 > *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>Amazon AWS AI, <sup>5</sup>Google Research, <sup>6</sup>Boson AI, <sup>7</sup>Microsoft Research Asia, <sup>8</sup>University of Michigan*  
 
-## What is This Survey About?
+## 📌 What is This Survey About?
 
 Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding, language generation, and complex reasoning and have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing the efficiency challenges posed by LLMs. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of the research developments in efficient LLMs and inspire them to contribute to this important and exciting field. We will actively maintain this repository and incorporate new research as it emerges. 
 
-## Why Efficient LLMs are Needed?
+## 🤔 Why Efficient LLMs are Needed?
 
 ![img/image.jpg](img/image.jpg)
 
 Although LLMs are leading the next wave of AI revolution, the remarkable capabilities of LLMs come at the cost of their substantial resource demands. Figure 1 (left) illustrates the relationship between model performance and the carbon emissions during training for LLaMA series. As shown, the amount of carbon emitted grows exponentially as the number of model parameter scales up. In addition to training, inference also contributes quite significantly to the operational cost of LLMs. As depicted in Figure 2 (right), more advanced LLMs exhibit higher memory usage and energy consumption during inference, presenting challenges for these models in expanding their reach to a broader customer base and diverse applications in a cost-effective way. With the rapid expansion of applications and the customer base for LLMs, the operational cost during inference in terms of energy consumption and memory usage would increase and exceed the training cost and become the dominant factor for the overall environmental impact. 
 
-## Table of Content
-- [Model-Centric Methods](#Model-Centric) 
+## 📖 Table of Content
+- [🤖 Model-Centric Methods](#-Model-Centric) 
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
-      - [Post-Training Quantitation](#Post-Training-Quantitation)
+      - [Post-Training Quantization](#Post-Training-Quantization)
         - [Weight-based Quantization](#Weight-based-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
+      - [Quantization-Aware Training](#Quantization-Aware-Training)
+      - [Quantization-Aware Fine-Tuning](#Quantization-Aware-Fine-Tuning)
     - [Parameter Pruning](#Parameter-Pruning)
       - [Structured Pruning](#Structured-Pruning)
       - [Unstructured Pruning](#Unstructured-Pruning)
     - [Low-rank Decomposition](#Low-rank-Decomposition)
     - [Knowledge Distillation](#Knowledge-Distillation)
-      - [White-box KD](#White-box-KD)
-      - [Black-box KD](#Black-box-KD)
+      - [White-Box KD](#White-Box-KD)
+      - [Black-Box KD](#Black-Box-KD)
   - [Efficient Pre-Training](#Efficient-Pre-Training)
     - [Mixed Precision Acceleration](#Mixed-Precision-Acceleration)
     - [Scaling Models](#Scaling-Models)
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
-    - [System-level Pre-Training Acceleration](#System-level-Techniques)
+    - [System-Level Pre-Training Acceleration](#System-Level-Techniques)
       - [Distributed Pre-Training](#Distributed-Pre-Training)
-      - [Hardware-assisted Attention Acceleration](#Hardware-assisted-Attention-Acceleration)
+      - [Hardware-Assisted Attention Acceleration](#Hardware-Assisted-Attention-Acceleration)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
-    - [Parameter Efficient Fine-tuning](#Parameter-Efficient-Fine-tuning)
-      - [Adapter-tuning](#Adapter-tuning)
+    - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
+      - [Adapter-Tuning](#Adapter-tuning)
       - [Low-Rank Adaptation](#Low-Rank-Adaptation)
-      - [Prefix-tuning](#Prefix-tuning)
-      - [Prompt-tuning](#Prompt-tuning)
-    - [Memory Efficient Fine-tuning](#Memory-Efficient-Fine-tuning)
+      - [Prefix-Tuning](#Prefix-Tuning)
+      - [Prompt-Tuning](#Prompt-Tuning)
+    - [Memory Efficient Fine-Tuning](#Memory-Efficient-Fine-Tuning)
   - [Efficient Inference](#Efficient-Inference)
-    - [Algorithm-level Inference Acceleration](#Algorithm-level-Inference-Acceleration)
+    - [Algorithm-Level Inference Acceleration](#Algorithm-Level-Inference-Acceleration)
       - [Speculative Decoding](#Speculative-Decoding)
-      - [KV-cache Optimization](#KV-cache-Optimization)
-      - [Sharing-based Attention Acceleration](#Sharing-based-Attention-Acceleration)
-    - [System-level Inference Acceleration](#System-level-Inference-Acceleration)
+      - [KV-Cache Optimization](#KV-Cache-Optimization)
+      - [Sharing-Based Attention Acceleration](#Sharing-Based-Attention-Acceleration)
+    - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
       - [General Attention Optimization](#General-Attention-Optimization)
       - [Attention Optimization for LLMs](#Attention-Optimization-for-LLMs)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
-      - [Algorithm-level MoE Optimization](#Algorithm-level-MoE-Optimization)
-      - [System-level MoE Acceleration](#System-level-MoE-Acceleration)
+      - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
+      - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
     - [Long-context LLMs](#Long-Context-LLMs)
       - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
       - [Recurrent Structure](#Recurrent-Structure)
       - [Window & Stream Structure](#Window-&-Stream-Structure)
       - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
-    - [Transformer Alternate Architecture](#Transformer-Alternate-Architecture)
+    - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
-- [Data-Centric Methods](#Data-Centric)
+- [🔢 Data-Centric Methods](#-Data-Centric)
   - [Data Selection](#Data-Selection)
     - [Data Selection for Efficient Pre-Training](#Data-Selection-for-Efficient-Pre-Training)
     - [Data Selection for Efficient Fine-Tuning](#Data-Selection-for-Efficient-Fine-Tuning)
@@ -78,18 +80,18 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Demonstration Ordering](#Demonstration-Ordering)
       - [Template Formatting](#Template-Formatting)
         - [Instruction Generation](#Instruction-Generation)
-        - [Multi-step Reasoning](#Multi-step-Reasoning)
+        - [Multi-Step Reasoning](#Multi-Step-Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
-- [LLM Frameworks](#LLM-Frameworks)
+- [🧑‍💻 LLM Frameworks](#-LLM-Frameworks)
   - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
   - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
 
 
-## Model-Centric
+## 🤖 Model-Centric
 ### Model Compression
 #### Quantization
-##### Post-Training Quantitation
+##### Post-Training Quantization
 ###### Weight-based Quantization
 - LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale, <ins>NeurlPS, 2022</ins> [[Paper](https://openreview.net/forum?id=dXiGWqBoxaD)] [[Code](https://doi.org/10.48550/arXiv.2208.07339)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
@@ -106,11 +108,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - RPTQ: Reorder-based Post-training Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.01089)]
 - Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and scaling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.09145)]
 - QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.08041)]
-##### Quantitation-aware Training
+##### Quantization-Aware Training
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - LLM-QAT: Data-Free Quantization Aware Training for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17888)] 
 - BitNet: Scaling 1-bit Transformers for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.11453)]
-##### Fine-Tuning Enhanced Quantization
+##### Quantization-Aware Fine-Tuning
 - QLoRA: Efficient Finetuning of Quantized LLMs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)]
 - Memory-Efficient Fine-Tuning of Compressed Large Language Models via sub-4-bit Integer Quantization, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14152)]
 - QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.14717 )]
@@ -130,7 +132,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.08302)]
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 #### Knowledge Distillation
-##### White-box KD
+##### White-Box KD
 - Towards the Law of Capacity Gap in Distilling Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.07052)] [[Code](https://github.com/GeneZC/MiniMA)]
 - Baby Llama: knowledge distillation from an ensemble of teachers trained on a small dataset with no performance penalty, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
 - Knowledge Distillation of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.08543)] [[Code](https://github.com/microsoft/LMOps/tree/main/minillm)]
@@ -139,7 +141,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Less is More: Task-aware Layer-wise Distillation for Language Model Compression, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/pdf/2210.01351.pdf)]
 - Compression of Generative Pre-trained Language Models via Quantization, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.331.pdf)]
 - Token-Scaled Logit Distillation for Ternary Weight Generative Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.06744)]
-##### Black-box KD
+##### Black-Box KD
 - Instruction Tuning with GPT-4 <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.03277)] [[Code](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)]
 - Meta-learning via Language Model In-context Tuning, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.07814)] [[Code](https://github.com/yandachen/In-context-Tuning)]
 - MetaICL: Learning to Learn In Context, <ins>Arxiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.15943)] [[Code](https://github.com/facebookresearch/MetaICL)]
@@ -185,7 +187,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Decoupled weight decay regularization, <ins>ICLR, 2019</ins> [[Paper](https://arxiv.org/abs/1711.05101)] [[Code](https://github.com/loshchil/AdamW-and-SGDW)]
 - Symbolic Discovery of Optimization Algorithms, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
-#### System-level Techniques  
+#### System-Level Techniques  
 ##### Distributed Pre-Training
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training
 - Measuring the Effects of Data Parallelism on Neural Network Training
@@ -198,10 +200,10 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
 - ZeRO-Offload: Democratizing Billion-Scale Model Training  
-##### Hardware-assisted Attention Acceleration
+##### Hardware-Assisted Attention Acceleration
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
-### Efficient Fine-tuning
+### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
 ##### Adapter-Tuning
 - LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
@@ -237,23 +239,24 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 ### Efficient Inference
-#### Algorithm-level Inference Acceleration
+#### Algorithm-Level Inference Acceleration
 ##### Speculative Decoding
+- Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads, <ins>Blog, 2023</ins> [[Blog](https://sites.google.com/view/medusa-llm)] [[Code](https://github.com/FasterDecoding/Medusa)]
 - Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
 - Accelerating LLM Inference with Staged Speculative Decoding, <ins>ES-FOMO at ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
 - Accelerating Large Language Model Decoding with Speculative Sampling, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.01318)]
 - Speculative Decoding with Big Little Decoder, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.07863)] [[Code](https://github.com/kssteven418/BigLittleDecoder)]
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>Arxiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/unilm)]
-##### KV-cache Optimization
+##### KV-Cache Optimization
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
 - Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
-##### Sharing-based Attention Acceleration
+##### Sharing-Based Attention Acceleration
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
-#### System-level Inference Acceleration
+#### System-Level Inference Acceleration
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
 - Efficiently Scaling Transformer Inference, <ins>MLSys, 2023</ins> [[Paper](https://proceedings.mlsys.org/paper_files/paper/2023/file/523f87e9d08e6071a3bbd150e6da40fb-Paper-mlsys2023.pdf)]
@@ -316,18 +319,19 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Large Scale Language Modeling with Mixtures of Experts, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2112.10684)] [[Code](https://github.com/facebookresearch/fairseq/tree/main/examples/moe_lm)]
 - BASE Layers: Simplifying Training of Large, Sparse Models, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2103.16716)] [[Code](https://github.com/pytorch/fairseq/)]
 - PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.10845)]
-##### Algorithm-level MoE Optimization
+##### Algorithm-Level MoE Optimization
 - Mixture-of-Experts with Expert Choice Routing, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/2f00ecd787b432c1d36f3de9800728eb-Paper-Conference.pdf)]
 - StableMoE: Stable Routing Strategy for Mixture of Experts, <ins>Arxiv, 2022</ins> [[Paper](https://arxiv.org/pdf/2204.08396.pdf)] [[Code](https://github.com/Hunter-DDM/stablemoe)]
 - On the Representation Collapse of Sparse Mixture of Experts, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2204.09179)]
 - TA-MoE: Topology-Aware Large Scale Mixture-of-Expert Training, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2302.09915)] [[Code](https://github.com/Chen-Chang/TA-MoE)]
 - Lifelong Language Pretraining with Distribution-Specialized Experts, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12281)]
 - Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14705)]
-##### System-level MoE Acceleration
+##### System-Level MoE Acceleration
 - FastMoE: A Fast Mixture-of-Expert Training System, <ins>PPoPP, 2022</ins> [[Paper](https://arxiv.org/abs/2103.13262)] [[Code](https://github.com/laekov/fastmoe)]
 - FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models, <ins>PPoPP, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3503221.3508418)] [[Code](https://github.com/thu-pacman/FasterMoE)]
 - DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2201.05596.pdf)] [[Code](https://github.com/microsoft/DeepSpeed)]
 - Tutel: Adaptive mixture-of-experts at scale, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2206.03382.pdf)] [[Code](https://github.com/microsoft/tutel)]
+- MegaBlocks: Efficient Sparse Training with Mixture-of-Experts, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2211.15841.pdf)] [[Code](https://github.com/stanford-futuredata/megablocks)]
 - SmartMoE: Efficiently Training Sparsely-Activated Models through Combining Offline and Online Parallelization, <ins>USENIX ATC, 2023</ins> [[Paper](https://www.usenix.org/conference/atc23/presentation/zhai)]
 #### Long-Context LLMs
 ##### Extrapolation and Interpolation
@@ -353,14 +357,15 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LongNet: Scaling Transformers to 1,000,000,000 Tokens, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02486)] [[Code](https://github.com/microsoft/unilm/tree/master)]
 - Efficient Long-Text Understanding with Short-Text Models, <ins>TACL, 2023</ins> [[Paper](https://arxiv.org/abs/2208.00748)] [[Code](https://github.com/Mivg/SLED)]
 ##### Memory-Retrieval Augmentation
-- Memorizing Transformers, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2203.08913)] [[Code]()]
+- Memorizing Transformers, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2203.08913)] [[Code](https://github.com/lucidrains/memorizing-transformers-pytorch)]
 - Landmark Attention: Random-Access Infinite Context Length for Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.16300)] [[Code](https://github.com/epfml/landmark-attention/)]
 - Augmenting Language Models with Long-Term Memory, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.07174)]
 - Unlimiformer: Long-Range Transformers with Unlimited Length Input, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.01625)] [[Code](https://github.com/abertsch72/unlimiformer)]
 - Focused Transformer: Contrastive Training for Context Scaling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03170)] [[Code](https://github.com/CStanKonrad/long_llama)]
 - Retrieval meets Long Context Large Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
-#### Transformer Alternate Architecture
+#### Transformer Alternative Architecture
 ##### State Space Models
+- Sparse Modular Activation for Efficient Sequence Modeling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11197)] [[Code](https://github.com/renll/SeqBoat)]
 - Mamba: Linear-Time Sequence Modeling with Selective State Spaces, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.00752)] [[Code](https://github.com/state-spaces/mamba)]
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
@@ -372,7 +377,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
 - MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
 
-## Data-Centric
+## 🔢 Data-Centric
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
 - Data Selection Strategies for Multi-Domain Sentiment Analysis, <ins>Arxiv, 2017</ins> [[Paper](https://arxiv.org/abs/1702.02426)]
@@ -433,7 +438,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 - TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 
-## LLM Frameworks
+## 🧑‍💻 LLM Frameworks
 ### LLM Frameworks Supporting Efficient Training and Inference
 - DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
 - Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
@@ -452,8 +457,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Mosec [[Code](https://github.com/mosecorg/mosec)]
 - LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
 
-## Citation
-If you find this useful for your work, please consider citing:
+## 🖌️ Citation
+If you find this survey useful to your work, please consider citing:
 ```
 @misc{wan2023efficient,
       title={Efficient Large Language Models: A Survey}, 
@@ -464,3 +469,22 @@ If you find this useful for your work, please consider citing:
       primaryClass={cs.CL}
 }
 ```
+## ❤️ Contribution
+
+This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> (wang.15980@osu.edu), <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> (wan.512@osu.edu), and <ins>[mi-zhang](https://github.com/mi-zhang)</ins> (mizhang.1@osu.edu). **We welcome feedback, suggestions, and contributions that can help improve this survey and repository so as to make them valuable resources to benefit the entire community**.
+
+
+<!-- **<font color='red'>Work still in progress</font>**  🚀, **we appreciate any suggestions and contributions** ❤️. -->
+
+If you have any suggestions or find any missed papers, feel free to send us an email or submit a pull request:
+
+1. Use following markdown format.
+
+```markdown
+**Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
+```
+
+2. If one preprint paper has multiple versions, please use **the earliest submitted year**.
+   
+3. Display the papers in **a year descending order** (the latest, the first).
+
