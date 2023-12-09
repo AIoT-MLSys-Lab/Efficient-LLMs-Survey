@@ -39,7 +39,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Optimization Strategies](#Optimization-Strategies)
     - [System-Level Pre-Training Acceleration](#System-Level-Techniques)
       - [Distributed Pre-Training](#Distributed-Pre-Training)
-      - [Hardware-Assisted Attention Acceleration](#Hardware-Assisted-Attention-Acceleration)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
     - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
       - [Adapter-Tuning](#Adapter-tuning)
@@ -51,12 +50,10 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Algorithm-Level Inference Acceleration](#Algorithm-Level-Inference-Acceleration)
       - [Speculative Decoding](#Speculative-Decoding)
       - [KV-Cache Optimization](#KV-Cache-Optimization)
-      - [Sharing-Based Attention Acceleration](#Sharing-Based-Attention-Acceleration)
     - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
       - [General Attention Optimization](#General-Attention-Optimization)
-      - [Attention Optimization for LLMs](#Attention-Optimization-for-LLMs)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
       - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
@@ -200,9 +197,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC'20, 2020</ins> [[Paper](https://arxiv.org/abs/1910.02054)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>Proc. VLDB Endow, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
 - ZeRO-Offload: Democratizing Billion-Scale Model Training  
-##### Hardware-Assisted Attention Acceleration
-- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
-- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
 ##### Adapter-Tuning
@@ -253,9 +247,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
 - Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
-##### Sharing-Based Attention Acceleration
-- Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
-- GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
 #### System-Level Inference Acceleration
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://www.andrew.cmu.edu/user/beidic/)]
@@ -273,12 +264,14 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FlashDecoding++: Faster Large Language Model Inference on GPUs, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.01282)]
 ### Efficient Architecture
 #### Efficient Attention
-##### General Attention Optimization
-###### Feature Information Reduction
+##### Sharing-Based Attention Acceleration
+- Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
+- GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
+##### Feature Information Reduction
 - Funnel-transformer: Filtering out sequential redundancy for efficient language processing, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2006.03236)] [[Code](https://github.com/laiguokun/Funnel-Transformer)]
 - Nyströmformer: A nyström-based algorithm for approximating self-attention, <ins>AAAI, 2021</ins> [[Paper](https://arxiv.org/abs/2102.03902)] [[Code](https://github.com/mlpen/Nystromformer)]
 - Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks, <ins>ICML, 2019</ins> [[Paper](https://arxiv.org/abs/1810.00825)]
-###### Kernelization or Low-Rank
+##### Kernelization or Low-Rank
 - Sumformer: Universal Approximation for Efficient Transformers, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02301)]
 - FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
@@ -287,28 +280,22 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Rethinking Attention with Performers,  <ins>ICLR, 2021</ins> [[Paper](https://openreview.net/forum?id=Ua6zuk0WRH)] [[Code](https://github.com/lucidrains/performer-pytorch)]
 - Random Feature Attention, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2103.02143)]
 - Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2006.16236)] [[Code](https://github.com/idiap/fast-transformers)]
-###### Fixed Pattern Strategies
+##### Fixed Pattern Strategies
 - Big bird: Transformers for longer sequences, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2007.14062)] [[Code](https://github.com/google-research/bigbird)]
 - Poolingformer: Long Document Modeling with Pooling Attention, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2105.04371)]
 - Longformer: The Long-Document Transformer, <ins>Arxiv, 2020</ins> [[Paper](https://arxiv.org/abs/2004.05150)] [[Code](https://github.com/allenai/longformer)]
 - Blockwise Self-Attention for Long Document Understanding, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/1911.02972v)] [[Code](https://github.com/xptree/BlockBERT)]
 - Generating Long Sequences with Sparse Transformers, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1904.10509)]
 - Faster Causal Attention Over Large Sequences Through Sparse Flash Attention, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2306.01160)]
-###### Learnable Pattern Strategies
+##### Learnable Pattern Strategies
 - Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
 - Sparse Sinkhorn Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2002.11296)]
 - Fast Transformers with Clustered Attention, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/pdf/2007.04825.pdf)] [[Code](https://github.com/idiap/fast-transformers)]
 - ClusterFormer: Neural Clustering Attention for Efficient and Effective Transformer, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.170/)]
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
-###### Hardware-assisted Attention
+##### Hardware-assisted Attention
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
-- FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
-- FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
-##### Attention Optimization for LLMs
-- Fast Transformer Decoding: One Write-Head is All You Need, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
-- GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
-- Generating Long Sequences with Sparse Transformers, <ins>Arxiv, 2019</ins> [[Paper](https://arxiv.org/abs/1904.10509)]
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>Arxiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
