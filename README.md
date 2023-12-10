@@ -28,7 +28,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Parameter Pruning](#Parameter-Pruning)
       - [Structured Pruning](#Structured-Pruning)
       - [Unstructured Pruning](#Unstructured-Pruning)
-    - [Low-rank Decomposition](#Low-rank-Decomposition)
+    - [Low-Rank Approximation](#Low-Rank-Approximation)
     - [Knowledge Distillation](#Knowledge-Distillation)
       - [White-Box KD](#White-Box-KD)
       - [Black-Box KD](#Black-Box-KD)
@@ -129,7 +129,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
 - A Simple and Effective Pruning Approach for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11695)] [[Code](https://github.com/locuslab/wanda)]
 - One-Shot Sensitivity-Aware Mixed Sparsity Pruning for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.09499v1.pdf)]
-#### Low-rank Decomposition
+#### Low-Rank Approximation
 - TensorGPT: Efficient Compression of the Embedding Layer in LLMs based on the Tensor-Train Decomposition, <ins>arXiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.00526)]
 - ZeroQuant-V2: Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.08302)] [[Code](https://github.com/microsoft/DeepSpeed)]
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
