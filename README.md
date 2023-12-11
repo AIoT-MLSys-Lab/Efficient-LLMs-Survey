@@ -217,7 +217,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
 - Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
 - PPT: Pre-trained Prompt Tuning for Few-shot Learning, <ins>ACL, 2022</ins> [[Paper](https://arxiv.org/abs/2109.04332)] [[Code](https://github.com/thu-coai/PPT)]
-- Parameter-Efficient Prompt Tuning Makes Generalized and Calibrated Neural Text Retrievers <ins>EMNLP-Findings, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2/tree/main/PT-Retrieval)]
+- Parameter-Efficient Prompt Tuning Makes Generalized and Calibrated Neural Text Retrievers, <ins>EMNLP-Findings, 2022</ins> [[Paper](https://arxiv.org/abs/2207.07087)] [[Code](https://github.com/THUDM/P-tuning-v2/tree/main/PT-Retrieval)]
 - P-Tuning v2: Prompt Tuning Can Be Comparable to Finetuning Universally Across Scales and Tasks，<ins>ACL-Short, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
 - The Power of Scale for Parameter-Efficient Prompt Tuning, <ins>EMNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08691)]
 #### Memory-Efficient Fine-Tuning
