@@ -191,7 +191,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - PyTorch Distributed: Experiences on Accelerating Data Parallel Training, <ins>VLDB, 2020</ins> [[Paper](https://dl.acm.org/doi/10.14778/3415478.3415530)]
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
-##### Adapter-Tuning
+##### Adapter-based Tuning
 - OpenDelta: A Plug-and-play Library for Parameter-efficient Adaptation of Pre-trained Models, <ins>ACL Demo, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-demo.26/)] [[Code](https://github.com/thunlp/OpenDelta)]
 - LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/pdf/2304.01933.pdf)] [[Code](https://github.com/AGI-Edgerunners/LLM-Adapters)]
 - Compacter: Efficient Low-Rank Hypercomplex Adapter Layers, <ins>NeurIPS, 2023</ins> [[Paper](https://openreview.net/forum?id=bqGK5PyI6-N)] [[Code](https://github.com/rabeehk/compacter)]
@@ -209,11 +209,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - CPET: Effective Parameter-Efficient Tuning for Compressed Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.07705)]
 - Tied-Lora: Enhacing Parameter Efficiency of LoRA with Weight Tying, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.09578)]
 - LoRA: Low-Rank Adaptation of Large Language Models, <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=nZeVKeeFYf9)] [[Code](https://github.com/microsoft/LoRA)]
-##### Prefix-Tuning
+##### Prefix Tuning
 - LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention, <ins>arXiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2303.16199)] [[Code](https://github.com/ZrrSkywalker/LLaMA-Adapter)]
 - P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks <ins>ACL-Short, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
 - Prefix-Tuning: Optimizing Continuous Prompts for Generation <ins>ACL, 2021</ins> [[Paper](https://aclanthology.org/2021.acl-long.353/)] [[Code](https://github.com/XiangLi1999/PrefixTuning)]
-##### Prompt-Tuning
+##### Prompt Tuning
 - GPT Understands, Too, <ins>AI Open, 2023</ins> [[Paper](https://doi.org/10.1016/j.aiopen.2023.08.012)]
 - Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2210.07565)] [[Code](https://github.com/Hzfinfdu/MPMP)]
 - Multitask Prompt Tuning Enables Parameter-Efficient Transfer Learning, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2303.02861)]
