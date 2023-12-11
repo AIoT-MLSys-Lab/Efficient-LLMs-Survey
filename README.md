@@ -156,7 +156,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Explanations from Large Language Models Make Small Reasoners Better, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2210.06726)]
 - DISCO: Distilling Counterfactuals with Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10534)] [[Code](https://github.com/eric11eca/disco)]
 - Meta-learning via Language Model In-context Tuning, <ins>arXiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.07814)] [[Code](https://github.com/yandachen/In-context-Tuning)]
-- MetaICL: Learning to Learn In Context, <ins>arXiv, 2021</ins>, [[Paper](https://arxiv.org/abs/2110.15943)] [[Code](https://github.com/facebookresearch/MetaICL)]
 ### Efficient Pre-Training
 #### Mixed Precision Acceleration
 - GACT: Activation Compressed Training for Generic Network Architectures, <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/liu22v/liu22v.pdf)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
