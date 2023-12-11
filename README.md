@@ -221,7 +221,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Memory-Efficient Fine-Tuning
 - Memory-Efficient Selective Fine-Tuning, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=zaNbLceVwm)]
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
-- Fine-Tuning Language Models with Just Forward Passes, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
+- Fine-Tuning Language Models with Just Forward Passes, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 ### Efficient Inference
 #### Algorithm-Level Inference Acceleration
 ##### Speculative Decoding
