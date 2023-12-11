@@ -62,7 +62,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [MoE-based LLMs](#MoE-based-LLMs)
       - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
       - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
-    - [Long-context LLMs](#Long-Context-LLMs)
+    - [Long-Context LLMs](#Long-Context-LLMs)
       - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
       - [Recurrent Structure](#Recurrent-Structure)
       - [Window & Stream Structure](#Window-&-Stream-Structure)
