@@ -46,7 +46,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Prompt Tuning](#Prompt-Tuning)
     - [Memory Efficient Fine-Tuning](#Memory-Efficient-Fine-Tuning)
   - [Efficient Inference](#Efficient-Inference)
-    - [Algorithm-Level Inference Acceleration](#Algorithm-Level-Inference-Acceleration)
       - [Speculative Decoding](#Speculative-Decoding)
       - [KV-Cache Optimization](#KV-Cache-Optimization)
     - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
@@ -60,8 +59,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
-      - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
-      - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
+      - [MoE Optimization](#MoE-Optimization)
     - [Long-Context LLMs](#Long-Context-LLMs)
       - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
       - [Recurrent Structure](#Recurrent-Structure)
@@ -214,8 +212,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
 ### Efficient Inference
-#### Algorithm-Level Inference Acceleration
-##### Speculative Decoding
+#### Speculative Decoding
 - Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads, <ins>Blog, 2023</ins> [[Blog](https://sites.google.com/view/medusa-llm)] [[Code](https://github.com/FasterDecoding/Medusa)]
 - Fast Inference from Transformers via Speculative Decoding, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2211.17192)]
 - Accelerating LLM Inference with Staged Speculative Decoding, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2308.04623)]
@@ -223,7 +220,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Speculative Decoding with Big Little Decoder, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.07863)] [[Code](https://github.com/kssteven418/BigLittleDecoder)]
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow/tree/inference)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
-##### KV-Cache Optimization
+#### KV-Cache Optimization
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
@@ -266,7 +263,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Large Scale Language Modeling with Mixtures of Experts, <ins>EMNLP, 2022</ins> [[Paper](https://arxiv.org/abs/2112.10684)] [[Code](https://github.com/facebookresearch/fairseq/tree/main/examples/moe_lm)]
 - BASE Layers: Simplifying Training of Large, Sparse Models, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2103.16716)] [[Code](https://github.com/pytorch/fairseq/)]
 - GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2006.16668)]
-##### Algorithm-Level MoE Optimization
+##### MoE Optimization
 - Lifelong Language Pretraining with Distribution-Specialized Experts, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12281)]
 - Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14705)]
 - Mixture-of-Experts with Expert Choice Routing, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/2f00ecd787b432c1d36f3de9800728eb-Paper-Conference.pdf)]
