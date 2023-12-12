@@ -85,9 +85,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
 - [🧑‍💻 LLM Frameworks](#-LLM-Frameworks)
-  - [LLM Frameworks Supporting Efficient Training and Inference](#LLM-Frameworks-Supporting-Efficient-Training-and-Inference)
-  - [LLM Frameworks Supporting Efficient Inference Only](#LLM-Frameworks-Supporting-Efficient-Inference-Only)
-
 
 ## 🤖 Model-Centric
 ### Model Compression
