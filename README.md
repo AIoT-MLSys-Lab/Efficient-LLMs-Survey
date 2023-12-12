@@ -85,7 +85,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Training Efficiency Optimization](#System-Level-Training-Efficiency-Optimization)
       - [System-Level Inference Efficiency Optimization](#System-Level-Inference-Efficiency-Optimization)
       - [System-Level Fine-Tuning Efficiency Optimization](#System-Level-Fine-Tuning-Efficiency-Optimization)
-      - [System-Level Efficient Architecture](#System-Level-Architecture)
+      - [System-Level Efficient Architecture](#System-Level-Architecture-Optimization)
         - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
         - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
     - [LLM Frameworks](#LLM-Frameworks)
@@ -412,7 +412,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Just-in-Time Dynamic-Batching, <ins>NeurIPS Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 #### System-Level Fine-Tuning Efficiency Optimization
 - S-LoRA: Serving Thousands of Concurrent LoRA Adapters, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2311.03285)] [[Code](https://github.com/S-LoRA/S-LoRA)]
-#### System-Level Efficient Architecture
+#### System-Level Efficient Architecture Optimization
 ##### Hardware-Assisted Attention
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
