@@ -418,22 +418,27 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - PromptGen: Automatically Generate Prompts using Generative Models, <ins>NAACL Findings, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.3/)]
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 
-## 🧑‍💻 LLM Frameworks
-- DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
-- Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
-- Alpa [[Code](https://github.com/alpa-projects/alpa)]
-- ColossalAI [[Code](https://github.com/hpcaitech/ColossalAI)]
-- FairScale [[Code](https://github.com/facebookresearch/fairscale)]
-- Pax [[Code](https://github.com/google/paxml/)]
-- Composer [[Code](https://github.com/mosaicml/composer)]
-- vLLM [[Code](https://github.com/vllm-project/vllm)]
-- Parallelformers [[Code](https://github.com/tunib-ai/parallelformers)]
-- OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]
-- Ray-LLM [[Code](https://github.com/ray-project/ray-llm)]
-- MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]
-- Sax [[Code](https://github.com/google/saxml)]
-- Mosec [[Code](https://github.com/mosecorg/mosec)]
-- LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]
+## 🧑‍💻 LLM Frameworks [^1]
+
+|                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
+| :-------------------------------------------------------------------- | :------------------ | :-------------------- | :-- |
+| DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]            | ✅                   | ✅                     | ✅   |
+| Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]              | ✅                   | ✅                     | ✅   |
+| Alpa [[Code](https://github.com/alpa-projects/alpa)]                  | ✅                   | ✅                     | ✅   |
+| ColossalAI [[Code](https://github.com/hpcaitech/ColossalAI)]          | ✅                   | ✅                     | ✅   |
+| FairScale [[Code](https://github.com/facebookresearch/fairscale)]     | ✅                   | ✅                     | ✅   |
+| Pax [[Code](https://github.com/google/paxml/)]                        | ✅                   | ✅                     | ✅   |
+| Composer [[Code](https://github.com/mosaicml/composer)]               | ✅                   | ✅                     | ✅   |
+| vLLM [[Code](https://github.com/vllm-project/vllm)]                   | ❌                   | ✅                     | ❌   |
+| Parallelformers [[Code](https://github.com/tunib-ai/parallelformers)] | ❌                   | ✅                     | ❌   |
+| OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]                  | ❌                   | ✅                     | ✅   |
+| Ray-LLM [[Code](https://github.com/ray-project/ray-llm)]              | ❌                   | ✅                     | ❌   |
+| MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]                   | ❌                   | ✅                     | ❌   |
+| Sax [[Code](https://github.com/google/saxml)]                         | ❌                   | ✅                     | ❌   |
+| Mosec [[Code](https://github.com/mosecorg/mosec)]                     | ❌                   | ✅                     | ❌   |
+| LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ❌                   | ✅                     | ❌   |
+
+[^1]: This table was updated Dec 2023. This table will require updates as cool new frameworks are being released frequently and current frameworks continue to mature at an accelerated rate. So please feel free to suggest any important distinguishing features or popular new frameworks
 
 ## 🖌️ Citation
 If you find this survey useful to your work, please consider citing:
