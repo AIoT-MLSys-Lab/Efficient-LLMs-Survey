@@ -404,6 +404,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
 - Just-in-Time Dynamic-Batching, <ins>NeurIPS Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 #### Fine-Tuning Acceleration
+- S-LoRA: Serving Thousands of Concurrent LoRA Adapters, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2311.03285)] [[Code](https://github.com/S-LoRA/S-LoRA)]
 #### System-Level Architecture Design
 ##### Hardware-Assisted Attention
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
