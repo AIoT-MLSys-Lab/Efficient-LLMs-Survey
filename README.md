@@ -88,7 +88,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Architecture Design](#System-Level-Architecture-Design)
         - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
         - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
-    - [LLM Frameworks] (#LLM-Frameworks)
+    - [LLM Frameworks](#LLM-Frameworks)
 
 ## 🤖 Model-Centric
 ### Model Compression
