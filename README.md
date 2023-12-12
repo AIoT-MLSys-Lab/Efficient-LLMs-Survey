@@ -52,9 +52,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [System-Level Inference Acceleration](#System-Level-Inference-Acceleration)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
-      - [Sharing-Based Attention Acceleration](#Sharing-Based-Attention-Acceleration)
+      - [Sharing-based Attention Acceleration](#Sharing-based-Attention-Acceleration)
       - [Feature Information Reduction](#Feature-Information-Reduction)
-      - [Kernelization Or Low-Rank](#Kernelization-Or-Low-Rank)
+      - [Kernelization or Low-Rank](#Kernelization-or-Low-Rank)
       - [Fixed Pattern Strategies](#Fixed-Pattern-Strategies)
       - [Learnable Pattern Strategies](#Learnable-Pattern-Strategies)
       - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
@@ -249,14 +249,14 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Just-in-Time Dynamic-Batching, <ins>NeurIPS Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 ### Efficient Architecture
 #### Efficient Attention
-##### Sharing-Based Attention Acceleration
+##### Sharing-based Attention Acceleration
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 ##### Feature Information Reduction
 - Nyströmformer: A nyström-based algorithm for approximating self-attention, <ins>AAAI, 2021</ins> [[Paper](https://arxiv.org/abs/2102.03902)] [[Code](https://github.com/mlpen/Nystromformer)]
 - Funnel-transformer: Filtering out sequential redundancy for efficient language processing, <ins>NeurIPS, 2020</ins> [[Paper](https://arxiv.org/abs/2006.03236)] [[Code](https://github.com/laiguokun/Funnel-Transformer)]
 - Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks, <ins>ICML, 2019</ins> [[Paper](https://arxiv.org/abs/1810.00825)]
-##### Kernelization Or Low-Rank
+##### Kernelization or Low-Rank
 - Sumformer: Universal Approximation for Efficient Transformers, <ins>ICML Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02301)]
 - FLuRKA: Fast fused Low-Rank & Kernel Attention, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.15799)]
 - Scatterbrain: Unifying Sparse and Low-rank Attention,  <ins>NeurlPS, 2021</ins> [[Paper](https://openreview.net/forum?id=SehIKudiIo1)] [[Code](https://github.com/HazyResearch/fly)]
