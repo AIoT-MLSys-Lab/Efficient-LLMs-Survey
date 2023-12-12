@@ -421,7 +421,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ## 🧑‍💻 LLM Frameworks [^1]
 
 |                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
-| :-------------------------------------------------------------------- | :------------------ | :-------------------- | :-- |
+| :-------------------------------------------------------------------- | :------------------: | :--------------------: | :--: |
 | DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]            | ✅                   | ✅                     | ✅   |
 | Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]              | ✅                   | ✅                     | ✅   |
 | Alpa [[Code](https://github.com/alpa-projects/alpa)]                  | ✅                   | ✅                     | ✅   |
