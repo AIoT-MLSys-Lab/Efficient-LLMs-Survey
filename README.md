@@ -81,7 +81,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [Multi-Step Reasoning](#Multi-Step-Reasoning)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
-- [🧑‍💻 LLM Frameworks](#-LLM-Frameworks)
+- [🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks](#-System-Level-Efficiency-Optimization-and-LLM-Frameworks)
 
 ## 🤖 Model-Centric
 ### Model Compression
@@ -379,7 +379,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - PromptGen: Automatically Generate Prompts using Generative Models, <ins>NAACL Findings, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-naacl.3/)]
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 
-## 🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks [^1]
+## 🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks
 ### System-Level Efficiency Optimization
 #### Training Acceleration  
 - An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://ieeexplore.ieee.org/document/10177476)] [[Code](https://github.com/xuqifan897/Optimus)]
@@ -419,7 +419,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FastMoE: A Fast Mixture-of-Expert Training System, <ins>PPoPP, 2022</ins> [[Paper](https://arxiv.org/abs/2103.13262)] [[Code](https://github.com/laekov/fastmoe)]
 - FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models, <ins>PPoPP, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3503221.3508418)] [[Code](https://github.com/thu-pacman/FasterMoE)]
 - DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2201.05596.pdf)] [[Code](https://github.com/microsoft/DeepSpeed)]
-### LLML Frameworks
+### LLML Frameworks [^1]
 <div align="center">
   
 |                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
