@@ -419,7 +419,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 
 ## 🧑‍💻 LLM Frameworks [^1]
-
+<div align="center">
+  
 |                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
 | :-------------------------------------------------------------------- | :------------------: | :--------------------: | :--: |
 | DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]            | ✅                   | ✅                     | ✅   |
@@ -437,6 +438,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 | Sax [[Code](https://github.com/google/saxml)]                         | ❌                   | ✅                     | ❌   |
 | Mosec [[Code](https://github.com/mosecorg/mosec)]                     | ❌                   | ✅                     | ❌   |
 | LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ❌                   | ✅                     | ❌   |
+
+</div>
+
 
 [^1]: This table was updated Dec 2023. This table will require updates as cool new frameworks are being released frequently and current frameworks continue to mature at an accelerated rate. So please feel free to suggest any important distinguishing features or popular new frameworks
 
