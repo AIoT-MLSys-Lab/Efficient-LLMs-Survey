@@ -422,7 +422,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts, <ins>EMNLP, 2020</ins> [[Paper](https://aclanthology.org/2020.emnlp-main.346.pdf)] [[Code](https://ucinlp.github.io/autoprompt/)]
 
 ## 🧑‍💻 LLM Frameworks
-### LLM Frameworks Supporting Efficient Training and Inference
 - DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]
 - Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]
 - Alpa [[Code](https://github.com/alpa-projects/alpa)]
@@ -430,7 +429,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FairScale [[Code](https://github.com/facebookresearch/fairscale)]
 - Pax [[Code](https://github.com/google/paxml/)]
 - Composer [[Code](https://github.com/mosaicml/composer)]
-### LLM Frameworks Supporting Efficient Inference Only
 - vLLM [[Code](https://github.com/vllm-project/vllm)]
 - Parallelformers [[Code](https://github.com/tunib-ai/parallelformers)]
 - OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]
