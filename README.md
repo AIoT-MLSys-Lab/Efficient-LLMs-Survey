@@ -88,7 +88,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Architecture Design](#System-Level-Architecture-Design)
         - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
         - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
-    - [LLM Frameworks](#LLM-Frameworks [^1])
+    - [LLM Frameworks](#LLM-Frameworks)
 
 ## 🤖 Model-Centric
 ### Model Compression
@@ -426,7 +426,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FastMoE: A Fast Mixture-of-Expert Training System, <ins>PPoPP, 2022</ins> [[Paper](https://arxiv.org/abs/2103.13262)] [[Code](https://github.com/laekov/fastmoe)]
 - FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models, <ins>PPoPP, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3503221.3508418)] [[Code](https://github.com/thu-pacman/FasterMoE)]
 - DeepSpeed-MoE: Advancing Mixture-of-Experts Inference and Training to Power Next-Generation AI Scale, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2201.05596.pdf)] [[Code](https://github.com/microsoft/DeepSpeed)]
-### LLM Frameworks [^1]
+### LLM Frameworks
 <div align="center">
   
 |                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
@@ -450,7 +450,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 </div>
 
 
-[^1]: This table was updated Dec 2023. This table will require updates as cool new frameworks are being released frequently and current frameworks continue to mature at an accelerated rate. So please feel free to suggest any important distinguishing features or popular new frameworks
+ <!-- [^1]: This table was updated Dec 2023. This table will require updates as cool new frameworks are being released frequently and current frameworks continue to mature at an accelerated rate. So please feel free to suggest any important distinguishing features or popular new frameworks-->
 
 ## 🖌️ Citation
 If you find this survey useful to your work, please consider citing:
