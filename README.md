@@ -21,7 +21,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
       - [Post-Training Quantization](#Post-Training-Quantization)
-        - [Weight-based Quantization](#Weight-based-Quantization)
+        - [Weight-Only Quantization](#Weight-Only-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
       - [Quantization-Aware Training](#Quantization-Aware-Training)
       - [Quantization-Aware Fine-Tuning](#Quantization-Aware-Fine-Tuning)
@@ -93,7 +93,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ### Model Compression
 #### Quantization
 ##### Post-Training Quantization
-###### Weight-based Quantization
+###### Weight-Only Quantization
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
 - QuIP: 2-Bit Quantization of Large Language Models With Guarantees, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13304)] [[Code](https://github.com/jerry-chee/QuIP)]
 - AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
