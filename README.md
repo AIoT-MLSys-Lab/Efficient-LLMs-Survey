@@ -406,7 +406,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/pdf?id=wIPIhHd00i)]
 - Efficiently Scaling Transformer Inference, <ins>MLSys, 2023</ins> [[Paper](https://proceedings.mlsys.org/paper_files/paper/2023/file/523f87e9d08e6071a3bbd150e6da40fb-Paper-mlsys2023.pdf)]
 - S3: Increasing GPU Utilization during Generative Inference for Higher Throughput, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.06000)]
-- EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2308.14352)]
 - DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale, <ins>SC, 2022</ins> [[Paper](https://dl.acm.org/doi/abs/10.5555/3571885.3571946)]
 - Just-in-Time Dynamic-Batching, <ins>NeurIPS Workshop, 2018</ins> [[Paper](https://arxiv.org/abs/1904.07421)]
 #### System-Level Serving Efficiency Optimization
@@ -424,6 +423,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
 ##### System-Level MoE Optimization
+- EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2308.14352)]
 - Tutel: Adaptive mixture-of-experts at scale, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2206.03382.pdf)] [[Code](https://github.com/microsoft/tutel)]
 - MegaBlocks: Efficient Sparse Training with Mixture-of-Experts, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2211.15841.pdf)] [[Code](https://github.com/stanford-futuredata/megablocks)]
 - SmartMoE: Efficiently Training Sparsely-Activated Models through Combining Offline and Online Parallelization, <ins>USENIX ATC, 2023</ins> [[Paper](https://www.usenix.org/conference/atc23/presentation/zhai)]
