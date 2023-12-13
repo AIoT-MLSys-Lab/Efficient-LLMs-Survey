@@ -88,7 +88,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
         - [System-Level MoE Optimization](#System-Level-MoE-Optimization)
     - [LLM Frameworks](#LLM-Frameworks)
 
-## 🤖 Model-Centric
+## 🤖 Model-Centric Methods
 ### Model Compression
 #### Quantization
 ##### Post-Training Quantization
@@ -316,7 +316,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Hyena Hierarchy: Towards Larger Convolutional Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.10866)]
 - MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2305.07185.pdf)]
 
-## 🔢 Data-Centric
+## 🔢 Data-Centric Methods
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
 - Data Selection for Language Models via Importance Resampling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.03169)] [[Code](https://github.com/p-lambda/dsir)]
