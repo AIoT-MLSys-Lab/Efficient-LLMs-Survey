@@ -36,7 +36,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Scaling Models](#Scaling-Models)
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
-    - [System-Level Pre-Training Acceleration](#System-Level-Techniques)
   - [Efficient Fine-Tuning](#Efficient-Fine-Tuning) 
     - [Parameter Efficient Fine-Tuning](#Parameter-Efficient-Fine-Tuning)
       - [Adapter-based Tuning](#Adapter-based-Tuning)
@@ -54,15 +53,13 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Kernelization or Low-Rank](#Kernelization-or-Low-Rank)
       - [Fixed Pattern Strategies](#Fixed-Pattern-Strategies)
       - [Learnable Pattern Strategies](#Learnable-Pattern-Strategies)
-      - [Hardware-Assisted Attention](#Hardware-Assisted-Attention)
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
-      - [Optimization For MoE](#Optimization-For-MoE)
-    - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
-      - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
-      - [Recurrent Structure](#Recurrent-Structure)
-      - [Window & Stream Structure](#Window-&-Stream-Structure)
-      - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
+      - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
+        - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
+        - [Recurrent Structure](#Recurrent-Structure)
+        - [Window & Stream Structure](#Window-&-Stream-Structure)
+        - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
       - [Other Sequential Models](#Other-Sequential-Models)
@@ -87,7 +84,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Fine-Tuning Efficiency Optimization](#System-Level-Fine-Tuning-Efficiency-Optimization)
       - [System-Level Efficient Architecture Optimization](#System-Level-Architecture-Optimization)
         - [System-Level Attention Optimization](#System-Level-Attention-Optimization)
-        - [System-Level MoE Acceleration](#System-Level-MoE-Acceleration)
+        - [System-Level MoE Optimization](#System-Level-MoE-Optimization)
     - [LLM Frameworks](#LLM-Frameworks)
 
 ## 🤖 Model-Centric
@@ -419,7 +416,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
-##### System-Level MoE Acceleration
+##### System-Level MoE Optimization
 - Tutel: Adaptive mixture-of-experts at scale, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2206.03382.pdf)] [[Code](https://github.com/microsoft/tutel)]
 - MegaBlocks: Efficient Sparse Training with Mixture-of-Experts, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2211.15841.pdf)] [[Code](https://github.com/stanford-futuredata/megablocks)]
 - SmartMoE: Efficiently Training Sparsely-Activated Models through Combining Offline and Online Parallelization, <ins>USENIX ATC, 2023</ins> [[Paper](https://www.usenix.org/conference/atc23/presentation/zhai)]
