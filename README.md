@@ -386,7 +386,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 
 ## 🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks
 ### System-Level Efficiency Optimization
-#### System-Level Training Efficiency Optimization  
+#### System-Level Pre-Training Efficiency Optimization  
 - An Efficient 2D Method for Training Super-Large Deep Learning Models, <ins>IPDPS, 2023</ins> [[Paper](https://ieeexplore.ieee.org/document/10177476)] [[Code](https://github.com/xuqifan897/Optimus)]
 - PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel, <ins>VLDB, 2023</ins> [[Paper](https://dl.acm.org/doi/10.14778/3611540.3611569)]
 - Tesseract: Parallelize the Tensor Parallelism Efficiently, <ins>ICPP, 2022</ins>, [[Paper](https://dl.acm.org/doi/10.1145/3545008.3545087)]
