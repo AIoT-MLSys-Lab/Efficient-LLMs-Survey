@@ -83,7 +83,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Pre-Training Efficiency Optimization](#System-Level-Pre-Training-Efficiency-Optimization)
       - [System-Level Fine-Tuning Efficiency Optimization](#System-Level-Fine-Tuning-Efficiency-Optimization)
       - [System-Level Inference Efficiency Optimization](#System-Level-Inference-Efficiency-Optimization)
-      - [System-Level Efficient Architecture Optimization](#System-Level-Architecture-Optimization)
+      - [System-Level Efficient Architecture Optimization](#System-Level-Efficient-Architecture-Optimization)
         - [System-Level Attention Optimization](#System-Level-Attention-Optimization)
         - [System-Level MoE Optimization](#System-Level-MoE-Optimization)
     - [LLM Frameworks](#LLM-Frameworks)
