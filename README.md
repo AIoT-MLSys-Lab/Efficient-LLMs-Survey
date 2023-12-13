@@ -56,6 +56,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Mixture of Experts](#Mixture-of-Experts)
       - [MoE-based LLMs](#MoE-based-LLMs)
       - [Algorithm-Level MoE Optimization](#Algorithm-Level-MoE-Optimization)
+    - [Long Context LLM](#Long-Context-LLM)
         - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
         - [Recurrent Structure](#Recurrent-Structure)
         - [Window & Stream Structure](#Window-&-Stream-Structure)
