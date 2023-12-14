@@ -48,7 +48,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [KV-Cache Optimization](#KV-Cache-Optimization)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
-      - [Sharing-based Attention Acceleration](#Sharing-based-Attention-Acceleration)
+      - [Sharebased Attention Acceleration](#Sharebased-Attention-Acceleration)
       - [Feature Information Reduction](#Feature-Information-Reduction)
       - [Kernelization or Low-Rank](#Kernelization-or-Low-Rank)
       - [Fixed Pattern Strategies](#Fixed-Pattern-Strategies)
@@ -228,7 +228,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
 ### Efficient Architecture
 #### Efficient Attention
-##### Sharing-based Attention Acceleration
+##### Sharebased Attention Acceleration
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 ##### Feature Information Reduction
@@ -251,6 +251,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Longformer: The Long-Document Transformer, <ins>arXiv, 2020</ins> [[Paper](https://arxiv.org/abs/2004.05150)] [[Code](https://github.com/allenai/longformer)]
 - Blockwise Self-Attention for Long Document Understanding, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/1911.02972v)] [[Code](https://github.com/xptree/BlockBERT)]
 ##### Learnable Pattern Strategies
+- HyperAttention: Long-context Attention in Near-Linear Time, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.05869)] 
 - ClusterFormer: Neural Clustering Attention for Efficient and Effective Transformer, <ins>ACL, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-long.170/)]
 - Reformer: The Efficient Transformer,  <ins>ICLR, 2022</ins> [[Paper](https://openreview.net/forum?id=rkgNKkHtvB)] [[Code](https://github.com/lucidrains/reformer-pytorch)]
 - Sparse Sinkhorn Attention, <ins>ICML, 2020</ins> [[Paper](https://arxiv.org/abs/2002.11296)]
