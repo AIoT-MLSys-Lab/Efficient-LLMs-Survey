@@ -48,7 +48,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [KV-Cache Optimization](#KV-Cache-Optimization)
   - [Efficient Architecture](#Efficient-Architecture)
     - [Efficient Attention](#Efficient-Attention)
-      - [Shaing-based Attention](#Sharing-based-Attention)
+      - [Sharing-based Attention](#Sharing-based-Attention)
       - [Feature Information Reduction](#Feature-Information-Reduction)
       - [Kernelization or Low-Rank](#Kernelization-or-Low-Rank)
       - [Fixed Pattern Strategies](#Fixed-Pattern-Strategies)
