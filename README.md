@@ -450,7 +450,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 | MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]                   | ❌                   | ✅                     | ❌   |
 | Sax [[Code](https://github.com/google/saxml)]                         | ❌                   | ✅                     | ❌   |
 | Mosec [[Code](https://github.com/mosecorg/mosec)]                     | ❌                   | ✅                     | ❌   |
-| LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ❌                   | ✅                     | ❌   |
+| LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ✅                   | ✅                     | ❌   |
 
 </div>
 
