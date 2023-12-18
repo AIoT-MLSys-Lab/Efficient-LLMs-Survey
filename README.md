@@ -400,7 +400,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### System-Level Inference Efficiency Optimization
 - SAMP: A Model Inference Toolkit of Post-Training Quantization for Text Processing via Self-Adaptive Mixed-Precision, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2209.09130)]
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
-- SMDP-Based Dynamic Batching for Efficient Inference on GPU-Based Platforms, <ins>ICC, 2023</ins> [[Paper](https://arxiv.org/abs/2301.12865)]
 - Flash-Decoding for Long-Context Inference, <ins>Blog, 2023</ins> [[Blog](https://pytorch.org/blog/flash-decoding/)]
 - FlashDecoding++: Faster Large Language Model Inference on GPUs, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.01282)]
 - Deja Vu: Contextual Sparsity for Efficient LLMs at Inference Time, <ins>ICML, 2023</ins> [[Paper](https://openreview.net/pdf?id=wIPIhHd00i)]
