@@ -396,7 +396,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO-Infinity: breaking the GPU memory wall for extreme scale deep learning, <ins>SC, 2021</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3458817.3476205)]
 - ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://www.usenix.org/system/files/atc21-ren-jie.pdf)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3433701.3433727)] [[Code](https://github.com/microsoft/DeepSpeed)]
-- PyTorch Distributed: Experiences on Accelerating Data Parallel Training, <ins>VLDB, 2020</ins> [[Paper](https://dl.acm.org/doi/10.14778/3415478.3415530)]
 #### System-Level Inference Efficiency Optimization
 - SAMP: A Model Inference Toolkit of Post-Training Quantization for Text Processing via Self-Adaptive Mixed-Precision, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2209.09130)]
 - FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2303.06865)] [[Code](https://github.com/FMInference/FlexGen)]
