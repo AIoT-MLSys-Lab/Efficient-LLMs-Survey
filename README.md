@@ -59,7 +59,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Long Context LLMs](#Long-Context-LLMs)
         - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
         - [Recurrent Structure](#Recurrent-Structure)
-        - [Window & Stream Structure](#Window-&-Stream-Structure)
+        - [Window and Stream Structure](#Window-and-Stream-Structure)
         - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
@@ -288,7 +288,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ∞-former: Infinite Memory Transformer, <ins>ACL, 2022</ins>
 - Memformer: A Memory-Augmented Transformer for Sequence Modeling, <ins>AACL-Findings, 2020</ins> [[Paper]](https://arxiv.org/abs/2010.06891) [[Code](https://github.com/deep-spin/infinite-former)]
 - Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context, <ins>ACL, 2019</ins> [[Paper](https://arxiv.org/abs/1901.02860)] [[Code](https://github.com/kimiyoung/transformer-xl)]
-##### Window & Stream Structure
+##### Window and Stream Structure
 - Efficient Streaming Language Models with Attention Sinks, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.17453)] [[Code](https://github.com/mit-han-lab/streaming-llm)]
 - Parallel Context Windows for Large Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2212.10947)] [[Code](https://github.com/ai21labs/parallel-context-windows)]
 - Naive Bayes-based Context Extension, <ins>GitHub, 2023</ins>  [[Code](https://github.com/bojone/NBCE)]
