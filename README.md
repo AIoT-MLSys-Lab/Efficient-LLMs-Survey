@@ -420,6 +420,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Memory Management for Large Language Model Serving with PagedAttention, <ins>SOSP, 2023</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3600006.3613165)] [[Code](https://github.com/vllm-project/vllm)]
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Accelerated Inference for Large Transformer Models Using NVIDIA Triton Inference Server, <ins>Nvidia Blog, 2022</ins> [[Blog](https://developer.nvidia.com/blog/accelerated-inference-for-large-transformer-models-using-nvidia-fastertransformer-and-nvidia-triton-inference-server/)]
+- ELSA: Hardware-Software Co-design for Efficient, Lightweight Self-Attention Mechanism in Neural Networks, <ins>ISCA, 2021</ins> [[Paper](https://dl.acm.org/doi/10.1109/ISCA52012.2021.00060)]
 - A3: Accelerating Attention Mechanisms in Neural Networks with Approximation, <ins>HPCA, 2020</ins> [[Paper](https://arxiv.org/abs/2002.10941)]
 ##### System-Level MoE Optimization
 - Tutel: Adaptive mixture-of-experts at scale, <ins>MLSys, 2023</ins> [[Paper](https://arxiv.org/pdf/2206.03382.pdf)] [[Code](https://github.com/microsoft/tutel)]
