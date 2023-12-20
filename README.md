@@ -291,7 +291,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ##### Window and Stream Structure
 - Efficient Streaming Language Models with Attention Sinks, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.17453)] [[Code](https://github.com/mit-han-lab/streaming-llm)]
 - Parallel Context Windows for Large Language Models, <ins>ACL, 2023</ins> [[Paper](https://arxiv.org/abs/2212.10947)] [[Code](https://github.com/ai21labs/parallel-context-windows)]
-- Naive Bayes-based Context Extension, <ins>GitHub, 2023</ins>  [[Code](https://github.com/bojone/NBCE)]
 - LongNet: Scaling Transformers to 1,000,000,000 Tokens, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02486)] [[Code](https://github.com/microsoft/unilm/tree/master)]
 - Efficient Long-Text Understanding with Short-Text Models, <ins>TACL, 2023</ins> [[Paper](https://arxiv.org/abs/2208.00748)] [[Code](https://github.com/Mivg/SLED)]
 - Structured Prompting: Scaling In-Context Learning to 1,000 Examples, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.06713)] [[Code](https://github.com/microsoft/LMOps)]
