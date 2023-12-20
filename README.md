@@ -284,6 +284,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Exploring Length Generalization in Large Language Models, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.04901)]
 - The EOS Decision and Length Extrapolation, <ins>EMNLP, 2020</ins> [[Paper](https://arxiv.org/abs/2010.07174)] [[Code](https://github.com/bnewm0609/eos-decision)]
 ##### Recurrent Structure
+- Retentive Network: A Successor to Transformer for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08621)] [[Code](https://github.com/microsoft/torchscale)]
 - Recurrent Memory Transformer, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.06881)] [[Code](https://github.com/booydar/LM-RMT)]
 - Block-Recurrent Transformers, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.07852)] [[Code](https://github.com/google-research/meliad)]
 - ∞-former: Infinite Memory Transformer, <ins>ACL, 2022</ins>
