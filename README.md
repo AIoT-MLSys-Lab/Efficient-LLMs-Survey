@@ -59,7 +59,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Long Context LLMs](#Long-Context-LLMs)
         - [Extrapolation and Interpolation](#Extrapolation-and-Interpolation)
         - [Recurrent Structure](#Recurrent-Structure)
-        - [Segmentation and Sliding Window](#Segmentation and Sliding Window)
+        - [Segmentation and Sliding Window](#Segmentation-and-Sliding-Window)
         - [Memory-Retrieval Augmentation](#Memory-Retrieval-Augmentation)
     - [Transformer Alternative Architecture](#Transformer-Alternative-Architecture)
       - [State Space Models](#State-Space-Models)
