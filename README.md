@@ -175,7 +175,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Optimization Strategies
 - Symbolic Discovery of Optimization Algorithms, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
-- Winner-Take-All Column Row Sampling for Memory Efficient Adaptation of Language Model, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15265)] [[Code](https://github.com/zirui-ray-liu/WTACRS)]
 
 ### Efficient Fine-Tuning
 #### Parameter-Efficient Fine-Tuning
@@ -208,6 +207,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - P-Tuning v2: Prompt Tuning Can Be Comparable to Finetuning Universally Across Scales and Tasks，<ins>ACL-Short, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
 - The Power of Scale for Parameter-Efficient Prompt Tuning, <ins>EMNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08691)]
 #### Memory-Efficient Fine-Tuning
+- Winner-Take-All Column Row Sampling for Memory Efficient Adaptation of Language Model, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15265)] [[Code](https://github.com/zirui-ray-liu/WTACRS)]
 - Memory-Efficient Selective Fine-Tuning, <ins>ICML Workshop, 2023</ins> [[Paper](https://openreview.net/forum?id=zaNbLceVwm)]
 - Full Parameter Fine-tuning for Large Language Models with Limited Resources, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09782)] [[Code](https://github.com/OpenLMLab/LOMO)]
 - Fine-Tuning Language Models with Just Forward Passes, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17333)] [[Code](https://github.com/princeton-nlp/MeZO)]
