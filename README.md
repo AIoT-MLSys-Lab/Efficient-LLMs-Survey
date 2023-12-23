@@ -453,7 +453,6 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 | Pax [[Code](https://github.com/google/paxml/)]                        | ✅                   | ✅                     | ✅   |
 | Composer [[Code](https://github.com/mosaicml/composer)]               | ✅                   | ✅                     | ✅   |
 | vLLM [[Code](https://github.com/vllm-project/vllm)]                   | ❌                   | ✅                     | ❌   |
-| Parallelformers [[Code](https://github.com/tunib-ai/parallelformers)] | ❌                   | ✅                     | ❌   |
 | OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]                  | ❌                   | ✅                     | ✅   |
 | Ray-LLM [[Code](https://github.com/ray-project/ray-llm)]              | ❌                   | ✅                     | ❌   |
 | MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]                   | ❌                   | ✅                     | ❌   |
