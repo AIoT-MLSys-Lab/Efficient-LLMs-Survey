@@ -2,7 +2,7 @@
 
 > **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863)
 
-> *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Zhongnan Qu<sup>4</sup>, Shen Yan<sup>5</sup>, Yi Zhu<sup>6</sup>, Quanlu Zhang<sup>7</sup>, Mosharaf Chowdhury<sup>8</sup>, Mi Zhang<sup>1</sup>*
+> *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Jiachen Liu<sup>8</sup>, Zhongnan Qu<sup>4</sup>, Shen Yan<sup>5</sup>, Yi Zhu<sup>6</sup>, Quanlu Zhang<sup>7</sup>, Mosharaf Chowdhury<sup>8</sup>, Mi Zhang<sup>1</sup>*
 
 > *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>Amazon AWS AI, <sup>5</sup>Google Research, <sup>6</sup>Boson AI, <sup>7</sup>Microsoft Research Asia, <sup>8</sup>University of Michigan*  
 
