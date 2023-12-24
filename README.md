@@ -76,6 +76,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Template Formatting](#Template-Formatting)
         - [Instruction Generation](#Instruction-Generation)
         - [Multi-Step Reasoning](#Multi-Step-Reasoning)
+        - [Parallel Generation](#Parallel-Generation)
     - [Prompt Compression](#Prompt-Compression)
     - [Prompt Generation](#Prompt-Generation)
 - [🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks](#-System-Level-Efficiency-Optimization-and-LLM-Frameworks)
@@ -376,6 +377,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Contrastive Chain-of-Thought Prompting, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2311.09277.pdf)] [[Code](https://github.com/DAMO-NLP-SG/contrastive-cot)]
 - Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.04254)]
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html)]
+###### Parallel Generation
+- Skeleton-of-Thought: Large Language Models Can Do Parallel Decoding, <ins>arXiv, 2023</ins>  [[Paper](https://arxiv.org/abs/2307.15337)] [[Code](https://github.com/imagination-research/sot)]
 #### Prompt Compression
 - Learning to Compress Prompts with Gist Tokens, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.08467)]
 - Adapting Language Models to Compress Contexts, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14788)] [[Code](https://github.com/princeton-nlp/AutoCompressors)]
