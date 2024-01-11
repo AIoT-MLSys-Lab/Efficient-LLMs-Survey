@@ -271,6 +271,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
 #### Mixture of Experts
 ##### MoE-based LLMs
+- Mixtral of Experts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/pdf/2401.04088.pdf)] [[Code](https://github.com/mistralai/mistral-src)]
 - Mistral 7B, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.06825)] [[Code](https://github.com/mistralai/mistral-src)]
 - PanGu-Σ: Towards Trillion Parameter Language Model with Sparse Heterogeneous Computing, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2303.10845)]
 - Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity, <ins>JMLR, 2022</ins> [[Paper](https://jmlr.org/papers/volume23/21-0998/21-0998.pdf)] [[Code](https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py)]
