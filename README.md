@@ -86,7 +86,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Pre-Training Efficiency Optimization](#System-Level-Pre-Training-Efficiency-Optimization)
       - [System-Level Serving Efficiency Optimization](#System-Level-Serving-Efficiency-Optimization)
         - [Serving System Design](#Serving-System-Design)
-        - [Serving Performance Optimization](#Serving-Efficiency-Optimization)
+        - [Serving Performance Optimization](#Serving-Performance-Optimization)
       - [Hardware Co-Design](#Hardware-Co-Design)
     - [LLM Frameworks](#LLM-Frameworks)
 
