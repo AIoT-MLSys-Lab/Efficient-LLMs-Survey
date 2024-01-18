@@ -84,11 +84,10 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - [🧑‍💻 System-Level Efficiency Optimization and LLM Frameworks](#-System-Level-Efficiency-Optimization-and-LLM-Frameworks)
     - [System-Level Efficiency Optimization](#System-Level-Efficiency-Optimization)
       - [System-Level Pre-Training Efficiency Optimization](#System-Level-Pre-Training-Efficiency-Optimization)
-      - [System-Level Inference Efficiency Optimization](#System-Level-Inference-Efficiency-Optimization)
       - [System-Level Serving Efficiency Optimization](#System-Level-Serving-Efficiency-Optimization)
-      - [System-Level Efficient Architecture Optimization](#System-Level-Efficient-Architecture-Optimization)
-        - [System-Level Attention Optimization](#System-Level-Attention-Optimization)
-        - [System-Level MoE Optimization](#System-Level-MoE-Optimization)
+        - [Serving System Design](#Serving-System-Design)
+        - [Serving Efficiency Optimization](#Serving-Efficiency-Optimization)
+      - [Hardware Co-Design](#Hardware-Co-Design)
     - [LLM Frameworks](#LLM-Frameworks)
 
 ## 🤖 Model-Centric Methods
@@ -421,7 +420,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - ZeRO-Offload: Democratizing Billion-Scale Model Training, <ins>USENIX ATC, 2021</ins> [[Paper](https://www.usenix.org/system/files/atc21-ren-jie.pdf)] [[Code](https://www.deepspeed.ai/tutorials/zero-offload/)]
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models, <ins>SC, 2020</ins> [[Paper](https://dl.acm.org/doi/10.5555/3433701.3433727)] [[Code](https://github.com/microsoft/DeepSpeed)]
 
-#### System-Level Inference Efficiency Optimization
+#### System-Level Serving Efficiency Optimization
 ##### Serving System Design
 - TurboTransformers: an efficient GPU serving system for transformer models, <ins>PPoPP, 2021</ins> [[Paper](https://dl.acm.org/doi/abs/10.1145/3437801.3441578)]
 - Orca: A Distributed Serving System for Transformer-Based Generative Models, <ins>OSDI, 2022</ins> [[Paper](https://www.usenix.org/conference/osdi22/presentation/yu)]
