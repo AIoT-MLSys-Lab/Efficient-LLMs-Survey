@@ -336,6 +336,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ## 🔢 Data-Centric Methods
 ### Data Selection
 #### Data Selection for Efficient Pre-Training
+- DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.10429)]
 - Data Selection for Language Models via Importance Resampling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.03169)] [[Code](https://github.com/p-lambda/dsir)]
 - NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2111.04130.pdf)] [[Code](https://github.com/yaoxingcheng/TLM)]
 - Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
