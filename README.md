@@ -391,6 +391,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ###### Parallel Generation
 - Skeleton-of-Thought: Large Language Models Can Do Parallel Decoding, <ins>arXiv, 2023</ins>  [[Paper](https://arxiv.org/abs/2307.15337)] [[Code](https://github.com/imagination-research/sot)]
 #### Prompt Compression
+- Compressed Context Memory For Online Language Model Interaction, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2312.03414)]
 - Learning to Compress Prompts with Gist Tokens, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.08467)]
 - Adapting Language Models to Compress Contexts, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14788)] [[Code](https://github.com/princeton-nlp/AutoCompressors)]
 - In-context Autoencoder for Context Compression in a Large Language Model, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.06945)] [[Code](https://github.com/getao/icae)]
