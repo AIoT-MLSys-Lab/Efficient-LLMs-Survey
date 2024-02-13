@@ -344,9 +344,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
 #### Data Selection for Efficient Fine-Tuning
 - LESS: Selecting Influential Data for Targeted Instruction Tuning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.04333)] [[Code](https://github.com/princeton-nlp/LESS)]
+- Superfiltering: Weak-to-Strong Data Filtering for Fast Instruction-Tuning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.00530)] [[Code](https://github.com/tianyi-lab/Superfiltering)]
 - What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.15685)] [[Code](https://github.com/hkust-nlp/deita)]
 - One Shot Learning as Instruction Data Prospector for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.10302)]
 - MoDS: Model-oriented Data Selection for Instruction Tuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.15653)] [[Code](https://github.com/CASIA-LM/MoDS)]
+- From Quantity to Quality: Boosting LLM Performance with Self-Guided Data Selection for Instruction Tuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.12032)] [[Code](https://github.com/MingLiiii/Cherry_LLM)]
 - Instruction Mining: When Data Mining Meets Large Language Model Finetuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.06290)]
 - Data-Efficient Finetuning Using Cross-Task Nearest Neighbors, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.findings-acl.576.pdf)] [[Code](https://github.com/allenai/data-efficient-finetuning)]
 - Data Selection for Fine-tuning Large Language Models Using Transferred Shapley Values, <ins>ACL SRW, 2023</ins> [[Paper](https://arxiv.org/abs/2306.10165)] [[Code](https://github.com/stephanieschoch/ts-dshapley)]
