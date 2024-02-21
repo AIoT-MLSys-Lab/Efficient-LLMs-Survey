@@ -95,6 +95,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Quantization
 ##### Post-Training Quantization
 ###### Weight-Only Quantization
+- OneBit: Towards Extremely Low-bit Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.11295)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
 - QuIP: 2-Bit Quantization of Large Language Models With Guarantees, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.13304)] [[Code](https://github.com/jerry-chee/QuIP)]
 - AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.00978)] [[Code](https://github.com/mit-han-lab/llm-awq)]
@@ -343,6 +344,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2111.04130.pdf)] [[Code](https://github.com/yaoxingcheng/TLM)]
 - Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
 #### Data Selection for Efficient Fine-Tuning
+- How to Train Data-Efficient LLMs, <ins>arXiv, 2024</ins>[[Paper](https://arxiv.org/abs/2402.09668)]
 - LESS: Selecting Influential Data for Targeted Instruction Tuning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.04333)] [[Code](https://github.com/princeton-nlp/LESS)]
 - Superfiltering: Weak-to-Strong Data Filtering for Fast Instruction-Tuning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.00530)] [[Code](https://github.com/tianyi-lab/Superfiltering)]
 - What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.15685)] [[Code](https://github.com/hkust-nlp/deita)]
