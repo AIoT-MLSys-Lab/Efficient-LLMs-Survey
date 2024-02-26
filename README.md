@@ -243,6 +243,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ### Efficient Architecture
 #### Efficient Attention
 ##### Sharing-based Attention
+- MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.14905)]
 - GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13245)]
 - Fast Transformer Decoding: One Write-Head is All You Need, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1911.02150)]
 ##### Feature Information Reduction
