@@ -180,6 +180,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Fixup Initialization: Residual Learning without Normalization, <ins>ICLR, 2019</ins> [[Paper](https://openreview.net/pdf?id=H1gsz30cKX)]
 - On Weight Initialization in Deep Neural Networks, <ins>arXiv, 2017</ins> [[Paper](https://arxiv.org/abs/1704.08863)]
 #### Optimization Strategies
+- Towards Optimal Learning of Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.17759)] [[Code](https://github.com/microsoft/LMOps/tree/main/learning_law)]
 - Symbolic Discovery of Optimization Algorithms, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2302.06675)]
 - Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14342)] [[Code](https://github.com/Liuhong99/Sophia)]
 
