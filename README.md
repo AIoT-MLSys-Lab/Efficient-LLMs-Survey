@@ -242,6 +242,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 #### KV-Cache Optimization
+- WKVQuant: Quantizing Weight and Key/Value Cache for Large Language Models Gains More, <ins>arXiv, 2024</ins> [[Paper](https://zhuanzhi.ai/paper/6045a748004aa13e00d0cc6c8aceca4f)]
+- On the Efficacy of Eviction Policy for Key-Value Constrained Generative Language Model Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.06262)]
 - KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.02750)] [[Code](https://github.com/jy-yuan/KIVI)]
 - Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs, <ins>ICLR, 2024</ins> [[Paper](https://paperswithcode.com/paper/model-tells-you-what-to-discard-adaptive-kv)]
 - SkipDecode: Autoregressive Skip Decoding with Batching and Caching for Efficient LLM Inference, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.02628)]
