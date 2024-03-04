@@ -363,6 +363,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - NLP From Scratch Without Large-Scale Pretraining: A Simple and Efficient Framework, <ins>ICML, 2022</ins> [[Paper](https://arxiv.org/pdf/2111.04130.pdf)] [[Code](https://github.com/yaoxingcheng/TLM)]
 - Span Selection Pre-training for Question Answering, <ins>ACL, 2020</ins> [[Paper](https://arxiv.org/abs/1909.04120)] [[Code](https://github.com/IBM/span-selection-pretraining)]
 #### Data Selection for Efficient Fine-Tuning
+- AutoMathText: Autonomous Data Selection with Language Models for Mathematical Texts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.07625)] [[Code](https://huggingface.co/datasets/math-ai/AutoMathText)]
 - What Makes Good Data for Alignment? A Comprehensive Study of Automatic Data Selection in Instruction Tuning, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2312.15685)] [[Code](https://github.com/hkust-nlp/deita)]
 - How to Train Data-Efficient LLMs, <ins>arXiv, 2024</ins>[[Paper](https://arxiv.org/abs/2402.09668)]
 - LESS: Selecting Influential Data for Targeted Instruction Tuning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.04333)] [[Code](https://github.com/princeton-nlp/LESS)]
