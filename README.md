@@ -136,6 +136,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - A Simple and Effective Pruning Approach for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.11695)] [[Code](https://github.com/locuslab/wanda)]
 - One-Shot Sensitivity-Aware Mixed Sparsity Pruning for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.09499v1.pdf)]
 #### Low-Rank Approximation
+- SVD-LLM: Singular Value Decomposition for Large Language Model Compression, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.07378)] [[Code](https://github.com/AIoT-MLSys-Lab/SVD-LLM)]
 - ASVD: Activation-aware Singular Value Decomposition for Compressing Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2312.05821)] [[Code](https://github.com/hahnyuan/ASVD4LLM)]
 - Language model compression with weighted low-rank factorization, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2207.00112)]
 - TensorGPT: Efficient Compression of the Embedding Layer in LLMs based on the Tensor-Train Decomposition, <ins>arXiv, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2307.00526)]
