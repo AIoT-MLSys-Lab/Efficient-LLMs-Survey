@@ -522,13 +522,11 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ## 🖌️ Citation
 If you find this survey useful to your work, please consider citing:
 ```
-@misc{wan2023efficient,
-      title={Efficient Large Language Models: A Survey}, 
-      author={Zhongwei Wan and Xin Wang and Che Liu and Samiul Alam and Yu Zheng and Jiachen Liu and Zhongnan Qu and Shen Yan and Yi Zhu and Quanlu Zhang and Mosharaf Chowdhury and Mi Zhang},
-      year={2023},
-      eprint={2312.03863},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{wan2023efficient,
+  title={Efficient Large Language Models: A Survey},
+  author={Wan, Zhongwei and Wang, Xin and others},
+  year={2023},
+  journal={arXiv preprint arXiv:2312.03863},
 }
 ```
 ## ❤️ Contribution
