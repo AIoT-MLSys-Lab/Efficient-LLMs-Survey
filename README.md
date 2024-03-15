@@ -14,6 +14,19 @@
   journal={arXiv preprint arXiv:2312.03863},
 }
 ```
+## ❤️ Contribution
+
+This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> (wang.15980@osu.edu), <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> (wan.512@osu.edu), <ins>[samiul272](https://github.com/samiul272)</ins> (alam.140@osu.edu), and <ins>[mi-zhang](https://github.com/mi-zhang)</ins> (mizhang.1@osu.edu). **We welcome feedback, suggestions, and contributions that can help improve this survey and repository so as to make them valuable resources to benefit the entire community**.
+
+1. If you have any suggestions regarding our taxonomy, find any missed papers, or update any preprint arXiv paper that has been accepted to some venue, feel free to send us an email or submit a **pull request** using the following markdown format.
+
+```markdown
+Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
+```
+
+2. If one preprint paper has multiple versions, please use **the earliest submitted year**.
+   
+3. Display the papers in **a year descending order** (the latest, the first).
 
 ## 📌 What is This Survey About?
 
@@ -528,29 +541,5 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 
 </div>
 
-
  <!-- [^1]: This table was updated Dec 2023. This table will require updates as cool new frameworks are being released frequently and current frameworks continue to mature at an accelerated rate. So please feel free to suggest any important distinguishing features or popular new frameworks-->
 
-## 🖌️ Citation
-If you find this survey useful to your work, please consider citing:
-```
-@article{wan2023efficient,
-  title={Efficient Large Language Models: A Survey},
-  author={Wan, Zhongwei and Wang, Xin and others},
-  year={2023},
-  journal={arXiv preprint arXiv:2312.03863},
-}
-```
-## ❤️ Contribution
-
-This repository is maintained by <ins>[tuidan](https://github.com/tuidan)</ins> (wang.15980@osu.edu), <ins>[SUSTechBruce](https://github.com/SUSTechBruce)</ins> (wan.512@osu.edu), <ins>[samiul272](https://github.com/samiul272)</ins> (alam.140@osu.edu), and <ins>[mi-zhang](https://github.com/mi-zhang)</ins> (mizhang.1@osu.edu). **We welcome feedback, suggestions, and contributions that can help improve this survey and repository so as to make them valuable resources to benefit the entire community**.
-
-1. If you have any suggestions regarding our taxonomy, find any missed papers, or update any preprint arXiv paper that has been accepted to some venue, feel free to send us an email or submit a **pull request** using the following markdown format.
-
-```markdown
-Paper Title, <ins>Conference/Journal/Preprint, Year</ins>  [[pdf](link)] [[other resources](link)].
-```
-
-2. If one preprint paper has multiple versions, please use **the earliest submitted year**.
-   
-3. Display the papers in **a year descending order** (the latest, the first).
