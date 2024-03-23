@@ -271,6 +271,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 #### KV-Cache Optimization
+- GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.05527)]
 - Dynamic Memory Compression: Retrofitting LLMs for Accelerated Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.09636)]
 - No Token Left Behind: Reliable KV Cache Compression via Importance-Aware Mixed Precision Quantization, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.18096)]
 - Get More with LESS: Synthesizing Recurrence with KV Cache Compression for Efficient LLM Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.09398)]
