@@ -260,7 +260,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - QLoRA: Efficient Finetuning of Quantized LLMs, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)] [[Code1](https://github.com/artidoro/qlora)] [[Code2](https://github.com/TimDettmers/bitsandbytes)]
 ### Efficient Inference
 #### Speculative Decoding
-- Tandem Transformers for Inference Efficient LLMs, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.08644)] 
+- Tandem Transformers for Inference Efficient LLMs, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.08644)]
+- REST: Retrieval-Based Speculative Decoding, 2023</ins> [[Paper](https://arxiv.org/abs/2311.08252)]
 - PaSS: Parallel Speculative Sampling, <ins>NeurIPS Workshop, 2023</ins> [[Paper](https://arxiv.org/abs/2311.13581)]
 - Accelerating Transformer Inference for Translation via Parallel Decoding, <ins>ACL, 2023</ins> [[Paper](https://aclanthology.org/2023.acl-long.689/)] [[Code](https://github.com/hao-ai-lab/LookaheadDecoding)]
 - Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads, <ins>Blog, 2023</ins> [[Blog](https://sites.google.com/view/medusa-llm)] [[Code](https://github.com/FasterDecoding/Medusa)]
