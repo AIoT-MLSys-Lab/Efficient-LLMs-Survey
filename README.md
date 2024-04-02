@@ -55,6 +55,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
     - [Knowledge Distillation](#Knowledge-Distillation)
       - [White-Box KD](#White-Box-KD)
       - [Black-Box KD](#Black-Box-KD)
+    - [Parameter Sharing](#Parameter-Sharing)
   - [Efficient Pre-Training](#Efficient-Pre-Training)
     - [Mixed Precision Acceleration](#Mixed-Precision-Acceleration)
     - [Scaling Models](#Scaling-Models)
@@ -190,6 +191,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - In-context Learning Distillation: Transferring Few-shot Learning Ability of Pre-trained Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10670)]
 - Explanations from Large Language Models Make Small Reasoners Better, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2210.06726)]
 - DISCO: Distilling Counterfactuals with Large Language Models, <ins>arXiv, 2022</ins> [[Paper](https://arxiv.org/abs/2212.10534)] [[Code](https://github.com/eric11eca/disco)]
+##### Parameter-Sharing
+- MobiLlama: Towards Accurate and Lightweight Fully Transparent GPT, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.16840)] 
 ### Efficient Pre-Training
 #### Mixed Precision Acceleration
 - GACT: Activation Compressed Training for Generic Network Architectures, <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/liu22v/liu22v.pdf)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
