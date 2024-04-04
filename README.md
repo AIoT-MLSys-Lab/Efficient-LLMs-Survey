@@ -331,6 +331,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
 #### Mixture of Experts
 ##### MoE-based LLMs
+- Mixture-of-Depths: Dynamically allocating compute in transformer-based language models, 2024</ins> [[Paper](https://arxiv.org/abs/2404.02258)]
 - Branch-Train-MiX: Mixing Expert LLMs into a Mixture-of-Experts LLM, 2024</ins> [[Paper](https://arxiv.org/abs/2403.07816)]
 - Mixtral of Experts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/pdf/2401.04088.pdf)] [[Code](https://github.com/mistralai/mistral-src)]
 - Mistral 7B, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.06825)] [[Code](https://github.com/mistralai/mistral-src)]
