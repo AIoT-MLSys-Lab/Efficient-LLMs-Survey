@@ -332,6 +332,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
 #### Mixture of Experts
 ##### MoE-based LLMs
+- An Expert is Worth One Token: Synergizing Multiple Expert LLMs as Generalist via Expert Token Routing, 2024</ins> [[Paper](https://arxiv.org/abs/2403.16854)]
 - Mixture-of-Depths: Dynamically allocating compute in transformer-based language models, 2024</ins> [[Paper](https://arxiv.org/abs/2404.02258)]
 - Branch-Train-MiX: Mixing Expert LLMs into a Mixture-of-Experts LLM, 2024</ins> [[Paper](https://arxiv.org/abs/2403.07816)]
 - Mixtral of Experts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/pdf/2401.04088.pdf)] [[Code](https://github.com/mistralai/mistral-src)]
@@ -342,6 +343,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - BASE Layers: Simplifying Training of Large, Sparse Models, <ins>ICML, 2021</ins> [[Paper](https://arxiv.org/abs/2103.16716)] [[Code](https://github.com/pytorch/fairseq/)]
 - GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding, <ins>ICLR, 2021</ins> [[Paper](https://arxiv.org/abs/2006.16668)]
 ##### Algorithm-Level MoE Optimization
+- SEER-MoE: Sparse Expert Efficiency through Regularization for Mixture-of-Experts, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/abs/2404.05089)]
 - Scaling Laws for Fine-Grained Mixture of Experts, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/html/2402.07871v1)]
 - Lifelong Language Pretraining with Distribution-Specialized Experts, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2305.12281)]
 - Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14705)]
