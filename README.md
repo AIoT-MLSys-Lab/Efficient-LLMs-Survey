@@ -201,6 +201,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - A Study of BFLOAT16 for Deep Learning Training, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
 - Mixed Precision Training, <ins>ICLR, 2018</ins> [[Paper](https://openreview.net/forum?id=r1gs9JgRZ)]
 #### Scaling Models
+- lemon: lossless model expansion, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2310.07999)] 
 - Preparing Lessons for Progressive Training on Language Models, <ins>AAAI, 2024</ins> [[Paper](https://arxiv.org/abs/2401.09192)] 
 - Learning to Grow Pretrained Models for Efficient Transformer Training, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/pdf?id=cDYRS5iZ16f)] [[Code](https://github.com/VITA-Group/LiGO)]
 - 2x Faster Language Model Pre-training via Masked Structural Growth, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.02869)]
