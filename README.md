@@ -118,6 +118,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Quantization
 ##### Post-Training Quantization
 ###### Weight-Only Quantization
+- IntactKV: Improving Large Language Model Quantization by Keeping Pivot Tokens Intact, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2403.01241)] 
 - OmniQuant: OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2308.13137)] [[Code](https://github.com/OpenGVLab/OmniQuant)]
 - OneBit: Towards Extremely Low-bit Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.11295)]
 - GPTQ: Accurate Quantization for Generative Pre-trained Transformers, <ins>ICLR, 2023</ins> [[Paper](https://openreview.net/forum?id=tcbBPnfwxS)] [[Code](https://github.com/IST-DASLab/gptq)]
