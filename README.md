@@ -112,7 +112,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [System-Level Serving Efficiency Optimization](#System-Level-Serving-Efficiency-Optimization)
         - [Serving System Design](#Serving-System-Design)
         - [Serving Performance Optimization](#Serving-Performance-Optimization)
-      - [Hardware Co-Design](#Hardware-Co-Design)
+      - [Algorithm-Hardware Co-Design](#Algorithm-Hardware-Co-Design)
     - [LLM Frameworks](#LLM-Frameworks)
 
 ## 🤖 Model-Centric Methods
@@ -536,7 +536,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Petals: Collaborative Inference and Fine-tuning of Large Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2209.01188)] 
 - SpotServe: Serving Generative Large Language Models on Preemptible Instances, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.15566)]
 
-##### Serving Performance Optimization:
+##### Serving Performance Optimization
 - S3: Increasing GPU Utilization during Generative Inference for Higher Throughput, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2306.06000)]
 - Fast Distributed Inference Serving for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.05920)]
 - Response Length Perception and Sequence Scheduling: An LLM-Empowered LLM Inference Pipeline, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.13144)]
@@ -545,7 +545,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Prompt Cache: Modular Attention Reuse for Low-Latency Inference, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.04934)]
 - Fairness in Serving Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2401.00588)]
 
-#### Hardware Co-Design
+#### Algorithm-Hardware Co-Design
 - FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2205.14135)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08691)] [[Code](https://github.com/Dao-AILab/flash-attention)]
 - Flash-Decoding for Long-Context Inference, <ins>Blog, 2023</ins> [[Blog](https://pytorch.org/blog/flash-decoding/)]
