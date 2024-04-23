@@ -263,6 +263,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - P-Tuning v2: Prompt Tuning Can Be Comparable to Finetuning Universally Across Scales and Tasks，<ins>ACL-Short, 2022</ins> [[Paper](https://aclanthology.org/2022.acl-short.8/)] [[Code](https://github.com/THUDM/P-tuning-v2)]
 - The Power of Scale for Parameter-Efficient Prompt Tuning, <ins>EMNLP, 2021</ins> [[Paper](https://arxiv.org/abs/2104.08691)]
 #### Memory-Efficient Fine-Tuning
+- GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/abs/2403.03507)] 
 - ReFT: Representation Finetuning for Language Models, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/abs/2404.03592)] 
 - LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/abs/2403.17919)] 
 - BitDelta: Your Fine-Tune May Only Be Worth One Bit, <ins>arXiv, 2024/ins> [[Paper](https://arxiv.org/abs/2402.10193)] 
