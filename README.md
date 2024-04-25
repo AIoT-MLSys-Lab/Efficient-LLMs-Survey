@@ -295,6 +295,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### KV-Cache Optimization
 - SnapKV : LLM Knows What You are Looking for Before Generation, <ins>arXiv, 2024</ins> [[Paper](https://huggingface.co/papers/2404.14469)]
 - Anchor-based Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.07616)]
+- kvquant: Towards 10 million context length llm inference with kv cache quantization, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2401.18079)]
 - GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.05527)]
 - Dynamic Memory Compression: Retrofitting LLMs for Accelerated Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.09636)]
 - No Token Left Behind: Reliable KV Cache Compression via Importance-Aware Mixed Precision Quantization, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.18096)]
