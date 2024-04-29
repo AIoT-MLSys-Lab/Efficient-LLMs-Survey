@@ -279,6 +279,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 #### Parallel Decoding
 - Encode Once and Decode in Parallel: Efficient Transformer Decoding, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.13112)]
 #### Speculative Decoding
+- LayerSkip: Enabling Early Exit Inference and Self-Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2404.16710)]
 - TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://github.com/Infini-AI-Lab/TriForce)]
 - REST: Retrieval-Based Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://github.com/FasterDecoding/REST)]
 - Tandem Transformers for Inference Efficient LLMs, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.08644)]
