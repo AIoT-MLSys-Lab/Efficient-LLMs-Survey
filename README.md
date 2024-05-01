@@ -493,6 +493,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Everything of Thoughts: Defying the Law of Penrose Triangle for Thought Generation, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.04254)]
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, <ins>NeurIPS, 2022</ins> [[Paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html)]
 ###### Parallel Generation
+- Better & Faster Large Language Models via Multi-token Prediction, <ins>arXiv, 2023</ins>  [[Paper](https://arxiv.org/abs/2404.19737)] 
 - Skeleton-of-Thought: Large Language Models Can Do Parallel Decoding, <ins>arXiv, 2023</ins>  [[Paper](https://arxiv.org/abs/2307.15337)] [[Code](https://github.com/imagination-research/sot)]
 #### Prompt Compression
 - LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.12968)]
