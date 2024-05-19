@@ -58,7 +58,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Black-Box KD](#Black-Box-KD)
     - [Parameter Sharing](#Parameter-Sharing)
   - [Efficient Pre-Training](#Efficient-Pre-Training)
-    - [Mixed Precision Acceleration](#Mixed-Precision-Acceleration)
+    - [Mixed Precision Training](#Mixed-Precision-Training)
     - [Scaling Models](#Scaling-Models)
     - [Initialization Techniques](#Initialization-Techniques)
     - [Optimization Strategies](#Optimization-Strategies)
@@ -201,9 +201,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ##### Parameter-Sharing
 - MobiLlama: Towards Accurate and Lightweight Fully Transparent GPT, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.16840)] 
 ### Efficient Pre-Training
-#### Mixed Precision Acceleration
-- GACT: Activation Compressed Training for Generic Network Architectures, <ins>ICML, 2022</ins> [[Paper](https://proceedings.mlr.press/v162/liu22v/liu22v.pdf)] [[Code](https://github.com/LiuXiaoxuanPKU/GACT-ICML)]
-- Mesa: A Memory-saving Training Framework for Transformers, <ins>arXiv, 2021</ins> [[Paper](https://arxiv.org/abs/2111.11124)] [[Code](https://github.com/ziplab/Mesa)]
+#### Mixed Precision Training
 - Bfloat16 Processing for Neural Networks, <ins>ARITH, 2019</ins> [[Paper](https://ieeexplore.ieee.org/document/8877390)]
 - A Study of BFLOAT16 for Deep Learning Training, <ins>arXiv, 2019</ins> [[Paper](https://arxiv.org/abs/1905.12322)]
 - Mixed Precision Training, <ins>ICLR, 2018</ins> [[Paper](https://openreview.net/forum?id=r1gs9JgRZ)]
