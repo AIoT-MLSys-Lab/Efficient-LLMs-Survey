@@ -1,17 +1,20 @@
 # Efficient Large Language Models: A Survey  
 
-> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863) (Version 1 released on 12/06/2023; Version 2: 12/23/2023; Version 3: Accepted by Transactions on Machine Learning Research (TMLR))
+> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863) (Version 1 released on 12/06/2023; Version 2: 12/23/2023; Version 3: 05/19/2023, Accepted by Transactions on Machine Learning Research (TMLR))
 
 > *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Jiachen Liu<sup>4</sup>, Zhongnan Qu<sup>5</sup>, Shen Yan<sup>6</sup>, Yi Zhu<sup>7</sup>, Quanlu Zhang<sup>8</sup>, Mosharaf Chowdhury<sup>4</sup>, Mi Zhang<sup>1</sup>*
 
 > *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>University of Michigan, <sup>5</sup>Amazon AWS AI, <sup>6</sup>Google Research, <sup>7</sup>Boson AI, <sup>8</sup>Microsoft Research Asia*
 ## ⚡News: Our survey paper has been officially accepted by Transactions on Machine Learning Research (TMLR) 2024: [[OpenReview](https://openreview.net/forum?id=bsCCJHbO8A)]
 ```
-@article{wan2023efficient,
+@article{wan2024efficient,
   title={Efficient Large Language Models: A Survey},
-  author={Wan, Zhongwei and Wang, Xin and others},
-  year={2023},
-  journal={arXiv preprint arXiv:2312.03863},
+  author={Zhongwei Wan and Xin Wang and Che Liu and Samiul Alam and Yu Zheng and Jiachen Liu and Zhongnan Qu and Shen Yan and Yi Zhu and Quanlu Zhang and Mosharaf Chowdhury and Mi Zhang},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2024},
+  url={https://openreview.net/forum?id=bsCCJHbO8A},
+  note={Survey Certification}
 }
 ```
 ## ❤️ Contribution
