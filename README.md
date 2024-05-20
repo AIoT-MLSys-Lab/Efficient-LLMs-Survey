@@ -1,6 +1,6 @@
 # Efficient Large Language Models: A Survey  
 
-> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863) (Version 1 released on 12/06/2023; Version 2: 12/23/2023; Version 3: 05/19/2024, Accepted by Transactions on Machine Learning Research (TMLR))
+> **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863) (Version 1 released on 12/06/2023; Version 2: 12/23/2023; Version 3: 05/20/2024, Accepted by Transactions on Machine Learning Research (TMLR))
 
 > *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Jiachen Liu<sup>4</sup>, Zhongnan Qu<sup>5</sup>, Shen Yan<sup>6</sup>, Yi Zhu<sup>7</sup>, Quanlu Zhang<sup>8</sup>, Mosharaf Chowdhury<sup>4</sup>, Mi Zhang<sup>1</sup>*
 
