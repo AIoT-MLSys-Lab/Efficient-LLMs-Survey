@@ -7,7 +7,7 @@
 > *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>University of Michigan, <sup>5</sup>Amazon AWS AI, <sup>6</sup>Google Research, <sup>7</sup>Boson AI, <sup>8</sup>Microsoft Research Asia*
 ## ⚡News: Our survey paper has been officially accepted by Transactions on Machine Learning Research (TMLR) 2024: [[OpenReview](https://openreview.net/forum?id=bsCCJHbO8A)]
 ```
-@article{wan2024efficientllmsurvey,
+@article{wan2024efficient,
   title={Efficient Large Language Models: A Survey},
   author={Zhongwei Wan and Xin Wang and Che Liu and Samiul Alam and Yu Zheng and Jiachen Liu and Zhongnan Qu and Shen Yan and Yi Zhu and Quanlu Zhang and Mosharaf Chowdhury and Mi Zhang},
   journal={Transactions on Machine Learning Research},
