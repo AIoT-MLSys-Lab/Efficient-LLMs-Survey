@@ -572,23 +572,24 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 <div align="center">
 
 |                                                    | Efficient Training | Efficient Inference | Efficient Fine-Tuning    |
-| :-------------------------------------------------------------------- | :------------------: | :--------------------: | :--: |
+| :-------------------------------------------------------------------- | :------------------: | :---------------------: | :--: |
 | DeepSpeed [[Code](https://github.com/microsoft/DeepSpeed)]            | ✅                   | ✅                     | ✅   |
 | Megatron [[Code](https://github.com/NVIDIA/Megatron-LM)]              | ✅                   | ✅                     | ✅   |
-| Alpa [[Code](https://github.com/alpa-projects/alpa)]                  | ✅                   | ✅                     | ✅   |
 | ColossalAI [[Code](https://github.com/hpcaitech/ColossalAI)]          | ✅                   | ✅                     | ✅   |
+| Nanotron [[Code](https://github.com/huggingface/nanotron)]            | ✅                   | ✅                     | ✅   |
+| MegaBlocks [[Code](https://github.com/databricks/megablocks)]         | ✅                   | ✅                     | ✅   |
 | FairScale [[Code](https://github.com/facebookresearch/fairscale)]     | ✅                   | ✅                     | ✅   |
 | Pax [[Code](https://github.com/google/paxml/)]                        | ✅                   | ✅                     | ✅   |
 | Composer [[Code](https://github.com/mosaicml/composer)]               | ✅                   | ✅                     | ✅   |
+| OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]                  | ❌                   | ✅                     | ✅   |
+| LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ❌                   | ✅                     | ✅   |
 | vLLM [[Code](https://github.com/vllm-project/vllm)]                   | ❌                   | ✅                     | ❌   |
 | TensorRT-LLM [[Code](https://github.com/NVIDIA/TensorRT-LLM)]         | ❌                   | ✅                     | ❌   |
-| LightLLM [[Code](https://github.com/ModelTC/lightllm)]                | ❌                   | ✅                     | ❌   |
-| OpenLLM [[Code](https://github.com/bentoml/OpenLLM)]                  | ❌                   | ✅                     | ✅   |
+| TGI [[Code](https://github.com/huggingface/text-generation-inference)]| ❌                   | ✅                     | ❌   |
 | Ray-LLM [[Code](https://github.com/ray-project/ray-llm)]              | ❌                   | ✅                     | ❌   |
 | MLC-LLM [[Code](https://github.com/mlc-ai/mlc-llm)]                   | ❌                   | ✅                     | ❌   |
 | Sax [[Code](https://github.com/google/saxml)]                         | ❌                   | ✅                     | ❌   |
 | Mosec [[Code](https://github.com/mosecorg/mosec)]                     | ❌                   | ✅                     | ❌   |
-| LLM-Foundry [[Code](https://github.com/mosaicml/llm-foundry)]         | ✅                   | ✅                     | ❌   |
 
 </div>
 
