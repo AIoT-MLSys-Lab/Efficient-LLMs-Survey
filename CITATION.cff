@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: 'Efficient Large Language Models: A Survey'
-type: generic
+type: article
 message: >-
   If you find this survey useful to your work, please
   consider citing it.
@@ -29,39 +29,19 @@ authors:
   - family-names: Zhang
     given-names: Mi
 identifiers:
-  - type: doi
-    value: 10.5281/zenodo.1234
   - type: url
-    value: 'https://arxiv.org/abs/2312.03863'
-    description: Arxiv preprint url
-url: 'https://aiot-mlsys-lab.github.io/'
+    value: 'https://openreview.net/forum?id=bsCCJHbO8A'
+    description: Openreview url
 abstract: >-
-  Large Language Models (LLMs) have demonstrated remarkable
-  capabilities in important tasks such as natural language
-  understanding, language generation, and complex reasoning
-  and have the potential to make a substantial impact on our
-  society. Such capabilities, however, come with the
-  considerable resources they demand, highlighting the
-  strong need to develop effective techniques for addressing
-  their efficiency challenges. In this survey, we provide a
-  systematic and comprehensive review of efficient LLMs
-  research. We organize the literature in a taxonomy
-  consisting of three main categories, covering distinct yet
-  interconnected efficient LLMs topics from model-centric,
-  data-centric, and framework-centric perspectives,
-  respectively. We have also created this GitHub repository
-  where we compile the papers featured in this survey, and
-  will actively maintain this repository and incorporate new
-  research as it emerges. We hope our survey can serve as a
-  valuable resource to help researchers and practitioners
-  gain a systematic understanding of the research
-  developments in efficient LLMs and inspire them to
-  contribute to this important and exciting field.
+ Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding and language generation, and thus have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing their efficiency challenges. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We have also created a GitHub repository where we organize the papers featured in this survey at https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey. We will actively maintain the repository and incorporate new research as it emerges. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of efficient LLMs research and inspire them to contribute to this important and exciting field.
 keywords:
   - Large Language models
   - TinyML
   - Efficient Deep Learning
   - Edge Computing
-license: CC-BY-SA-4.0
 version: '1.0'
-date-released: '2023-12-08'
+date-released: "2024"
+url: "https://openreview.net/forum?id=bsCCJHbO8A"
+journal: "Transactions on Machine Learning Research"
+issn: "2835-8856"
+note: "Survey Certification"
