@@ -1,46 +1,63 @@
 cff-version: 1.2.0
-title: 'Efficient Large Language Models: A Survey'
-message: >-
-  If you find this survey useful to your work, please
-  consider citing it.
+message: "If you use this work, please cite it as below."
+authors:
+- family-names: "Wan"
+  given-names: "Zhongwei"
+- family-names: "Wang"
+  given-names: "Xin"
+- family-names: "Liu"
+  given-names: "Che"
+- family-names: "Alam"
+  given-names: "Samiul"
+- family-names: "Zheng"
+  given-names: "Yu"
+- family-names: "Liu"
+  given-names: "Jiachen"
+- family-names: "Qu"
+  given-names: "Zhongnan"
+- family-names: "Yan"
+  given-names: "Shen"
+- family-names: "Zhu"
+  given-names: "Yi"
+- family-names: "Zhang"
+  given-names: "Quanlu"
+- family-names: "Chowdhury"
+  given-names: "Mosharaf"
+- family-names: "Zhang"
+  given-names: "Mi"
+title: "Efficient Large Language Models: A Survey"
+date-released: 2024
+url: "https://openreview.net/forum?id=bsCCJHbO8A"
 preferred-citation:
   type: article
   authors:
-    - family-names: Wan
-      given-names: Zhongwei
-    - family-names: Wang
-      given-names: Xin
-    - family-names: Liu
-      given-names: Che
-    - family-names: Alam
-      given-names: Samiul
-      orcid: 'https://orcid.org/0000-0002-8458-4642'
-    - family-names: Zheng
-      given-names: Yu
-    - family-names: Qu
-      given-names: Zhongnan
-    - family-names: Yan
-      given-names: Shen
-    - family-names: Zhu
-      given-names: Yi
-    - family-names: Zhang
-      given-names: Quanlu
-    - family-names: Chowdhury
-      given-names: Mosharaf
-    - family-names: Zhang
-      given-names: Mi
-  identifiers:
-    - type: url
-      value: 'https://openreview.net/forum?id=bsCCJHbO8A'
-      description: Openreview url
-  abstract: >-
-   Large Language Models (LLMs) have demonstrated remarkable capabilities in important tasks such as natural language understanding and language generation, and thus have the potential to make a substantial impact on our society. Such capabilities, however, come with the considerable resources they demand, highlighting the strong need to develop effective techniques for addressing their efficiency challenges. In this survey, we provide a systematic and comprehensive review of efficient LLMs research. We organize the literature in a taxonomy consisting of three main categories, covering distinct yet interconnected efficient LLMs topics from model-centric, data-centric, and framework-centric perspective, respectively. We have also created a GitHub repository where we organize the papers featured in this survey at https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey. We will actively maintain the repository and incorporate new research as it emerges. We hope our survey can serve as a valuable resource to help researchers and practitioners gain a systematic understanding of efficient LLMs research and inspire them to contribute to this important and exciting field.
-  keywords:
-    - Large Language models
-    - TinyML
-    - Efficient Deep Learning
-    - Edge Computing
-  date-released: '2024'
-  url: 'https://openreview.net/forum?id=bsCCJHbO8A'
-  journal: 'Transactions on Machine Learning Research'
-  issue: '2835-8856'
+  - family-names: "Wan"
+    given-names: "Zhongwei"
+  - family-names: "Wang"
+    given-names: "Xin"
+  - family-names: "Liu"
+    given-names: "Che"
+  - family-names: "Alam"
+    given-names: "Samiul"
+  - family-names: "Zheng"
+    given-names: "Yu"
+  - family-names: "Liu"
+    given-names: "Jiachen"
+  - family-names: "Qu"
+    given-names: "Zhongnan"
+  - family-names: "Yan"
+    given-names: "Shen"
+  - family-names: "Zhu"
+    given-names: "Yi"
+  - family-names: "Zhang"
+    given-names: "Quanlu"
+  - family-names: "Chowdhury"
+    given-names: "Mosharaf"
+  - family-names: "Zhang"
+    given-names: "Mi"
+  journal: "Transactions on Machine Learning Research"
+  issn: "2835-8856"
+  title: "Efficient Large Language Models: A Survey"
+  year: 2024
+  url: "https://openreview.net/forum?id=bsCCJHbO8A"
+  note: "Survey Certification"
