@@ -38,7 +38,6 @@ keywords:
   - TinyML
   - Efficient Deep Learning
   - Edge Computing
-version: '1.0'
 date-released: '2024'
 url: 'https://openreview.net/forum?id=bsCCJHbO8A'
 journal: 'Transactions on Machine Learning Research'
