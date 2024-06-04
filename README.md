@@ -416,6 +416,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Memorizing Transformers, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2203.08913)] [[Code](https://github.com/lucidrains/memorizing-transformers-pytorch)]
 #### Transformer Alternative Architecture
 ##### State Space Models
+- Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2405.21060)]
 - MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2401.04081)]
 - DenseMamba: State Space Models with Dense Hidden Connection for Efficient Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.00818)] [[Code](https://github.com/WailordHe/DenseSSM)]
 - MambaByte: Token-free Selective State Space Model, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2401.13660)] 
