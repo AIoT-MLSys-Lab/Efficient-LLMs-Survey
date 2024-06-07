@@ -430,6 +430,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
 ##### Other Sequential Models
+- Scalable MatMul-free Language Modeling, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2406.02528)]
 - You Only Cache Once: Decoder-Decoder Architectures for Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2405.05254)]
 - MEGALODON: Efficient LLM Pretraining and Inference with Unlimited Context Length, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2404.08801)]
 - DiJiang: Efficient Large Language Models through Compact Kernelization, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.19928)]
