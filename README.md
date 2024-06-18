@@ -296,6 +296,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 #### KV-Cache Optimization
+- QUEST: Query-Aware Sparsity for Efficient Long-Context LLM Inference, <ins>ICML, 2024</ins> [[Paper](https://hanlab.mit.edu/projects/quest)]
 - Reducing Transformer Key-Value Cache Size with Cross-Layer Attention, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2405.12981)]
 - SnapKV : LLM Knows What You are Looking for Before Generation, <ins>arXiv, 2024</ins> [[Paper](https://huggingface.co/papers/2404.14469)]
 - Anchor-based Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.07616)]
