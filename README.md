@@ -176,6 +176,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LoSparse: Structured Compression of Large Language Models based on Low-Rank and Sparse Approximation, <ins>ICML, 2023</ins>  [[Paper](https://arxiv.org/abs/2306.11222)] [[Code](https://github.com/yxli2123/LoSparse)]
 #### Knowledge Distillation
 ##### White-Box KD
+- Rethinking Kullback-Leibler Divergence in Knowledge Distillation for Large Language Models <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2404.02657)]
 - DistiLLM: Towards Streamlined Distillation for Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2402.03898)] [[Code](https://github.com/jongwooko/distillm)]
 - Towards the Law of Capacity Gap in Distilling Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2311.07052)] [[Code](https://github.com/GeneZC/MiniMA)]
 - Baby Llama: Knowledge Distillation from an Ensemble of Teachers Trained on a Small Dataset with no Performance Penalty, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2308.02019)]
@@ -237,6 +238,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
 - SparseAdapter: An Easy Approach for Improving the Parameter-Efficiency of Adapters, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-emnlp.160/)] [[Code](https://github.com/Shwai-He/SparseAdapter)]
 ##### Low-Rank Adaptation
+- Mixture-of-Subspaces in Low-Rank Adaptation, <ins>Arxiv, 2024</ins> [[Paper](https://arxiv.org/pdf/2406.11909)] [[Code](https://github.com/wutaiqiang/MoSLoRA)]
 - MEFT: Memory-Efficient Fine-Tuning through Sparse Adapter, <ins>ACL, 2024</ins> [[Paper](https://arxiv.org/html/2406.04984v1)]
 - LoRA Meets Dropout under a Unified Framework, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.00812)]
 - STAR: Constraint LoRA with Dynamic Active Learning for Data-Efficient Fine-Tuning of Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.01165)]
