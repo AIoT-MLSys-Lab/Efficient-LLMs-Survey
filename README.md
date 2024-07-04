@@ -238,6 +238,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - AdaMix: Mixture-of-Adaptations for Parameter-efficient Model Tuning, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.emnlp-main.388/)] [[Code](https://github.com/microsoft/AdaMix)]
 - SparseAdapter: An Easy Approach for Improving the Parameter-Efficiency of Adapters, <ins>EMNLP, 2022</ins> [[Paper](https://aclanthology.org/2022.findings-emnlp.160/)] [[Code](https://github.com/Shwai-He/SparseAdapter)]
 ##### Low-Rank Adaptation
+- LOFIT: Localized Fine-tuning on LLM Representations, <ins>Arxiv, 2024</ins> [[Paper](https://arxiv.org/abs/2406.01563)]
 - Mixture-of-Subspaces in Low-Rank Adaptation, <ins>Arxiv, 2024</ins> [[Paper](https://arxiv.org/pdf/2406.11909)] [[Code](https://github.com/wutaiqiang/MoSLoRA)]
 - MEFT: Memory-Efficient Fine-Tuning through Sparse Adapter, <ins>ACL, 2024</ins> [[Paper](https://arxiv.org/html/2406.04984v1)]
 - LoRA Meets Dropout under a Unified Framework, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.00812)]
