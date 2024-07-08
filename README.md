@@ -298,6 +298,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Speculative Decoding with Big Little Decoder, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2302.07863)] [[Code](https://github.com/kssteven418/BigLittleDecoder)]
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
+- SEED: Accelerating Reasoning Tree Construction via Scheduled Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper]([https://arxiv.org/abs/2304.04487](https://arxiv.org/pdf/2406.18200))]
 #### KV-Cache Optimization
 - LOOK-M: Look-Once Optimization in KV Cache for Efficient Multimodal Long-Context Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2406.18139v1)]
 - D2O: Dynamic Discriminative Operations for Efficient Generative Inference of Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2406.13035v1)]
