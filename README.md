@@ -65,6 +65,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
       - [Prefix Tuning](#Prefix-Tuning)
       - [Prompt Tuning](#Prompt-Tuning)
     - [Memory Efficient Fine-Tuning](#Memory-Efficient-Fine-Tuning)
+    - [MoE Efficient Supervised Fine-Tuning](#MoE-Efficient-Supervised-Fine-Tuning)
   - [Efficient Inference](#Efficient-Inference)
     - [Parallel Decoding](#Parallel-Decoding)
     - [Speculative Decoding](#Speculative-Decoding)
@@ -278,6 +279,8 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LoftQ: LoRA-Fine-Tuning-Aware Quantization for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.08659)] [[Code](https://github.com/yxli2123/LoftQ)]
 - QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.14717 )] [[Code](https://github.com/yuhuixu1993/qa-lora)]
 - QLoRA: Efficient Finetuning of Quantized LLMs, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.14314)] [[Code1](https://github.com/artidoro/qlora)] [[Code2](https://github.com/TimDettmers/bitsandbytes)]
+#### MoE-Efficient-Supervised-Fine-Tuning
+- Let the Expert Stick to His Last: Expert-Specialized Fine-Tuning for Sparse Architectural Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2407.01906v1)] 
 ### Efficient Inference
 #### Parallel Decoding
 - CLLMs: Consistency Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.00835)]
