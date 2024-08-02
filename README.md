@@ -303,6 +303,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 - SEED: Accelerating Reasoning Tree Construction via Scheduled Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper]([https://arxiv.org/abs/2304.04487](https://arxiv.org/pdf/2406.18200))]
 #### KV-Cache Optimization
+- Palu: Compressing KV-Cache with Low-Rank Projection, <ins>arXiv, 2024</ins>  [[Paper](https://huggingface.co/papers/2407.21118)] [[Code](https://github.com/shadowpa0327/Palu)]
 - LOOK-M: Look-Once Optimization in KV Cache for Efficient Multimodal Long-Context Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2406.18139v1)]
 - D2O: Dynamic Discriminative Operations for Efficient Generative Inference of Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2406.13035v1)]
 - QUEST: Query-Aware Sparsity for Efficient Long-Context LLM Inference, <ins>ICML, 2024</ins> [[Paper](https://hanlab.mit.edu/projects/quest)]
