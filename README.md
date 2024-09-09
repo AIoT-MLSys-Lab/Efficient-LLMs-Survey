@@ -289,6 +289,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - CLLMs: Consistency Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.00835)]
 - Encode Once and Decode in Parallel: Efficient Transformer Decoding, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.13112)]
 #### Speculative Decoding
+- MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/html/2408.11049v1)]
 - DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2404.00242)]
 - LayerSkip: Enabling Early Exit Inference and Self-Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2404.16710)]
 - TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper](https://github.com/Infini-AI-Lab/TriForce)]
