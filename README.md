@@ -512,6 +512,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 ###### Multi-Step Reasoning
+- Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2408.03314)] 
+- Learning to Reason with LLMs, <ins>Website, 2024</ins> [[Html](https://openai.com/index/learning-to-reason-with-llms/)] 
+- Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2403.09629)] 
 - From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2405.14838)] 
 - Automatic Chain of Thought Prompting in Large Language Models, <ins>ICLR, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03493)] [[Code](https://github.com/amazon-science/auto-cot)]
 - Measuring and Narrowing the Compositionality Gap in Language Models, <ins>EMNLP, 2023</ins> [[Paper](https://arxiv.org/abs/2210.03350)] [[Code](https://github.com/ofirpress/self-ask)]
