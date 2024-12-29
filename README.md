@@ -2,9 +2,9 @@
 
 > **[Efficient Large Language Models: A Survey](http://arxiv.org/abs/2312.03863)**[ [arXiv]](http://arxiv.org/abs/2312.03863) (Version 1: 12/06/2023; Version 2: 12/23/2023; Version 3: 01/31/2024; Version 4: 05/23/2024, camera ready version of Transactions on Machine Learning Research)
 
-> *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Jiachen Liu<sup>4</sup>, Zhongnan Qu<sup>5</sup>, Shen Yan<sup>6</sup>, Yi Zhu<sup>7</sup>, Quanlu Zhang<sup>8</sup>, Mosharaf Chowdhury<sup>4</sup>, Mi Zhang<sup>1</sup>*
+> *Zhongwei Wan<sup>1</sup>, Xin Wang<sup>1</sup>, Che Liu<sup>2</sup>, Samiul Alam<sup>1</sup>, Yu Zheng<sup>3</sup>, Jiachen Liu<sup>4</sup>, Zhongnan Qu<sup>5</sup>, Shen Yan<sup>6</sup>, Yi Zhu<sup>7</sup>, Quanlu Zhang<sup>8</sup>, Mosharaf Chowdhury<sup>4</sup>, Mi Zhang.<sup>1</sup>*
 
-> *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>University of Michigan, <sup>5</sup>Amazon AWS AI, <sup>6</sup>Google Research, <sup>7</sup>Boson AI, <sup>8</sup>Microsoft Research Asia*
+> *<sup>1</sup>The Ohio State University, <sup>2</sup>Imperial College London, <sup>3</sup>Michigan State University, <sup>4</sup>University of Michigan, <sup>5</sup>Amazon AWS AI, <sup>6</sup>Google Research, <sup>7</sup>Boson AI, <sup>8</sup>Microsoft Research Asia.*
 ### ⚡News: Our survey has been officially accepted by Transactions on Machine Learning Research (TMLR), May 2024. Camera ready version is available at: [[OpenReview](https://openreview.net/pdf?id=bsCCJHbO8A)]
 ```
 @article{wan2023efficient,
