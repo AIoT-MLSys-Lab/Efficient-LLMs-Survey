@@ -376,6 +376,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Efficient Content-Based Sparse Attention with Routing Transformers, <ins>TACL, 2020</ins> [[Paper](https://arxiv.org/abs/2003.05997)] [[Code](https://github.com/google-research/google-research/tree/master/routing_transformer)]
 #### Mixture of Experts
 ##### MoE-based LLMs
+- DeepSeek-V3 Technical Report, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2412.19437)]
 - Self-MoE: Towards Compositional Large Language Models with Self-Specialized Experts, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2406.12034)]
 - Lory: Fully Differentiable Mixture-of-Experts for Autoregressive Language Model Pre-training, 2024</ins> [[Paper](https://arxiv.org/abs/2405.03133)]
 - JetMoE: Reaching Llama2 Performance with 0.1M Dollars, 2024</ins> [[Paper](https://arxiv.org/abs/2404.07413)]
