@@ -522,6 +522,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - TeGit: Generating High-Quality Instruction-Tuning Data with Text-Grounded Task Design, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2309.05447)]
 - Self-Instruct: Aligning Language Model with Self Generated Instructions, <ins>ACL, 2023</ins> [[Paper](https://doi.org/10.48550/arXiv.2212.10560)] [[Code](https://github.com/yizhongw/self-instruct)]
 ###### Multi-Step Reasoning
+- ReST-MCTS∗: LLM Self-Training via Process Reward Guided Tree Search, <ins>NeurIPS, 2024</ins> [[Paper](https://arxiv.org/abs/2406.03816)] 
 - Training Language Models to Self-Correct via Reinforcement Learning, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2409.12917)] 
 - Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2408.03314)] 
 - Learning to Reason with LLMs, <ins>Website, 2024</ins> [[Html](https://openai.com/index/learning-to-reason-with-llms/)] 
