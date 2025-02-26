@@ -310,6 +310,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 - SEED: Accelerating Reasoning Tree Construction via Scheduled Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper]([https://arxiv.org/abs/2304.04487](https://arxiv.org/pdf/2406.18200))]
 #### KV-Cache Optimization
+- MEDA: Dynamic KV Cache Allocation for Efficient Multimodal Long-Context Inference, <ins>NAACL, 2025</ins>  [[Paper](https://arxiv.org/abs/2502.17599)]
 - CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences, <ins>ICLR, 2025</ins>  [[Paper](https://openreview.net/forum?id=EQgEMAD4kv)]
 - SCOPE: Optimizing Key-Value Cache Compression in Long-context Generation, <ins>arXiv, 2024</ins>  [[Paper](https://arxiv.org/abs/2412.13649)]
 - vl-cache: sparsity and modality-aware kv cache compression for vision-language model inference acceleration, <ins>arXiv, 2024</ins>  [[Paper](https://arxiv.org/abs/2410.23317)]
