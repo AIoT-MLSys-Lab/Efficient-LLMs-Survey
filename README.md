@@ -338,6 +338,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2306.14048)]
 - Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2305.17118)]
 - Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2305.15805)]
+- Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification, <ins>ICLR, 2025</ins> [[Paper](https://arxiv.org/abs/2412.00876)] [[Code](https://github.com/Osilly/dynamic_llava)]
 ### Efficient Architecture
 #### Efficient Attention
 ##### Sharing-based Attention
