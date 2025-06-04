@@ -310,6 +310,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - SpecInfer: Accelerating Generative LLM Serving with Speculative Inference and Token Tree Verification, <ins>arXiv, 2023</ins>  [[Paper](https://doi.org/10.48550/arXiv.2305.09781)] [[Code](https://github.com/flexflow/FlexFlow)]
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 - SEED: Accelerating Reasoning Tree Construction via Scheduled Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper]([https://arxiv.org/abs/2304.04487](https://arxiv.org/pdf/2406.18200))]
+- Mamba Drafters for Speculative Decoding, <ins>arXiv, 2025</ins> [[Paper](https://arxiv.org/abs/2506.01206)]
 #### KV-Cache Optimization
 - MEDA: Dynamic KV Cache Allocation for Efficient Multimodal Long-Context Inference, <ins>NAACL, 2025</ins>  [[Paper](https://arxiv.org/abs/2502.17599)]
 - CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences, <ins>ICLR, 2025</ins>  [[Paper](https://openreview.net/forum?id=EQgEMAD4kv)]
@@ -419,6 +420,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Functional Interpolation for Relative Positions Improves Long Context Transformers, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/pdf/2310.04418.pdf)]
 - Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/pdf/2108.12409.pdf)] [[Code](https://github.com/ofirpress/attention_with_linear_biases)]
 - Exploring Length Generalization in Large Language Models, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.04901)]
+- Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2404.10308)] [[Code](https://github.com/alinlab/HOMER)]
 ##### Recurrent Structure
 - Retentive Network: A Successor to Transformer for Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2307.08621)] [[Code](https://github.com/microsoft/torchscale)]
 - Recurrent Memory Transformer, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2207.06881)] [[Code](https://github.com/booydar/LM-RMT)]
@@ -450,6 +452,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Focused Transformer: Contrastive Training for Context Scaling, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2307.03170)] [[Code](https://github.com/CStanKonrad/long_llama)]
 - Retrieval meets Long Context Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2310.03025)]
 - Memorizing Transformers, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2203.08913)] [[Code](https://github.com/lucidrains/memorizing-transformers-pytorch)]
+- Compress, Gather, and Recompute: REFORMing Long-Context Processing in Transformers, <ins>arXiv, 2025</ins> [[Paper](https://arxiv.org/abs/2506.01215)]
 #### Transformer Alternative Architecture
 ##### State Space Models
 - Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2405.21060)]
@@ -463,6 +466,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Block-State Transformers, <ins>NeurIPS, 2023</ins> [[Paper](https://arxiv.org/abs/2306.09539)]
 - Efficiently Modeling Long Sequences with Structured State Spaces, <ins>ICLR, 2022</ins> [[Paper](https://arxiv.org/abs/2111.00396)] [[Code](https://github.com/state-spaces/s4)]
 - Diagonal State Spaces are as Effective as Structured State Spaces, <ins>NeurIPS, 2022</ins> [[Paper](https://arxiv.org/abs/2203.14343)] [[Code](https://github.com/ag1988/dss)]
+- Sparsified State-Space Models are Efficient Highway Networks, <ins>TMLR, 2025</ins> [[Paper](https://arxiv.org/abs/2505.20698)] [[Code](https://github.com/woominsong/Simba)]
 ##### Other Sequential Models
 - Differential Transformer, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2410.05258)]
 - Scalable MatMul-free Language Modeling, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2406.02528)]
