@@ -171,7 +171,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - LoRAP: Transformer Sub-Layers Deserve Differentiated Structured Compression for Large Language Models, <ins>ICML, 2024</ins> [[Paper](https://arxiv.org/abs/2404.09695)][[Code](https://github.com/lihuang258/LoRAP)]
 ##### Unstructured Pruning
 - FedSpaLLM: Federated Pruning of Large Language Models, <ins>NAACL, 2025</ins> [[Paper](https://arxiv.org/pdf/2410.14852)]
-- SparseLLM: Towards Global Pruning of Large Language Models, <ins>NeurIPS, 2024</ins> [[Paper](https://arxiv.org/pdf/2402.17946)]
+- SparseLLM: Towards Global Pruning of Pre-trained Language Models, <ins>NeurIPS, 2024</ins> [[Paper](https://arxiv.org/pdf/2402.17946)]
 - MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models, <ins>NIPS, 2024</ins> [[Paper](https://arxiv.org/abs/2409.17481)] 
 - Dynamic Sparse No Training: Training-Free Fine-tuning for Sparse LLMs, <ins>ICLR, 2024</ins> [[Paper](https://arxiv.org/abs/2310.08915)] 
 - SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot, <ins>ICML, 2023</ins> [[Paper](https://arxiv.org/abs/2301.00774)] [[Code](https://github.com/IST-DASLab/sparsegpt)]
