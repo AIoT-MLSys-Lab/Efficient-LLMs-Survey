@@ -316,6 +316,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 - Inference with Reference: Lossless Acceleration of Large Language Models, <ins>arXiv, 2023</ins> [[Paper](https://arxiv.org/abs/2304.04487)] [[Code](https://github.com/microsoft/LMOps/tree/main/llma)]
 - SEED: Accelerating Reasoning Tree Construction via Scheduled Speculative Decoding, <ins>arXiv, 2024</ins> [[Paper]([https://arxiv.org/abs/2304.04487](https://arxiv.org/pdf/2406.18200))]
 - Mamba Drafters for Speculative Decoding, <ins>arXiv, 2025</ins> [[Paper](https://arxiv.org/abs/2506.01206)]
+- Accelerated Test-Time Scaling with Model-Free Speculative Sampling, <ins>arXiv, 2025</ins> [[Paper](https://arxiv.org/abs/2506.04708)]
 #### KV-Cache Optimization
 - Compress, Gather, and Recompute: REFORMing Long-Context Processing in Transformers, <ins>arXiv, 2025</ins>  [[Paper](https://arxiv.org/abs/2506.01215)]
 - MEDA: Dynamic KV Cache Allocation for Efficient Multimodal Long-Context Inference, <ins>NAACL, 2025</ins>  [[Paper](https://arxiv.org/abs/2502.17599)]
