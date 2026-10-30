@@ -41,6 +41,7 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
   - [Model Compression](#Model-Compression) 
     - [Quantization](#Quantization)
       - [Post-Training Quantization](#Post-Training-Quantization)
+        - [Embedding Quantization](#Embedding-Quantization)
         - [Weight-Only Quantization](#Weight-Only-Quantization)
         - [Weight-Activation Co-Quantization](#Weight-Activation-Co-Quantization)
         - [Evaluation of Post-Training Quantization](#Evaluation-of-Post-Training-Quantization)
@@ -116,6 +117,9 @@ Although LLMs are leading the next wave of AI revolution, the remarkable capabil
 ### Model Compression
 #### Quantization
 ##### Post-Training Quantization
+###### Embedding Quantization
+- Extreme Compression of Per-Layer Embeddings via Cross-Layer Latent Vector Quantization, <ins>arXiv, 2026</ins> [[Paper](https://arxiv.org/abs/2610.31309)] [[Code](https://github.com/VILA-Lab/optic)]
+
 ###### Weight-Only Quantization
 - GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance, <ins>ICML, 2025</ins> [[Paper](https://arxiv.org/abs/2505.07004)] [[Code]](https://github.com/snu-mllab/GuidedQuant)
 - I-LLM: Efficient Integer-Only Inference for Fully-Quantized Low-Bit Large Language Models, <ins>arXiv, 2024</ins> [[Paper](https://arxiv.org/abs/2405.17849)] 
